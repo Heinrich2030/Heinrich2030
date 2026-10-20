@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steuer-Rechner</title>
+  <meta name="description" content="Einkommensteuer berechnen – jahresunabhängig, im Browser, ohne Datenübertragung.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Steuer-Rechner</h1>
+    <p class="sub">Einkommensteuer-Schätzung. Alle Daten bleiben in deinem Browser.</p>
+  </header>
+
+  <main class="layout">
+    <form id="form" autocomplete="off">
+      <section class="card">
+        <h2>Allgemein</h2>
+        <div class="grid">
+          <label>Steuerjahr
+            <select name="jahr" id="jahr"></select>
+          </label>
+          <label>Veranlagung
+            <select name="veranlagung">
+              <option value="einzel">Einzelveranlagung</option>
+              <option value="zusammen">Zusammenveranlagung (Splitting)</option>
+            </select>
+          </label>
+          <label>Kirchensteuer
+            <select name="kirche">
+              <option value="0">keine</option>
+              <option value="0.09">9 % (die meisten Bundesländer)</option>
+              <option value="0.08">8 % (Bayern, Baden-Württemberg)</option>
+            </select>
+          </label>
+          <label>Kinder mit Kindergeld
+            <input name="kinder" type="number" min="0" step="1" inputmode="numeric">
+          </label>
+          <label class="check"><input name="alleinerziehend" type="checkbox"> alleinerziehend</label>
+        </div>
+        <p id="jahr-hinweis" class="hinweis" hidden></p>
+      </section>
+
+      <section class="card" data-person="0">
+        <h2>Anlage N <span class="who">Person 1</span></h2>
+        <div class="grid person"></div>
+      </section>
+
+      <section class="card" data-person="1" hidden>
+        <h2>Anlage N <span class="who">Person 2</span></h2>
+        <div class="grid person"></div>
+      </section>
+
+      <section class="card">
+        <h2>Sonderausgaben &amp; Ermäßigungen</h2>
+        <div class="grid">
+          <label>Spenden
+            <input name="spenden" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+          <label>Haushaltsnahe Dienstleistungen (Arbeitskosten)
+            <input name="haushaltsnah" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+          <label>Handwerkerleistungen (Arbeitskosten)
+            <input name="handwerker" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+          <label>Sonstige Einkünfte (Saldo)
+            <input name="sonstigeEinkuenfte" type="number" step="0.01" inputmode="decimal">
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Anlage KAP</h2>
+        <div class="grid">
+          <label>Kapitalerträge gesamt
+            <input name="kap.ertraege" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+          <label>Einbehaltene Kapitalertragsteuer
+            <input name="kap.kapEStEinbehalten" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+          <label>Einbehaltener Soli (KAP)
+            <input name="kap.soliEinbehalten" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+          <label>Einbehaltene Kirchensteuer (KAP)
+            <input name="kap.kistEinbehalten" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+        </div>
+      </section>
+
+      <button type="button" id="reset" class="ghost">Alle Eingaben löschen</button>
+    </form>
+
+    <aside class="card result" aria-live="polite">
+      <h2>Ergebnis</h2>
+      <div id="ergebnis" class="big"></div>
+      <dl id="details"></dl>
+      <p class="disclaimer">Schätzung ohne Gewähr, keine Steuerberatung. Nicht berücksichtigt:
+        außergewöhnliche Belastungen, Selbständigkeit, Vermietung, Höchstbeträge der Vorsorge,
+        Progressionsvorbehalt.</p>
+    </aside>
+  </main>
+
+  <template id="person-fields">
+    <label>Bruttoarbeitslohn<input data-f="brutto" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Einbehaltene Lohnsteuer<input data-f="lohnsteuer" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Einbehaltener Soli<input data-f="soliEinbehalten" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Einbehaltene Kirchensteuer<input data-f="kistEinbehalten" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Entfernung Wohnung–Arbeit (km)<input data-f="entfernungKm" type="number" min="0" step="1" inputmode="numeric"></label>
+    <label>Arbeitstage vor Ort<input data-f="arbeitstage" type="number" min="0" max="366" step="1" inputmode="numeric"></label>
+    <label>Homeoffice-Tage<input data-f="homeofficeTage" type="number" min="0" max="366" step="1" inputmode="numeric"></label>
+    <label>Arbeitsmittel<input data-f="arbeitsmittel" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Sonstige Werbungskosten<input data-f="sonstigeWK" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Rentenversicherung (Arbeitnehmeranteil)<input data-f="rvAN" type="number" min="0" step="0.01" inputmode="decimal"></label>
+    <label>Kranken-/Pflegeversicherung (Basis, AN-Anteil)<input data-f="kvpvBasis" type="number" min="0" step="0.01" inputmode="decimal"></label>
+  </template>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
