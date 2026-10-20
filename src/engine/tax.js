@@ -92,7 +92,9 @@ export function berechne(input, p) {
   // 3. Sonderausgaben
   const vorsorge = personenDaten.reduce((s, n) => s + pos(n.rvAN) + pos(n.kvpvBasis), 0);
   const spendenAbziehbar = Math.min(pos(input.spenden), gesamtbetrag * p.spendenHoechstQuote);
-  const uebrigeSA = Math.max(spendenAbziehbar, p.sonderausgabenPauschbetrag * personen);
+  // Im Jahr gezahlte Kirchensteuer (Lohn) ist Sonderausgabe, nicht die auf Kapitalerträge
+  const kistGezahlt = personenDaten.reduce((s, n) => s + pos(n.kistEinbehalten), 0);
+  const uebrigeSA = Math.max(spendenAbziehbar + kistGezahlt, p.sonderausgabenPauschbetrag * personen);
   const sonderausgaben = cents(vorsorge + uebrigeSA);
   const einkommen = Math.max(0, cents(gesamtbetrag - sonderausgaben));
 

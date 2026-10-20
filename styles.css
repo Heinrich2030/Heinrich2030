@@ -55,7 +55,7 @@ body {
 }
 @media (max-width: 820px) {
   .layout { grid-template-columns: minmax(0, 1fr); }
-  .result { order: -1; position: static; }
+  .side { order: -1; }
 }
 
 .card {
@@ -84,7 +84,18 @@ input, select {
 input[type="checkbox"] { width: auto; }
 input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 0; }
 
-.result { position: sticky; top: calc(12px + env(safe-area-inset-top, 0px)); }
+.side { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+.result { margin-bottom: 16px; }
+.grenzsatz { margin: 0 0 10px; color: var(--muted); font-size: 0.9rem; }
+.grenzsatz strong { color: var(--text); }
+.tipp-liste { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.tipp { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--bg); }
+.tipp-kopf { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.tipp h3 { margin: 0; font-size: 0.95rem; text-wrap: balance; }
+.tipp p { margin: 6px 0 0; font-size: 0.86rem; color: var(--muted); }
+.kat { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.pill { font-size: 0.8rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--good);
+  border: 1px solid currentColor; border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
 .big { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; }
 .big.good { color: var(--good); }
 .big.bad { color: var(--bad); }

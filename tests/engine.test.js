@@ -98,3 +98,10 @@ test("Unbekanntes Jahr fällt auf neuestes bekanntes Jahr zurück", () => {
   assert.equal(r.fallback, true);
   assert.equal(r.year, latest);
 });
+
+test("Gezahlte Kirchensteuer mindert das Einkommen als Sonderausgabe", () => {
+  const p = TAX_YEARS[2025];
+  const ohne = berechne({ veranlagung: "einzel", personen: [{ brutto: 50000 }] }, p);
+  const mit = berechne({ veranlagung: "einzel", personen: [{ brutto: 50000, kistEinbehalten: 800 }] }, p);
+  assert.equal(ohne.sonderausgaben - 36 + 800, mit.sonderausgaben);
+});

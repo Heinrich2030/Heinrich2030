@@ -31,3 +31,9 @@ Außergewöhnliche Belastungen, Selbständigkeit/Gewerbe, Vermietung, Höchstbet
 Vorsorgeaufwendungen, Progressionsvorbehalt, ELSTER-Übermittlung (ERiC).
 
 > Schätzung ohne Gewähr – keine Steuerberatung.
+
+## Spartipps
+Die App analysiert deine Eingaben und zeigt Spartipps, sortiert nach Ersparnis in Euro.
+Jeder Betrag ist eine echte Vergleichsrechnung mit der Engine („Was wäre, wenn …“), z. B.
+Homeoffice-Tage, Handwerkerkosten, Basisrente, Spenden, Splitting-Vorteil, Günstigerprüfung
+und Freistellungsauftrag bei Kapitalerträgen. Logik: `src/engine/tipps.js`.

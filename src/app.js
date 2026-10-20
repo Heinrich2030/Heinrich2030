@@ -1,9 +1,11 @@
 import { berechne } from "./engine/tax.js";
+import { analysiere } from "./engine/tipps.js";
 import { KNOWN_YEARS, getYearParams } from "./data/tax-years.js";
 
 const STORAGE_KEY = "steuer-app:eingaben:v1";
 const form = document.getElementById("form");
 const eur = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" });
+const eur0 = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
 const pct = new Intl.NumberFormat("de-DE", { style: "percent", maximumFractionDigits: 1 });
 
 // Jahresauswahl: alle bekannten Jahre plus das aktuelle Kalenderjahr
@@ -122,6 +124,43 @@ function render() {
   zeile(dl, "Bereits bezahlt", eur.format(r.vorausgezahlt));
   zeile(dl, "Durchschnittssteuersatz", pct.format(r.durchschnittssatz));
   zeile(dl, "Rechenwerte", `${year}${params.status === "verifiziert" ? "" : " (vorläufig)"}`);
+  renderTipps(input, params, r);
+}
+
+function renderTipps(input, params, r) {
+  const { grenzsteuersatz, tipps } = analysiere(input, params);
+  const gs = document.getElementById("grenzsatz");
+  gs.replaceChildren();
+  if (r.zvE > 0) {
+    const b = document.createElement("strong");
+    b.textContent = pct.format(grenzsteuersatz);
+    gs.append("Dein Grenzsteuersatz: ", b, ". So viel von jedem zusätzlich absetzbaren Euro bekommst du zurück.");
+  } else gs.textContent = "Gib dein Einkommen ein, dann analysiere ich, wo du sparen kannst.";
+
+  const liste = document.getElementById("tipps");
+  liste.replaceChildren();
+  for (const t of tipps) {
+    const li = document.createElement("li");
+    li.className = "tipp";
+    const kopf = document.createElement("div");
+    kopf.className = "tipp-kopf";
+    const kat = document.createElement("span");
+    kat.className = "kat";
+    kat.textContent = t.kategorie;
+    kopf.append(kat);
+    if (t.ersparnis > 0) {
+      const pill = document.createElement("span");
+      pill.className = "pill";
+      pill.textContent = "≈ " + eur0.format(t.ersparnis);
+      kopf.append(pill);
+    }
+    const h = document.createElement("h3");
+    h.textContent = t.titel;
+    const p = document.createElement("p");
+    p.textContent = t.text;
+    li.append(kopf, h, p);
+    liste.append(li);
+  }
 }
 
 laden();
