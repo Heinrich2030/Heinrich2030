@@ -80,7 +80,7 @@ Moduswahl über Byte 1 der Schieberegisterkette (siehe `firmware/messkarte/src/h
 |---|---|---|
 | 0 | `HI_QUELLE` | HI-Force ← 2,500 V (REF5025 → OPA2388 als Puffer, liefert ≥ 15 mA) |
 | 1 | `LO_SENKE` | LO-Force → Drain DMN3404L; Source → Shunt → GND; OPA2388 regelt U_Shunt auf 100 mV |
-| 2–3 | Shunt | ADG1404 wählt 10 Ω / 100 Ω / 1 kΩ / 10 kΩ (0,1 %) → 10 mA / 1 mA / 100 µA / 10 µA |
+| 2–3 | Shunt | 2× ADG1408 (getrennter Force- und Sense-Pfad) wählen 10 Ω / 100 Ω / 1 kΩ / 10 kΩ (0,1 %) → 10 mA / 1 mA / 100 µA / 10 µA |
 | 4 | `SCAN_PU` | HI-Force ← 3,3 V über 1 kΩ |
 | 5 | `SCAN_PD` | LO-Force → GND über 10 kΩ |
 | 6 | `ISO` | HI-Force ← AVDD über 1 MΩ (0,1 %) |
@@ -150,19 +150,48 @@ Nullabgleich mit dem Kurzschlussadapter erfasst, nicht aber Abnutzung der Kontak
 | c | 1–32 | Testpunkte 33–64 |
 | b | 1–4 | GND |
 | b | 5–6 | +3,3 V (max. 50 mA, für Adapter-EEPROM/LEDs) |
-| b | 7 | SDA |
+| b | 7 | SDA (je Seite eigener I²C-Bus, EEPROM-Adresse immer 0x50) |
 | b | 8 | SCL |
-| b | 9 | EEPROM-A0 (Seite A: GND, Seite B: 3,3 V → Adresse 0x50/0x51) |
-| b | 10–31 | frei (z. B. Adapter-LEDs, Schirmung) |
+| b | 9–10 | GND |
+| b | 11–31 | frei (z. B. Adapter-LEDs, Schirmung) |
 | b | 32 | Adapter-Erkennung (auf dem Adapter mit GND verbunden) |
 
 Adapter bauen: [`adapter.md`](adapter.md).
 
 ## 8. Stromversorgung
 
-- USB-C, 5 V/3 A (keine PD-Aushandlung nötig, 5,1-kΩ-CC-Widerstände).
-- Display-Einheit: ca. 400–600 mA (Hintergrundbeleuchtung), Messkarte: < 100 mA.
-- AVDD 5,0 V aus TPS7A20 (rauscharm, ggf. aus 5-V-USB über Ladungspumpe/Boost auf 5,5 V vorregeln,
-  damit der LDO genug Spannungsreserve hat – alternativ AVDD = 4,5 V wählen und
-  `ADS1220::avdd` anpassen).
-- 3,3 V für Logik vom Pico-2-Regler.
+- USB-C an der linken Gehäusewand, 5 V/3 A (keine PD-Aushandlung nötig, 5,1-kΩ-CC-Widerstände),
+  Polyfuse 2 A, TVS-Diode SMAJ5.0CA.
+- AVDD (Analogteil): die 5 V über Ferrit + 22 µF gefiltert. Ein LDO hätte aus 5 V USB keine
+  Spannungsreserve. Die Genauigkeit hängt nicht an AVDD: Widerstandsmessung ist ratiometrisch zum
+  Shunt, die Isolationsmessung ratiometrisch zu AVDD selbst.
+- 3,3 V für die Logik vom Pico-2-Regler (Pico über Schottky-Diode aus 5 V, sein eigener USB bleibt
+  für Firmware-Updates nutzbar – zweite Öffnung in der linken Wand).
+- Display-Einheit: ca. 400–600 mA. Sie wird aus der Messkarte versorgt (JST-PH-Stecker „Display 5V“
+  → kurzes Kabel auf USB-C-Stecker am Display).
+
+## 9. Flachbandkabel Messkarte ↔ Kanalkarte (34-polig, IDC)
+
+| Pin | Signal | Pin | Signal |
+|---|---|---|---|
+| 1 | GND | 2 | HI_F (HI-Force-Bus) |
+| 3 | GND | 4 | HI_S (HI-Sense-Bus) |
+| 5 | GND | 6 | LO_F |
+| 7 | GND | 8 | LO_S |
+| 9 | GND | 10 | 5VA |
+| 11 | 5VA | 12 | 3V3 |
+| 13 | 3V3 | 14 | GND |
+| 15–18 | HA0–HA3 (HI-Adresse) | 19–22 | LA0–LA3 (LO-Adresse) |
+| 23 | GND | 24 | SR_CLK |
+| 25 | SR_LATCH | 26 | SR_OE_N |
+| 27 | Schieberegister-Eingang | 28 | Schieberegister-Ausgang (weiter zur nächsten Karte) |
+| 29 | GND | 30 | SDA (eigener Bus je Karte) |
+| 31 | SCL | 32 | ADAPT_N (Adapter steckt) |
+| 33 | GND | 34 | GND |
+
+Die Analogbusse liegen zwischen Masseadern. Beide Kanalkarten sind identisch, die Kette der
+Schieberegister läuft Messkarte → Karte A → Karte B.
+
+## 10. KiCad-Projekte
+
+Schaltpläne, Leiterplatten und Fertigungsdaten: [`../hardware/kicad/`](../hardware/kicad/README.md).

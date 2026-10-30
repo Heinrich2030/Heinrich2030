@@ -2,3 +2,11 @@ node_modules/
 .DS_Store
 kabeltester/tests/test_analyse
 .pio/
+__pycache__/
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.dsn
+*.ses
+.netzliste.tmp
+kabeltester/hardware/kicad/*/fertigung/*.step

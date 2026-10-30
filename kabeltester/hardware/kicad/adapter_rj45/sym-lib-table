@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "kabeltester")(type "KiCad")(uri "${KIPRJMOD}/../bibliothek/kabeltester.kicad_sym")(options "")(descr "Kabeltester"))
+)

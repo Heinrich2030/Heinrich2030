@@ -47,18 +47,18 @@ static void sendeOhm(char* buf, size_t len, const char* prefix, int a, int b, fl
 }
 
 // ---------------------------------------------------------------------------
-// Adapter-Erkennung: EEPROM 24C02 auf jedem Adapter, Adresse 0x50 (Seite A) / 0x51 (Seite B).
+// Adapter-Erkennung: EEPROM 24AA02 auf jedem Adapter, Adresse 0x50, je Seite ein eigener I²C-Bus.
 // Inhalt: ASCII-Name, mit 0 abgeschlossen (z. B. "RJ45 8P8C", "D-Sub 25").
 // ---------------------------------------------------------------------------
-static void adapterName(uint8_t adr, char* name, size_t len) {
+static void adapterName(TwoWire& bus, char* name, size_t len) {
   name[0] = 0;
-  Wire.beginTransmission(adr);
-  Wire.write((uint8_t)0);
-  if (Wire.endTransmission() != 0) return;
-  size_t n = Wire.requestFrom(adr, (uint8_t)(len - 1));
+  bus.beginTransmission(hw::ADAPTER_EEPROM);
+  bus.write((uint8_t)0);
+  if (bus.endTransmission() != 0) return;
+  size_t n = bus.requestFrom(hw::ADAPTER_EEPROM, (uint8_t)(len - 1));
   size_t i = 0;
-  while (Wire.available() && i < n) {
-    char c = (char)Wire.read();
+  while (bus.available() && i < n) {
+    char c = (char)bus.read();
     if (c == 0 || c == (char)0xFF) break;
     name[i++] = c;
   }
@@ -73,7 +73,7 @@ static void pruefeAdapter(bool immerMelden) {
     if (da == adapterSteckt[s] && !immerMelden) continue;
     adapterSteckt[s] = da;
     char name[33] = "";
-    if (da) adapterName((uint8_t)(0x50 + s), name, sizeof name);
+    if (da) adapterName(s == 0 ? Wire : Wire1, name, sizeof name);
     char buf[64];
     snprintf(buf, sizeof buf, "ADAPTER %c %d %s", 'A' + s, da ? 1 : 0, name);
     sende(buf);
@@ -251,9 +251,12 @@ void setup() {
   SPI.setRX(hw::PIN_SPI_MISO);
   SPI.begin();
 
-  Wire.setSDA(hw::PIN_I2C_SDA);
-  Wire.setSCL(hw::PIN_I2C_SCL);
+  Wire.setSDA(hw::PIN_I2C_A_SDA);
+  Wire.setSCL(hw::PIN_I2C_A_SCL);
   Wire.begin();
+  Wire1.setSDA(hw::PIN_I2C_B_SDA);
+  Wire1.setSCL(hw::PIN_I2C_B_SCL);
+  Wire1.begin();
 
   pinMode(hw::PIN_START, INPUT_PULLUP);
   pinMode(hw::PIN_ADAPT_A, INPUT_PULLUP);

@@ -11,8 +11,9 @@ und macht es für beliebige Kabel nutzbar.
 3. Jeden Buchsenkontakt mit einem Testpunkt (Reihe a/c) verbinden – **kurz und breit**, weil
    die Leiterbahn außerhalb des Kelvin-Punktes liegt (wird durch den Nullabgleich erfasst).
 4. Kontakt **b32 mit GND** verbinden → das Gerät erkennt den gesteckten Adapter.
-5. EEPROM 24AA02 (SOT-23-5): VCC an b5, GND an b1, SDA an b7, SCL an b8, A0 an b9,
-   A1/A2 an GND. 4,7-kΩ-Pull-ups sitzen auf der Messkarte.
+5. EEPROM 24AA02 (SOT-23-5, feste Adresse 0x50): VCC an b5, GND an b1, SDA an b7, SCL an b8,
+   WP an GND. 4,7-kΩ-Pull-ups sitzen auf der Messkarte; jede Seite hat einen eigenen I²C-Bus.
+   Fertige Vorlage mit 2× RJ45: [`../hardware/kicad/adapter_rj45`](../hardware/kicad/README.md).
 6. Schirm-/Gehäusekontakte als eigenen Testpunkt auflegen – so wird auch der Schirm geprüft.
 
 Mehrere Stecker auf einem Adapter sind erlaubt (z. B. RJ45 + RJ11 + USB-A auf einer Platine).

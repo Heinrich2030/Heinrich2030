@@ -15,7 +15,7 @@ constexpr uint8_t PIN_595_OE    = 22;   // low = Ausgänge aktiv (Pull-up -> bei
 
 // --- Schnellscan: gepufferter LO-Sense-Bus am internen ADC ------------------
 constexpr uint8_t PIN_SCAN_ADC  = 26;   // ADC0
-constexpr uint8_t PIN_VBUS_ADC  = 27;   // ADC1: Spannungsmonitor 2,5-V-Quelle (Selbsttest)
+constexpr uint8_t PIN_VBUS_ADC  = 27;   // ADC1: Monitor REF5025/2 über OPV-Puffer (Selbsttest)
 
 // --- UART zum Display (ESP32-S3) ------------------------------------------
 constexpr uint8_t PIN_UART_TX   = 0;
@@ -23,8 +23,12 @@ constexpr uint8_t PIN_UART_RX   = 1;
 constexpr uint32_t UART_BAUD    = 921600;
 
 // --- I²C zu den Adapter-EEPROMs (Reihe b der DIN-41612-Leisten) -------------
-constexpr uint8_t PIN_I2C_SDA   = 12;
-constexpr uint8_t PIN_I2C_SCL   = 13;
+// Je Seite ein eigener Bus: alle Adapter-EEPROMs (24AA02, SOT-23) haben die feste Adresse 0x50.
+constexpr uint8_t PIN_I2C_A_SDA = 12;   // I2C0 -> Kanalkarte A
+constexpr uint8_t PIN_I2C_A_SCL = 13;
+constexpr uint8_t PIN_I2C_B_SDA = 2;    // I2C1 -> Kanalkarte B
+constexpr uint8_t PIN_I2C_B_SCL = 3;
+constexpr uint8_t ADAPTER_EEPROM = 0x50;
 
 // --- Bedienung / Signalisierung ---------------------------------------------
 constexpr uint8_t PIN_START     = 14;   // Start-Taster / Fußschalter (gegen GND)

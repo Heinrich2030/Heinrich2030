@@ -81,6 +81,8 @@ kabeltester/
 ├── docs/hardware.md          Schaltungskonzept, Bauteilwahl, Leistungsdaten, Schutzkonzept
 ├── docs/adapter.md           Steckeradapter und Kurzschlussadapter bauen
 ├── hardware/stueckliste.csv  Stückliste mit Bestellnummern und Richtpreisen
+├── hardware/kicad/           KiCad-Projekte: Schaltpläne, Platinen, Gerber, STEP (Generator in Python)
+├── gehaeuse/step/            Gehäuse und Gesamtbaugruppe als STEP/STL (für jedes CAD-Programm)
 ├── gehaeuse/gehaeuse.scad    Pultgehäuse für den 3D-Druck (OpenSCAD, parametrisch)
 ├── docs/zusammenbau-3d.html  Drehbares 3D-Modell des Zusammenbaus mit Explosionsansicht (im Browser öffnen)
 ├── firmware/common/          Analyse-Kern (Soll/Ist-Vergleich, Profile, Länge) – auf PC testbar
@@ -128,9 +130,10 @@ Die Messkarte lässt sich auch ohne Display über USB bedienen (Terminal, 115 20
 
 ## Stand und offene Punkte
 
-- Konzept, Stückliste, Firmware und Gehäuse sind fertig. Schaltplan und Leiterplatten-Layout
-  (KiCad) sind der nächste Schritt; `docs/hardware.md` ist dafür die Vorlage.
-- Die Firmware ist gegen die Bibliotheken syntaktisch geprüft, aber noch nicht auf echter
-  Hardware gelaufen. Die Leistungsdaten sind berechnete Richtwerte.
+- Schaltpläne und Platinen-Platzierung in KiCad sind fertig, ebenso Gehäuse und Baugruppe als STEP.
+  **Die Leiterbahnen fehlen noch** – siehe [hardware/kicad/README.md](hardware/kicad/README.md).
+- Einige Pinbelegungen eigener Symbole und die DIN-41612-Ausrichtung sind vor der Bestellung zu prüfen
+  (Liste in der KiCad-Anleitung).
+- Die Firmware ist gegen die Bibliotheken syntaktisch geprüft, aber noch nicht auf echter Hardware
+  gelaufen. Die Leistungsdaten sind berechnete Richtwerte.
 - Die eingebauten LVGL-Schriften haben keine Umlaute; die Oberfläche schreibt daher „ue/oe“.
-  Mit `lv_font_conv` lässt sich eine Schrift mit Umlauten und Ω erzeugen.

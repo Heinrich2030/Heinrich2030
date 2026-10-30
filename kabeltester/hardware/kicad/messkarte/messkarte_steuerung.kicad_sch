@@ -1,0 +1,1695 @@
+(kicad_sch
+  (version 20230121)
+  (generator eeschema)
+  (uuid "e5e4f1fc-c745-4b6e-b085-d34b3b696cd4")
+  (paper "A3")
+  (title_block
+    (title "Kabeltester Messkarte – Steuerung")
+    (date "2026-10-30")
+    (rev "1.0")
+    (company "Kabeltester")
+    (comment 1 "Automatisch erzeugt aus kabeltester/hardware/kicad/generator – nicht von Hand ändern")
+    (comment 2 "Netze sind über Labels verbunden (Label am Pinende)"))
+  (lib_symbols
+    (symbol "74xx:74HC595"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at -7.62 13.97 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "74HC595"
+        (at -7.62 -16.51 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_keywords" "HCMOS SR 3State"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_description" "8-bit serial in/out Shift Register 3-State Outputs"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (symbol "74HC595_1_0"
+        (pin tri_state line
+          (at 10.16 7.62 180)
+          (length 2.54)
+          (name "QB"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 2.54 0)
+          (length 2.54)
+          (name "~{SRCLR}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 5.08 0)
+          (length 2.54)
+          (name "SRCLK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 -2.54 0)
+          (length 2.54)
+          (name "RCLK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 -5.08 0)
+          (length 2.54)
+          (name "~{OE}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 10.16 0)
+          (length 2.54)
+          (name "SER"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 10.16 180)
+          (length 2.54)
+          (name "QA"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 15.24 270)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 5.08 180)
+          (length 2.54)
+          (name "QC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 2.54 180)
+          (length 2.54)
+          (name "QD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 0 180)
+          (length 2.54)
+          (name "QE"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 -2.54 180)
+          (length 2.54)
+          (name "QF"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 -5.08 180)
+          (length 2.54)
+          (name "QG"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin tri_state line
+          (at 10.16 -7.62 180)
+          (length 2.54)
+          (name "QH"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -17.78 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 10.16 -12.7 180)
+          (length 2.54)
+          (name "QH'"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74HC595_1_1"
+        (rectangle
+          (start -7.62 12.7)
+          (end 7.62 -15.24)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))))
+    (symbol "Device:C"
+      (pin_numbers hide)
+      (pin_names
+        (offset 0.254))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Device:R"
+      (pin_numbers hide)
+      (pin_names
+        (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_description" "Resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))))
+  (symbol
+    (lib_id "74xx:74HC595")
+    (at 45.72 53.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c346687f-99d7-41af-b28f-774da320a6ad")
+    (property "Reference" "U2"
+      (at 45.72 36.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "SN74HC595PW"
+      (at 45.72 72.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+      (at 45.72 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 45.72 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C5947"
+      (at 45.72 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "1ccd46ce-58c2-4fc9-8ca7-49294a5bc1f4"))
+    (pin "10"
+      (uuid "55275f31-46bb-4dd9-9bde-3b91ffcf6216"))
+    (pin "11"
+      (uuid "2d9a424f-b0c0-4b7f-ac4f-9ff9bb8fdfbb"))
+    (pin "12"
+      (uuid "fa33ed1d-0cba-4a04-9732-787901de2977"))
+    (pin "13"
+      (uuid "fbc30130-8ebe-4013-afeb-303089beb3fa"))
+    (pin "14"
+      (uuid "40169dbe-ca10-4d15-b781-85d5c42f5517"))
+    (pin "15"
+      (uuid "19044b25-877d-424a-95d0-42f7dd8b4108"))
+    (pin "16"
+      (uuid "f0f9d41b-4c99-4c4f-92a9-88450e67e0c4"))
+    (pin "2"
+      (uuid "265c8c19-3bab-43cf-8f97-c01b1e02c6b1"))
+    (pin "3"
+      (uuid "a01f8425-1919-4dba-ac65-694a887e204d"))
+    (pin "4"
+      (uuid "acd13279-395c-4252-9256-09e125fa4c98"))
+    (pin "5"
+      (uuid "e1b74b47-f7c4-4cfe-9cf2-7a2239ca3701"))
+    (pin "6"
+      (uuid "4045baa4-eba7-451e-8fd5-d10211955963"))
+    (pin "7"
+      (uuid "7390745c-2add-4a55-a9bc-9ac74c422045"))
+    (pin "8"
+      (uuid "fa85fb1d-f9ab-4f17-a3f7-d702d94c0ff2"))
+    (pin "9"
+      (uuid "e17cba2a-683b-49df-835d-39c24d8cc197"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "U2")
+          (unit 1)))))
+  (global_label "HA1"
+    (shape bidirectional)
+    (at 55.88 45.72 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "9bdd3979-b680-4236-82e1-5a31f3f1c911")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "3V3"
+    (shape bidirectional)
+    (at 35.56 50.8 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "cd26d83b-afbb-4b2c-9c18-4cc73d85801f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 35.56 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_CLK"
+    (shape bidirectional)
+    (at 35.56 48.26 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "63023afe-f837-49f6-9fc8-b3f32cce8ce8")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 35.56 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_LATCH"
+    (shape bidirectional)
+    (at 35.56 55.88 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "01ad847a-a058-4bc2-a2d5-4f4668616bb3")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 35.56 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_OE_N"
+    (shape bidirectional)
+    (at 35.56 58.42 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "168041cb-6563-495f-ab1a-3650ab633330")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 35.56 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "MOSI"
+    (shape bidirectional)
+    (at 35.56 43.18 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "c99da0b6-04d1-4fca-8cc2-72cf6113a3a0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 35.56 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "HA0"
+    (shape bidirectional)
+    (at 55.88 43.18 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f2d9fafc-c13c-4d70-a451-c82e16255f1f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "3V3"
+    (shape bidirectional)
+    (at 45.72 38.1 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "df001d88-2ad6-4370-b22d-097d80a01a67")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 45.72 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "HA2"
+    (shape bidirectional)
+    (at 55.88 48.26 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "89959726-e447-4646-a00e-33ecea3b2302")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "HA3"
+    (shape bidirectional)
+    (at 55.88 50.8 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "13f8deae-2a69-4594-b422-7193bf0d3923")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "LA0"
+    (shape bidirectional)
+    (at 55.88 53.34 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "5de8e31d-4da6-4dba-9b50-8a1cb79af8f9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "LA1"
+    (shape bidirectional)
+    (at 55.88 55.88 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "a1612838-063b-4724-8eba-20a20dd45363")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "LA2"
+    (shape bidirectional)
+    (at 55.88 58.42 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "14491d75-e172-42cd-b019-d2e42329f131")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "LA3"
+    (shape bidirectional)
+    (at 55.88 60.96 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "ef6fdff4-020c-4d20-80ab-4c9b3a61aacf")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 55.88 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 45.72 71.12 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "2b8521fe-6ade-4e48-b11b-81ed7d250c5e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 45.72 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (label "SR_ZWISCHEN"
+    (at 55.88 66.04 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "315582d1-4279-4f53-b613-f196fb401826"))
+  (symbol
+    (lib_id "Device:C")
+    (at 81.28 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "838f2c60-82dd-4880-8b5f-aa787f477c95")
+    (property "Reference" "C6"
+      (at 81.28 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100n"
+      (at 81.28 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 81.28 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 81.28 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C14663"
+      (at 81.28 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "ff9f3f6d-1e6e-485e-b013-fbbadcca5b67"))
+    (pin "2"
+      (uuid "afd79e3b-d360-43b5-86e8-da7d647ce527"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "C6")
+          (unit 1)))))
+  (global_label "3V3"
+    (shape bidirectional)
+    (at 81.28 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "96b803ea-2d64-4e5d-b2b3-78c53d0fae37")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 81.28 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 81.28 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "f2bc470d-b512-4db0-8a61-4db82d34823c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 81.28 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "74xx:74HC595")
+    (at 116.84 53.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "77dfdc5c-f85b-4711-8d09-b70c080dbe42")
+    (property "Reference" "U3"
+      (at 116.84 36.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "SN74HC595PW"
+      (at 116.84 72.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+      (at 116.84 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 116.84 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C5947"
+      (at 116.84 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "958cca8f-f91f-4ed1-ad3b-63369fcdbe40"))
+    (pin "10"
+      (uuid "66f76d14-febe-4b37-a5ab-17c53173772e"))
+    (pin "11"
+      (uuid "396ea411-c38f-4606-b12b-7e0a6eeda56f"))
+    (pin "12"
+      (uuid "7848ace7-0568-4ab9-8cfc-e85727e35c3c"))
+    (pin "13"
+      (uuid "275d47eb-05d2-4f54-a714-030558e9cd64"))
+    (pin "14"
+      (uuid "ec3308c7-fb5b-4c86-94aa-3fafda5b6195"))
+    (pin "15"
+      (uuid "f99bf44c-08c5-4f6c-9f1d-53bfb9c58d73"))
+    (pin "16"
+      (uuid "9b092824-c968-462c-9936-4760c0cecc2e"))
+    (pin "2"
+      (uuid "bf094021-4b77-4fc1-a074-8c1b6b23fbf6"))
+    (pin "3"
+      (uuid "b0162d1f-a6f4-46ee-a542-2035a34decb1"))
+    (pin "4"
+      (uuid "b2827c38-cdf0-47c8-a6dd-67a214b27e6c"))
+    (pin "5"
+      (uuid "2a87eb93-c48a-4d95-92ac-9c521a2d9a5d"))
+    (pin "6"
+      (uuid "5de440e5-0a7d-45c9-a67c-92901eccd3e3"))
+    (pin "7"
+      (uuid "8c156569-0ba1-4d39-b7d4-61c0f8e40ef2"))
+    (pin "8"
+      (uuid "17d0f355-217b-4874-94e8-4e7e2103ea2d"))
+    (pin "9"
+      (uuid "e45ae6d9-d803-49e1-8808-ac0774e78a04"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "U3")
+          (unit 1)))))
+  (global_label "M_LO_SENKE"
+    (shape bidirectional)
+    (at 127 45.72 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "2a1cc5af-dbea-448f-940c-936e3e20402d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "3V3"
+    (shape bidirectional)
+    (at 106.68 50.8 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "e59c0ea9-7bb0-4301-8676-9bd998b4546f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 106.68 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_CLK"
+    (shape bidirectional)
+    (at 106.68 48.26 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "797bcaaa-551a-4a0a-9765-8a9f20763fff")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 106.68 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_LATCH"
+    (shape bidirectional)
+    (at 106.68 55.88 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "104ae353-7d79-43ea-82fd-5ed4a0d21d5e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 106.68 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_OE_N"
+    (shape bidirectional)
+    (at 106.68 58.42 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "c58deffb-b9c2-429b-b30a-fe03dc392c91")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 106.68 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (label "SR_ZWISCHEN"
+    (at 106.68 43.18 180)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right bottom))
+    (uuid "25db7558-b5d9-4cb7-b241-87bd4a98d8a6"))
+  (global_label "M_HI_QUELLE"
+    (shape bidirectional)
+    (at 127 43.18 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "3ce6da13-4fad-4ac7-8d4c-421b40a341f9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "3V3"
+    (shape bidirectional)
+    (at 116.84 38.1 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "03df7737-7f78-43e0-8db5-44cd2eae7694")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 116.84 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SH_A0"
+    (shape bidirectional)
+    (at 127 48.26 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "6b94c0b2-9d15-4695-809a-bd54e0b1062f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SH_A1"
+    (shape bidirectional)
+    (at 127 50.8 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "5328df9a-b2e8-4958-916f-a4472c20a432")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "M_SCAN_PU"
+    (shape bidirectional)
+    (at 127 53.34 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "b96d48b3-f70f-4fe3-9f24-87a2fab17695")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "M_SCAN_PD"
+    (shape bidirectional)
+    (at 127 55.88 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "7f30f59f-afa5-48c4-a25f-7dbe5cfde60d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "M_ISO"
+    (shape bidirectional)
+    (at 127 58.42 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "36736370-f39f-47d9-baf4-863a4b40d165")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "M_LO_GND"
+    (shape bidirectional)
+    (at 127 60.96 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "716f3c05-87c5-4963-8f90-448d1ca09727")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 116.84 71.12 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "4c14389f-9b91-4722-abf1-16bbb3fc18f3")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 116.84 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "SR_D1"
+    (shape bidirectional)
+    (at 127 66.04 0)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "0c1adeb5-1ee9-4735-be44-f2e1262c0b05")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 127 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:C")
+    (at 152.4 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "389d8331-ff16-46a0-b8ff-de297f706991")
+    (property "Reference" "C7"
+      (at 152.4 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100n"
+      (at 152.4 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 152.4 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 152.4 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C14663"
+      (at 152.4 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "468ff928-53d9-4219-b00e-400ec0b6caf6"))
+    (pin "2"
+      (uuid "4b7102ae-5fc6-4bf8-9cb2-af26b9e151e5"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "C7")
+          (unit 1)))))
+  (global_label "3V3"
+    (shape bidirectional)
+    (at 152.4 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "1dbd122a-2adc-4d7d-b653-92542a5d9c2f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 152.4 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 152.4 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "abf782e7-30cb-4438-bb7a-783a792cbb7e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 152.4 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 165.1 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8b8a2029-946c-4ff7-9825-52db05206e8a")
+    (property "Reference" "R23"
+      (at 165.1 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 165.1 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 165.1 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 165.1 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 165.1 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "1871af62-f112-43bc-be3c-1ac21f79d194"))
+    (pin "2"
+      (uuid "ea064562-6a2f-4e3a-bac0-be434e8e2288"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R23")
+          (unit 1)))))
+  (global_label "M_HI_QUELLE"
+    (shape bidirectional)
+    (at 165.1 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "637c6d82-80c1-4c36-9fdf-b18ec71c57d6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 165.1 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 165.1 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "afc95f92-c77c-433e-b615-f60ec122da58")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 165.1 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 177.8 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0dad0ffd-54a9-4571-aacb-d03ff921e52b")
+    (property "Reference" "R24"
+      (at 177.8 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 177.8 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 177.8 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 177.8 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 177.8 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "279dbbc8-bc48-435b-87d2-14fe900ac0b6"))
+    (pin "2"
+      (uuid "60086ea7-05d4-45da-858e-a5ffe18194fa"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R24")
+          (unit 1)))))
+  (global_label "M_LO_SENKE"
+    (shape bidirectional)
+    (at 177.8 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "287e8f64-3541-4bd6-81a1-1ecfc4ba84ee")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 177.8 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 177.8 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "64452e1b-9aaa-4201-b9de-4e652a3b5b3f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 177.8 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 187.96 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7d80390a-5962-45ad-867a-2be930f55922")
+    (property "Reference" "R25"
+      (at 187.96 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 187.96 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 187.96 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 187.96 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 187.96 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "c1a2e79b-d03b-4a02-8177-48f8bbd6ae91"))
+    (pin "2"
+      (uuid "b55c1f23-4f73-49fe-ab17-815363f19467"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R25")
+          (unit 1)))))
+  (global_label "SH_A0"
+    (shape bidirectional)
+    (at 187.96 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "12a24762-962a-4c5b-b860-b2d6e3255e41")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 187.96 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 187.96 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "726f2485-8e0e-453f-be8b-c74720045aaa")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 187.96 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 198.12 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8d23f395-5efc-4655-91b6-7d4d506943c7")
+    (property "Reference" "R26"
+      (at 198.12 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 198.12 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 198.12 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 198.12 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 198.12 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "3653efff-cfcd-4bde-b126-6f588a3168e3"))
+    (pin "2"
+      (uuid "88d21e8f-fc00-42bc-9008-9ac9cdacc61a"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R26")
+          (unit 1)))))
+  (global_label "SH_A1"
+    (shape bidirectional)
+    (at 198.12 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "2beb9696-1698-4104-ab7d-51ddc8b14e9e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 198.12 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 198.12 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "dcc59692-40cf-4957-9024-c1e1c149681e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 198.12 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 210.82 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2aa92bca-207d-4583-999e-9b9ced38280e")
+    (property "Reference" "R27"
+      (at 210.82 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 210.82 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 210.82 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 210.82 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 210.82 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "0cf684c6-bbc9-406a-b6f6-6e57e5e6e31c"))
+    (pin "2"
+      (uuid "740bb866-3204-4ee2-a4aa-0bd31d5bd794"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R27")
+          (unit 1)))))
+  (global_label "M_SCAN_PU"
+    (shape bidirectional)
+    (at 210.82 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "dba59498-6a81-4100-8b24-de60e9c06330")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 210.82 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 210.82 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "50c94854-fc16-45cd-aefb-bb8afdd37af9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 210.82 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 220.98 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "415176c0-beaf-4458-83ed-8a4867803695")
+    (property "Reference" "R28"
+      (at 220.98 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 220.98 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 220.98 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 220.98 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 220.98 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "fc07876f-d907-4ded-8a09-1bc1e0136e66"))
+    (pin "2"
+      (uuid "f15e1b1a-8c42-486b-9011-23b2716ea142"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R28")
+          (unit 1)))))
+  (global_label "M_SCAN_PD"
+    (shape bidirectional)
+    (at 220.98 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "e56fea92-2cbd-4002-986e-b626936e1bbb")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 220.98 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 220.98 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "06e3df06-5a13-4c1f-8fe9-b3dd368b4644")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 220.98 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 233.68 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ee5ed411-0346-4234-bc09-f1aa6e7cb67f")
+    (property "Reference" "R29"
+      (at 233.68 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 233.68 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 233.68 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 233.68 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 233.68 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "15416df8-403a-4a50-b54a-b79b2d981a03"))
+    (pin "2"
+      (uuid "16367122-6213-496f-88b1-0d4b783ca624"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R29")
+          (unit 1)))))
+  (global_label "M_ISO"
+    (shape bidirectional)
+    (at 233.68 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "380f7f67-2c44-4747-8735-fc6d284220fd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 233.68 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 233.68 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "91bd7e3f-7770-4209-b65f-f3ad51019609")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 233.68 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "Device:R")
+    (at 243.84 43.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0ef3a066-7e29-4366-be3d-65420e9e85ff")
+    (property "Reference" "R30"
+      (at 243.84 37.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100k"
+      (at 243.84 48.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 243.84 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 243.84 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "LCSC" "C25803"
+      (at 243.84 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "9ed6ec71-b208-4d1e-a0aa-3ecb4fd6ea96"))
+    (pin "2"
+      (uuid "7ec3be52-a41c-451e-8d37-e0c4c3f4a516"))
+    (instances
+      (project "messkarte"
+        (path "/08bfe0d7-4a80-4120-a843-3132773aa475/e5e4f1fc-c745-4b6e-b085-d34b3b696cd4"
+          (reference "R30")
+          (unit 1)))))
+  (global_label "M_LO_GND"
+    (shape bidirectional)
+    (at 243.84 39.37 90)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "4af6fc01-3f02-4cc2-91d3-72557a371ba6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 243.84 39.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 243.84 46.99 270)
+    (fields_autoplaced)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "ed17deeb-4f31-47e4-857e-78e2f77c9d51")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 243.84 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))))

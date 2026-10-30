@@ -31,7 +31,15 @@ led_schlitz = [8, 60];  // Lichtleiter für Gut/Fehler-LED-Streifen
 schacht_l = 104;
 schacht_b = 14;
 schacht_abstand = 16;
-kanal_dom_h = 66;     // Kanalkarten hoch setzen: DIN-Federleiste endet knapp unter dem Deck
+kanal_dom_h = 71.3;   // Kanalkarten-Unterseite: DIN-Federleiste (11,7 mm) endet 1 mm unter dem Deck
+mess_dom_h = 8;
+
+// Schraubdome = Befestigungslöcher der KiCad-Platinen (hardware/kicad/generator/layouts.py)
+mess_dome = [[7, 72], [117, 42], [7, 16], [119, 16]];
+kanal_dome = [for (x0 = [4, 128], p = [[4, 4], [114, 4], [4, 70], [114, 70]]) [x0 + p[0], 194 - p[1]]];
+// USB-Öffnungen in der linken Wand: [y, z] Mitte
+usb_strom = [40, 11.2];   // USB-C Versorgung (Messkarte)
+usb_pico = [87.5, 12.2];  // USB des Pico 2 (Firmware-Update)
 
 $fn = 48;
 
@@ -82,8 +90,8 @@ module gehaeuse() {
                  Y_knick + (T - Y_knick - schacht_b) / 2, H_hinten - 10])
         cube([schacht_l, schacht_b, 20]);
 
-    // Rückseite: USB-C
-    translate([B - 40, T - 5, 12]) cube([10, 10, 4.5]);
+    // Linke Wand: USB-C (Versorgung) und USB des Pico 2
+    for (u = [usb_strom, usb_pico]) translate([-1, u[0] - 5, u[1] - 2.5]) cube([wand + 2, 10, 5]);
     // Vorderseite: 3,5-mm-Klinke für Fußschalter
     translate([B - 25, -1, H_vorne / 2]) rotate([-90, 0, 0]) cylinder(d = 6.5, h = 10);
     // Lüftungsschlitze seitlich
@@ -101,16 +109,12 @@ module boden() {
   difference() {
     union() {
       translate([wand + 0.3, wand + 0.3, 0]) cube([B - 2 * wand - 0.6, T - 2 * wand - 0.6, 2]);
-      // Schraubdome Messkarte (100 x 80) und Kanalkarten (unter den Schächten, 110 x 60)
-      for (p = [[30, 20], [130, 20], [30, 100], [130, 100]])
-        translate([p[0], p[1], 0]) cylinder(d = 7, h = 8);
-      for (x = [B / 2 - 118, B / 2 + 8], p = [[0, 0], [110, 0], [0, 50], [110, 50]])
-        translate([x + p[0], 140 + p[1] - 25, 0]) cylinder(d = 7, h = kanal_dom_h);
+      // Schraubdome Messkarte und Kanalkarten (M2,5 selbstschneidend, Kernloch 2,6 mm)
+      for (p = mess_dome) translate([p[0], p[1], 0]) cylinder(d = 7, h = mess_dom_h);
+      for (p = kanal_dome) translate([p[0], p[1], 0]) cylinder(d = 9, h = kanal_dom_h);
     }
-    for (p = [[30, 20], [130, 20], [30, 100], [130, 100]])
-      translate([p[0], p[1], -1]) cylinder(d = 2.6, h = 20);
-    for (x = [B / 2 - 118, B / 2 + 8], p = [[0, 0], [110, 0], [0, 50], [110, 50]])
-      translate([x + p[0], 140 + p[1] - 25, -1]) cylinder(d = 2.6, h = kanal_dom_h + 2);
+    for (p = mess_dome) translate([p[0], p[1], -1]) cylinder(d = 2.6, h = 20);
+    for (p = kanal_dome) translate([p[0], p[1], -1]) cylinder(d = 2.6, h = kanal_dom_h + 2);
   }
   // Gummifüße-Markierungen
   for (x = [15, B - 15], y = [15, T - 15]) translate([x, y, -0.4]) cylinder(d = 12, h = 0.4);

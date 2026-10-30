@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,Menge,Hersteller-Nr.,LCSC Part #
+100n,C1,C_0603_1608Metric,1,,C14663
+DIN 41612 C96 Messer,J1,DIN41612_C_3x32_Male_Horizontal_THT,1,Harting DIN-Signal C096 M abgewinkelt,
+RJ45 Port 1,J2,RJ45_Amphenol_54602-x08_Horizontal,1,Amphenol 54602-908LF,
+RJ45 Port 2,J3,RJ45_Amphenol_54602-x08_Horizontal,1,Amphenol 54602-908LF,
+24AA02T-I/OT,U1,SOT-23-5,1,,

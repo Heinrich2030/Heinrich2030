@@ -149,7 +149,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 
   <div class="teile" id="teile"></div>
 
-  <p class="fuss">Die Kanalkarten sitzen auf 66 mm hohen Domen, damit ihre DIN-41612-Federleisten direkt unter den
+  <p class="fuss">Die Kanalkarten sitzen auf 71,3 mm hohen Domen, damit ihre DIN-41612-Federleisten direkt unter den
     Adapterschächten im Deck enden. Die Adapter werden von oben eingesteckt, die Messkarte liegt flach unter dem Display.
     Quelle der Maße: <code>kabeltester/gehaeuse/gehaeuse.scad</code>.</p>
 </div>
@@ -287,67 +287,58 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   }
 
   // ===== 1. Bodenplatte =====
-  const boden = part('boden', 'Bodenplatte', '3D-Druck, Schraubdome für Messkarte (8 mm) und Kanalkarten (66 mm), Gummifüße.',
+  const boden = part('boden', 'Bodenplatte', '3D-Druck, Schraubdome für Messkarte (8 mm) und Kanalkarten (71,3 mm), Gummifüße.',
     '#4a514e', 0, W(20, 10, 0));
   box(boden, WD + 0.3, WD + 0.3, -2, B - 2 * WD - 0.6, T - 2 * WD - 0.6, 2, M.boden);
-  [[30, 20], [130, 20], [30, 100], [130, 100]].forEach(q => zyl(boden, q[0], q[1], 0, 3.5, 8, M.boden));
-  [B / 2 - 118, B / 2 + 8].forEach(x => [[0, 0], [110, 0], [0, 50], [110, 50]].forEach(q => zyl(boden, x + q[0], 115 + q[1], 0, 3.5, 66, M.boden)));
+  // Dome = Befestigungslöcher der KiCad-Platinen (hardware/kicad/generator/layouts.py)
+  [[7, 72], [117, 42], [7, 16], [119, 16]].forEach(q => zyl(boden, q[0], q[1], 0, 3.5, 8, M.boden));
+  [4, 128].forEach(x => [[4, 4], [114, 4], [4, 70], [114, 70]].forEach(q => zyl(boden, x + q[0], 194 - q[1], 0, 4.5, 71.3, M.boden)));
   [[15, 15], [B - 15, 15], [15, T - 15], [B - 15, T - 15]].forEach(q => zyl(boden, q[0], q[1], -5, 6, 3, M.gummi));
 
   // ===== 2. USB-C-Buchse =====
-  const usb = part('usb', 'USB-C-Buchse', 'Versorgung 5 V / 3 A, ohne PD-Aushandlung (5,1-kΩ-CC-Widerstände).',
-    '#b9bec4', 40, W(215, 197, 14));
-  box(usb, 200, 180, 9, 30, 17, 1.6, M.pcb);
-  box(usb, 210.5, 190, 10.6, 9, 7.6, 3.2, M.metall);
-  [[203, 183], [227, 183], [203, 194], [227, 194]].forEach(q => zyl(usb, q[0], q[1], 0, 2, 9, M.boden, 12));
+  const usb = part('usb', 'USB-C-Buchse', 'Auf der Messkarte an der linken Wand: Versorgung 5 V / 3 A (5,1-kΩ-CC-Widerstände). Daneben die USB-Buchse des Pico 2 für Firmware-Updates.',
+    '#b9bec4', 40, W(2, 40, 13));
+  box(usb, 2.5, 35.5, 9.6, 7.5, 9, 3.2, M.metall);
 
   // ===== 3. Messkarte =====
   const mk = part('messkarte', 'Messkarte', 'Raspberry Pi Pico 2, ADS1220 (24 Bit), REF5025, Stromsenke 10 mA … 10 µA, Moduswahl, Summer.',
     '#1f6a3c', 40, W(80, 60, 14));
-  box(mk, 25, 15, 8, 110, 90, 1.6, M.pcb);
-  box(mk, 32, 22, 9.6, 51, 21, 1, M.pico);                 // Pico 2
-  box(mk, 52, 29, 10.6, 7, 7, 0.9, M.chip);                // RP2350
-  box(mk, 32, 29.5, 10.6, 5, 6, 2.6, M.metall);            // USB am Pico
-  box(mk, 95, 38, 9.6, 5, 4.4, 1.2, M.chip);               // ADS1220
-  box(mk, 95, 50, 9.6, 5, 4, 1.4, M.chip);                 // REF5025
-  box(mk, 105, 38, 9.6, 5, 4, 1.2, M.chip);                // OPA2388
-  box(mk, 105, 50, 9.6, 5, 4, 1.2, M.chip);                // OPA2388
-  box(mk, 115, 38, 9.6, 6.5, 4.4, 1.1, M.chip);            // ADG1404
-  box(mk, 40, 55, 9.6, 6.5, 4.4, 1.1, M.chip);             // 74HC595
-  box(mk, 50, 55, 9.6, 6.5, 4.4, 1.1, M.chip);             // 74HC595
-  box(mk, 62, 55, 9.6, 3, 3, 1, M.chip); box(mk, 68, 55, 9.6, 3, 3, 1, M.chip); box(mk, 74, 55, 9.6, 3, 3, 1, M.chip); // TMUX
-  viele(mk, 3.2, 1.6, 0.6, M.chip, [[95, 62, 9.6], [100, 62, 9.6], [105, 62, 9.6], [110, 62, 9.6], [115, 62, 9.6]]); // Shunts
-  zyl(mk, 122, 26, 9.6, 6, 7, M.piezo);                    // Summer
-  zyl(mk, 88, 78, 9.6, 3, 7, M.elko, 16); zyl(mk, 96, 78, 9.6, 3, 7, M.elko, 16);
-  box(mk, 40, 95, 9.6, 25, 9, 9, M.din);                   // Wannenstecker zu Kanalkarte A
-  box(mk, 100, 95, 9.6, 25, 9, 9, M.din);                  // Wannenstecker zu Kanalkarte B
-  box(mk, 70, 16, 9.6, 10, 5, 6, M.din);                   // UART zum Display
+  box(mk, 3, 12, 8, 120, 90, 1.6, M.pcb);                   // 120 x 90 mm, 4 Lagen
+  box(mk, 3.6, 77, 9.6, 51, 21, 1, M.pico);                // Pico 2 (USB zur linken Wand)
+  box(mk, 26, 84, 10.6, 7, 7, 0.9, M.chip);                // RP2350
+  box(mk, 2.6, 85, 10.6, 5, 7.5, 2.6, M.metall);           // USB am Pico
+  [[60, 72], [70, 72]].forEach(q => box(mk, q[0], q[1], 9.6, 6.5, 5, 1.1, M.chip));       // 2x 74HC595
+  [[45, 58], [56, 58], [67, 58], [78, 58], [89, 58]].forEach(q => box(mk, q[0], q[1], 9.6, 5, 5, 1.3, M.chip)); // ADS1220, REF5025, OPA, ADG1408
+  for (let i = 0; i < 6; i++) box(mk, 45 + i * 7, 48, 9.6, 3, 3, 1, M.chip);              // 6x TMUX1101
+  viele(mk, 2, 1.25, 0.6, M.chip, [[45, 40, 9.6], [49, 40, 9.6], [53, 40, 9.6], [57, 40, 9.6], [61, 40, 9.6]]); // Shunts
+  zyl(mk, 60, 18, 9.6, 6, 9.5, M.piezo);                   // Summer
+  box(mk, 60, 92, 9.6, 43, 9, 9.1, M.din);                 // Flachbandstecker Kanalkarte A
+  box(mk, 113, 50, 9.6, 9, 43, 9.1, M.din);                // Flachbandstecker Kanalkarte B
+  [[12, 14], [24, 14], [33, 14], [44, 14], [80, 14]].forEach(q => box(mk, q[0], q[1], 9.6, 8, 5, 6, M.din)); // JST-PH: Display, LED, Taster, Fuß
 
   // ===== 4./5. Kanalkarten =====
   function kanalkarte(id, name, x0) {
     const k = part(id, name, '64 Testpunkte: 8× ADG1606 (Force) + 8× CD74HCT4067 (Sense), Schutzbeschaltung, DIN-41612-Federleiste 96-polig.',
       '#2a7a46', 115, W(x0 + 20, 130, 70));
-    const z = 66;
-    box(k, x0, 112, z, 118, 64, 1.6, M.pcb);
+    const z = 71.3;
+    box(k, x0, 120, z, 118, 74, 1.6, M.pcb);                // 118 x 74 mm, 4 Lagen
     const cx = x0 + 59;
-    box(k, cx - 47.5, 162, z + 1.6, 95, 11, 17.4, M.din);    // Federleiste, endet knapp unter dem Deck
+    box(k, cx - 47.5, 162, z + 1.6, 95, 11, 11.7, M.din);    // Federleiste, endet 1 mm unter dem Deck
     const loecher = [];
-    for (let r = 0; r < 3; r++) for (let i = 0; i < 32; i++) loecher.push([cx - 39.4 + i * 2.54, 164.96 + r * 2.54, z + 19]);
+    for (let r = 0; r < 3; r++) for (let i = 0; i < 32; i++) loecher.push([cx - 39.4 + i * 2.54, 164.96 + r * 2.54, z + 13.3]);
     viele(k, 0.9, 0.9, 0.1, M.loch, loecher);
-    for (let i = 0; i < 4; i++) {                             // je Block: 2× ADG1606, 2× HCT4067
-      const bx = x0 + 6 + i * 28;
-      box(k, bx, 125, z + 1.6, 9.7, 6.4, 1.1, M.chip);
-      box(k, bx + 12, 125, z + 1.6, 9.7, 6.4, 1.1, M.chip);
-      box(k, bx, 134, z + 1.6, 15.4, 7.5, 2.4, M.chip);
-      box(k, bx, 143, z + 1.6, 15.4, 7.5, 2.4, M.chip);
+    for (let i = 0; i < 8; i++) {
+      box(k, x0 + 10 + i * 12.25 + 1.5, 182, z + 1.6, 6.4, 9.7, 1.1, M.chip);   // ADG1606 (hinten)
+      box(k, x0 + 1 + i * 14.5 + 2, 144, z + 1.6, 10.3, 15.4, 2.4, M.chip);      // CD74HCT4067 (vorne)
     }
-    box(k, x0 + 75, 114, z + 1.6, 6.5, 4.4, 1.1, M.chip);    // 2× 74HC595
-    box(k, x0 + 85, 114, z + 1.6, 6.5, 4.4, 1.1, M.chip);
-    const ptc = [];
-    for (let i = 0; i < 32; i++) { ptc.push([x0 + 8 + i * 3.2, 152, z + 1.6]); ptc.push([x0 + 8 + i * 3.2, 157, z + 1.6]); }
+    box(k, x0 + 2, 175, z + 1.6, 5, 6.5, 1.1, M.chip);       // 2× 74HC595
+    box(k, x0 + 111, 175, z + 1.6, 5, 6.5, 1.1, M.chip);
+    const ptc = [];                                           // Sense-Beschaltung oben, Schutzbeschaltung unten
+    for (let i = 0; i < 32; i++) { ptc.push([x0 + 3 + i * 3.6, 124, z + 1.6]); ptc.push([x0 + 3 + i * 3.6, 130, z + 1.6]);
+      for (let r = 0; r < 4; r++) ptc.push([x0 + 3 + i * 3.6, 176 + r * 4.5, z - 0.6]); }
     viele(k, 1.6, 3.2, 0.6, M.chip, ptc);
-    box(k, x0 + 36, 113, z + 1.6, 25, 9, 7, M.din);           // Wannenstecker (flach, passt unter die Schräge)
-    return { k, header: [x0 + 48.5, 117.5, z + 8.6] };
+    box(k, x0 + 37.5, 121, z - 9.1, 43, 9, 9.1, M.din);       // Flachbandstecker auf der Unterseite
+    return { k, header: [x0 + 59, 125.5, z - 9.1] };
   }
   const ka = kanalkarte('kanalA', 'Kanalkarte A', 4);
   const kb = kanalkarte('kanalB', 'Kanalkarte B', 128);
@@ -383,7 +374,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   });
   box(geh, WD, 0, 0, B - 2 * WD, WD, HV - 1, M.gehaeuse);           // Front
   box(geh, WD, T - WD, 0, B - 2 * WD, WD, HH, M.gehaeuse);           // Rückwand
-  box(geh, 210.5, T - WD - 0.2, 12, 9, WD + 0.6, 4, M.loch);         // USB-C-Öffnung
+  box(geh, -0.2, 35, 8.9, WD + 0.6, 10, 4.6, M.loch);                // USB-C (Versorgung), linke Wand
+  box(geh, -0.2, 82.5, 9.7, WD + 0.6, 10, 5, M.loch);                // USB des Pico 2 (Firmware)
   // Schräge Platte mit Ausschnitten
   const gs = schraege(geh);
   const sp = rechteck(new THREE.Shape(), 0, 0, B, L);
@@ -457,11 +449,11 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
     box(p, x + 2, 161, 165.9, 12, 12, 0.3, M.loch);
   }
   const adA = adapter('adapterA', 'Adapter A', 'Steckt in Schacht A. 2× RJ45 8P8C stehend, EEPROM mit Adaptername, b32 meldet „Adapter steckt“.', 15, {
-    text: ['2× RJ45 8P8C', 'A1–A9 · Schirm A9', '24AA02 @0x50'],
+    text: ['2× RJ45 8P8C', 'A1–A9 · Schirm A9', '24AA02 @0x50 · I²C A'],
     bauen: a => { rj45(a, 30); rj45(a, 70); },
   });
   const adB = adapter('adapterB', 'Adapter B', 'Steckt in Schacht B. RJ45 und D-Sub 9 auf einer Platine, EEPROM mit Adaptername.', 135, {
-    text: ['RJ45 + D-Sub 9', 'B1–B9 · B10–B18', '24AA02 @0x51'],
+    text: ['RJ45 + D-Sub 9', 'B1–B9 · B10–B18', '24AA02 @0x50 · I²C B'],
     bauen: a => {
       rj45(a, 150);
       box(a, 195, 160, 150, 31, 12, 11, M.metall);              // D-Sub 9, stehend
@@ -486,10 +478,9 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
     assembly.add(mesh);
     leitungen.push({ mesh, von, nach, r, bogen });
   }
-  leitung({ p: mk, q: W(52.5, 99.5, 18.6) }, { p: ka.k, q: W(ka.header[0], ka.header[1], ka.header[2]) }, 1.8, M.flach, 14);
-  leitung({ p: mk, q: W(112.5, 99.5, 18.6) }, { p: kb.k, q: W(kb.header[0], kb.header[1], kb.header[2]) }, 1.8, M.flach, 14);
-  leitung({ p: mk, q: W(75, 18.5, 15.6) }, { p: disp, q: aufSchraege(dx + 95, dy + 10.5, -15.8) }, 1.4, M.schwarz, 8);
-  leitung({ p: usb, q: W(205, 182, 10.6) }, { p: mk, q: W(130, 90, 9.6) }, 1.3, M.rot, 6);
+  leitung({ p: mk, q: W(81.5, 96.5, 18.7) }, { p: ka.k, q: W(ka.header[0], ka.header[1], ka.header[2]) }, 1.8, M.flach, 4);
+  leitung({ p: mk, q: W(117.5, 71.5, 18.7) }, { p: kb.k, q: W(kb.header[0], kb.header[1], kb.header[2]) }, 1.8, M.flach, 4);
+  leitung({ p: mk, q: W(16, 16.5, 15.6) }, { p: disp, q: aufSchraege(dx + 95, dy + 10.5, -15.8) }, 1.4, M.schwarz, 8);
 
   // ---------- Bildschirminhalt (Oberfläche "Pruefen") ----------
   function malBildschirm(c, w, h) {
