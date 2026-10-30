@@ -82,6 +82,7 @@ kabeltester/
 ├── docs/adapter.md           Steckeradapter und Kurzschlussadapter bauen
 ├── hardware/stueckliste.csv  Stückliste mit Bestellnummern und Richtpreisen
 ├── gehaeuse/gehaeuse.scad    Pultgehäuse für den 3D-Druck (OpenSCAD, parametrisch)
+├── docs/zusammenbau-3d.html  Drehbares 3D-Modell des Zusammenbaus mit Explosionsansicht (im Browser öffnen)
 ├── firmware/common/          Analyse-Kern (Soll/Ist-Vergleich, Profile, Länge) – auf PC testbar
 ├── firmware/messkarte/       Pico 2: Matrix, ADS1220, Messverfahren, Textprotokoll
 ├── firmware/display/         ESP32-S3: LVGL-Oberfläche, Profile, Protokoll, Weboberfläche

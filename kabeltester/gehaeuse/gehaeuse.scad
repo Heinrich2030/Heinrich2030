@@ -31,6 +31,7 @@ led_schlitz = [8, 60];  // Lichtleiter für Gut/Fehler-LED-Streifen
 schacht_l = 104;
 schacht_b = 14;
 schacht_abstand = 16;
+kanal_dom_h = 66;     // Kanalkarten hoch setzen: DIN-Federleiste endet knapp unter dem Deck
 
 $fn = 48;
 
@@ -104,12 +105,12 @@ module boden() {
       for (p = [[30, 20], [130, 20], [30, 100], [130, 100]])
         translate([p[0], p[1], 0]) cylinder(d = 7, h = 8);
       for (x = [B / 2 - 118, B / 2 + 8], p = [[0, 0], [110, 0], [0, 50], [110, 50]])
-        translate([x + p[0], 140 + p[1] - 25, 0]) cylinder(d = 7, h = 20);
+        translate([x + p[0], 140 + p[1] - 25, 0]) cylinder(d = 7, h = kanal_dom_h);
     }
     for (p = [[30, 20], [130, 20], [30, 100], [130, 100]])
       translate([p[0], p[1], -1]) cylinder(d = 2.6, h = 20);
     for (x = [B / 2 - 118, B / 2 + 8], p = [[0, 0], [110, 0], [0, 50], [110, 50]])
-      translate([x + p[0], 140 + p[1] - 25, -1]) cylinder(d = 2.6, h = 30);
+      translate([x + p[0], 140 + p[1] - 25, -1]) cylinder(d = 2.6, h = kanal_dom_h + 2);
   }
   // Gummifüße-Markierungen
   for (x = [15, B - 15], y = [15, T - 15]) translate([x, y, -0.4]) cylinder(d = 12, h = 0.4);
