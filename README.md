@@ -37,3 +37,7 @@ Die App analysiert deine Eingaben und zeigt Spartipps, sortiert nach Ersparnis i
 Jeder Betrag ist eine echte Vergleichsrechnung mit der Engine („Was wäre, wenn …“), z. B.
 Homeoffice-Tage, Handwerkerkosten, Basisrente, Spenden, Splitting-Vorteil, Günstigerprüfung
 und Freistellungsauftrag bei Kapitalerträgen. Logik: `src/engine/tipps.js`.
+
+## Weitere Projekte
+
+- [Kabeltester](kabeltester/README.md) – Tischgerät mit 7″-Touchdisplay, 128–256 Testpunkten und 4-Leiter-Widerstandsmessung.

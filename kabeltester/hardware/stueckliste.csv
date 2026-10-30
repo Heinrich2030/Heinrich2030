@@ -1,0 +1,32 @@
+Pos;Baugruppe;Menge;Bauteil;Hersteller-Nr.;Funktion;Preis ca. EUR/Stk;Bezug (Beispiel)
+1;Display;1;Waveshare ESP32-S3-Touch-LCD-7 (7 Zoll, 800x480 IPS, kapazitiv, 8 MB PSRAM, 16 MB Flash);ESP32-S3-Touch-LCD-7;Bedienung, Auswertung, WLAN, Speicher;45;Waveshare, Berrybase, Eckstein
+2;Messkarte;1;Raspberry Pi Pico 2 (RP2350);SC1631;Ablaufsteuerung, Schnellscan-ADC;5.50;Berrybase, Reichelt
+3;Messkarte;1;24-Bit-ADC, 4 Eingaenge, PGA 1-128, Temperatursensor;TI ADS1220IPWR;Praezise Spannungsmessung (4-Leiter);5;Mouser, Digikey, LCSC
+4;Messkarte;1;Spannungsreferenz 2,500 V, 0,05 %, 3 ppm/K;TI REF5025AIDR;Quelle HI-Bus und Sollwert Stromsenke;4;Mouser, Digikey
+5;Messkarte;2;Zero-Drift-OPV dual, Rail-to-Rail;TI OPA2388IDR;Puffer 2,5-V-Quelle, Regler Stromsenke, Scan-Puffer;5;Mouser, Digikey
+6;Messkarte;1;N-MOSFET Logic-Level;Diodes DMN3404L;Stellglied Stromsenke;0.30;LCSC
+7;Messkarte;1;Analog-Mux 4:1, niedriger Leckstrom;ADI ADG1404YRUZ;Shunt-Umschaltung (Strombereich);4;Mouser
+8;Messkarte;4;Shunt 10/100/1k/10k Ohm, 0,1 %, 10 ppm/K;Vishay TNPW-Serie / Susumu RG;Strommessung 10 mA ... 10 uA;0.60;Mouser
+9;Messkarte;1;Referenzwiderstand 1 MOhm, 0,1 %;Vishay TNPW12061M00BE;Isolationsmessung;0.80;Mouser
+10;Messkarte;3;Analogschalter SPST, niedriger Leckstrom;TI TMUX1101 (oder ADG1201);Moduswahl Quelle/Scan/ISO/GND;1;Mouser
+11;Messkarte;2;Schieberegister 8 Bit;TI SN74HC595PWR;Adressen + Modus-Bits;0.25;LCSC
+12;Messkarte;1;I2C-Puffer, Hot-Swap-faehig;NXP PCA9511A;I2C zu den steckbaren Adaptern;1;Mouser
+13;Messkarte;1;Spannungsregler rauscharm 5,0 V;TI TPS7A2050;AVDD Analogteil;1;Mouser
+14;Messkarte;1;USB-C-Buchse 16-polig + 2x 5,1 kOhm CC;GCT USB4105-GF-A;Versorgung 5 V/3 A;0.80;LCSC
+15;Messkarte;1;Piezo-Summer, aktiv/passiv;TDK PS1240;Gut/Fehler-Ton;0.80;Reichelt
+16;Messkarte;1;Taster gross, beleuchtet + Buchse 3,5 mm fuer Fusstaster;-;Start;5;Reichelt
+17;Messkarte;2;LED-Streifen gruen/rot + MOSFET;-;Gut/Fehler-Leuchte am Gehaeuse;3;Reichelt
+18;Kanalkarte (je 64 Pins);8;Analog-Mux 16:1, Ron 4,5 Ohm;ADI ADG1606BRUZ;Force-Pfade HI/LO (je 4);7;Mouser, Digikey
+19;Kanalkarte (je 64 Pins);8;Analog-Mux 16:1, TTL-Eingaenge;TI CD74HCT4067M96;Sense-Pfade HI/LO (je 4);0.80;Mouser, LCSC
+20;Kanalkarte (je 64 Pins);2;Schieberegister 8 Bit;TI SN74HC595PWR;Enables Force/Sense;0.25;LCSC
+21;Kanalkarte (je 64 Pins);64;PTC 1206, 0,1 A hold + Impulswiderstand 33 Ohm 1206;Bourns MF-USMF010 + Vishay CRCW1206-HP;Strombegrenzung Force-Pfad bei Fremdspannung;0.35;Mouser
+22;Kanalkarte (je 64 Pins);64;Widerstand 1 kOhm 0603;-;Schutz Sense-Pfad;0.01;LCSC
+23;Kanalkarte (je 64 Pins);128;Doppeldiode Low-Leakage (pA) gegen 0 V/5 V;Nexperia BAV199;Klemmung Force- und Sense-Knoten auf Versorgung;0.05;LCSC
+24;Kanalkarte (je 64 Pins);32;ESD-Schutzdiode bidirektional 24 V, 2-fach;Nexperia PESD2CAN;ESD-Schutz direkt am Steckverbinder;0.15;LCSC
+25;Kanalkarte (je 64 Pins);1;Federleiste DIN 41612 Bauform C, 96-polig (a+b+c), gewinkelt;z. B. Harting DIN-Signal C096 F;Adapter-Schnittstelle;6;Reichelt, Mouser
+26;Verbindung;3;Flachbandkabel 16-polig + Wannenstecker;-;Busse + Steuerung Messkarte <-> Kanalkarten;1;Reichelt
+27;Adapter;1 je Adapter;Messerleiste DIN 41612 Bauform C, 96-polig, gerade;z. B. Harting DIN-Signal C096 M;Gegenstueck auf Adapterplatine;4;Reichelt
+28;Adapter;1 je Adapter;EEPROM 2 kBit I2C;Microchip 24AA02;Adapter-Kennung und Name;0.30;Reichelt
+29;Leiterplatten;1;Messkarte + 2 Kanalkarten, 4 Lagen;-;JLCPCB / Aisler / Multi-CB;30;-
+30;Gehaeuse;1;Pultgehaeuse 3D-Druck (PETG) nach gehaeuse/gehaeuse.scad, alternativ Hammond 1456-Serie;-;Tischgeraet;15;-
+31;Zubehoer;1;Kurzschlussadapter (alle 64 Kontakte auf Kupferschiene je Seite);-;Nullabgleich;5;-
