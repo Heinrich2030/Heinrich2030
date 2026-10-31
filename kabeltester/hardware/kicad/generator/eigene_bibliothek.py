@@ -4,7 +4,15 @@ Nur für Bauteile, die in den KiCad-7-Standardbibliotheken fehlen. Pinbelegungen
 Einträge mit PRUEFEN=True sind vor der Fertigung gegen das Original-Datenblatt zu prüfen.
 """
 import os
+import itertools
 import uuid
+
+_ZAEHLER = itertools.count()
+
+
+def _id():
+    """Deterministische IDs: gleiche Bibliothek bei jedem Lauf."""
+    return uuid.uuid5(uuid.NAMESPACE_URL, f'kabeltester/{next(_ZAEHLER)}')
 from sexp import Sym, dump
 
 PIN_LEN = 2.54
@@ -100,6 +108,8 @@ def schreibe_symbole(pfad):
 
 
 def pico_footprint():
+    global _ZAEHLER
+    _ZAEHLER = itertools.count()
     """Pico-2-Modul, durchkontaktiert (2 x 20, Raster 2,54, Reihenabstand 17,78 mm), Pin 1 oben links."""
     pads = []
     for i in range(20):
@@ -107,19 +117,19 @@ def pico_footprint():
         for nummer, x in ((i + 1, -8.89), (40 - i, 8.89)):
             form = 'rect' if nummer == 1 else 'oval'
             pads.append(f'  (pad "{nummer}" thru_hole {form} (at {x} {y}) (size 1.7 1.7) (drill 1.02) '
-                        f'(layers "*.Cu" "*.Mask") (tstamp "{uuid.uuid4()}"))')
+                        f'(layers "*.Cu" "*.Mask") (tstamp "{_id()}"))')
     linien = []
     for (x1, y1, x2, y2) in ((-10.5, -25.5, 10.5, -25.5), (10.5, -25.5, 10.5, 25.5), (10.5, 25.5, -10.5, 25.5), (-10.5, 25.5, -10.5, -25.5)):
-        linien.append(f'  (fp_line (start {x1} {y1}) (end {x2} {y2}) (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp "{uuid.uuid4()}"))')
-        linien.append(f'  (fp_line (start {x1 * 1.03:.3f} {y1 * 1.02:.3f}) (end {x2 * 1.03:.3f} {y2 * 1.02:.3f}) (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp "{uuid.uuid4()}"))')
-        linien.append(f'  (fp_line (start {x1} {y1}) (end {x2} {y2}) (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp "{uuid.uuid4()}"))')
+        linien.append(f'  (fp_line (start {x1} {y1}) (end {x2} {y2}) (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp "{_id()}"))')
+        linien.append(f'  (fp_line (start {x1 * 1.03:.3f} {y1 * 1.02:.3f}) (end {x2 * 1.03:.3f} {y2 * 1.02:.3f}) (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp "{_id()}"))')
+        linien.append(f'  (fp_line (start {x1} {y1}) (end {x2} {y2}) (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp "{_id()}"))')
     # USB-Buchse des Pico markieren
-    linien.append(f'  (fp_rect (start -4 -26.5) (end 4 -21.5) (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS") (tstamp "{uuid.uuid4()}"))')
+    linien.append(f'  (fp_rect (start -4 -26.5) (end 4 -21.5) (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS") (tstamp "{_id()}"))')
     return ('(footprint "RaspberryPi_Pico2_THT" (version 20221018) (generator kabeltester_generator)\n'
             '  (layer "F.Cu")\n  (descr "Raspberry Pi Pico 2, Modul auf Stiftleisten 2x20, 2,54 mm")\n'
             '  (attr through_hole)\n'
-            f'  (fp_text reference "REF**" (at 0 -27.5) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))) (tstamp "{uuid.uuid4()}"))\n'
-            f'  (fp_text value "Pico2" (at 0 27.5) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) (tstamp "{uuid.uuid4()}"))\n'
+            f'  (fp_text reference "REF**" (at 0 -27.5) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))) (tstamp "{_id()}"))\n'
+            f'  (fp_text value "Pico2" (at 0 27.5) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) (tstamp "{_id()}"))\n'
             + '\n'.join(linien) + '\n' + '\n'.join(pads) + '\n)\n')
 
 
