@@ -6,6 +6,7 @@ import argparse, os, sys, time
 HIER = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HIER)
 import bauen, platinen, layouts, leiterplatte
+import pcbnew
 
 a = argparse.ArgumentParser()
 a.add_argument('name')
@@ -18,11 +19,26 @@ p = {'kanalkarte': platinen.kanalkarte, 'messkarte': platinen.messkarte, 'adapte
 m = layouts.MECH[p.name]
 ordner = os.path.join(bauen.ZIEL, p.name)
 lp = leiterplatte.Leiterplatte.aus_datei(p, ordner, m['breite'], m['hoehe'], m['lagen'])
-for z in lp.board.Zones():
+lp.lagen_typen()
+for z in list(lp.board.Zones()):
+    if z.GetNetname() == '5VA':
+        # 5VA wird Leiterbahn, In2 Signallage; die Fläche wird zur GND-Fläche auf In1
+        # (Board.Remove beschädigt KiCads Python-Bindung)
+        z.SetNet(lp.board.FindNet('GND'))
+        z.SetLayer(pcbnew.In1_Cu)
     lp.flaeche_einstellen(z)
 vorher = lp.offene_verbindungen()
 t0 = time.time()
 ok = lp.routen(arg.durchgaenge, arg.threads, arg.zeitlimit)
+# Nachrouten: Freerouting übernimmt das vorhandene Ergebnis und versucht die Reste
+for runde in range(2):
+    offen = lp.offene_verbindungen()
+    print(f'  nach Runde {runde + 1}: {offen} offen', flush=True)
+    if not ok or offen == 0 or time.time() - t0 > arg.zeitlimit:
+        break
+    ok = lp.routen(max(5, arg.durchgaenge // 2), arg.threads, arg.zeitlimit) or ok
+    if lp.offene_verbindungen() >= offen:
+        break
 vias = lp.naehen()
 lp.speichern()
 lp.neu_laden_und_fuellen()

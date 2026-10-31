@@ -33,6 +33,7 @@ class Leiterplatte:
         self.board = pcbnew.NewBoard(self.pfad)
         self.board.SetCopperLayerCount(lagen)
         self.lagen = lagen
+        self.lagen_typen()
         self.fps = {}
         self.netze = {}
         self._regeln()
@@ -214,6 +215,12 @@ class Leiterplatte:
         self.board.Add(z)
         return z
 
+    def lagen_typen(self):
+        """4 Lagen: In1 = Masselage (Power, Autorouter lässt sie frei), In2 = Signallage."""
+        if self.board.GetCopperLayerCount() == 4:
+            self.board.SetLayerType(pcbnew.In1_Cu, pcbnew.LT_POWER)
+            self.board.SetLayerType(pcbnew.In2_Cu, pcbnew.LT_SIGNAL)
+
     @staticmethod
     def flaeche_einstellen(z):
         """Volle Anbindung: auch Pads zwischen dichten Steckerreihen bekommen Masse."""
@@ -260,6 +267,17 @@ class Leiterplatte:
     def speichern(self):
         pcbnew.SaveBoard(self.pfad, self.board)
 
+    def leiterbahnen_aus_datei_entfernen(self):
+        """Speichert, entfernt segment/arc/via-Einträge im Dateitext und lädt neu."""
+        from sexp import parse, dump
+        pcbnew.SaveBoard(self.pfad, self.board)
+        baum = parse(open(self.pfad).read())
+        baum = [e for e in baum if not (isinstance(e, list) and e and e[0] in ('segment', 'arc', 'via'))]
+        with open(self.pfad, 'w') as f:
+            f.write(dump(baum) + '\n')
+        self.board = pcbnew.LoadBoard(self.pfad)
+        self.fps = {fp.GetReference(): fp for fp in self.board.GetFootprints()}
+
     def neu_laden_und_fuellen(self):
         """Gespeicherte Platine neu laden und Flächen füllen (vermeidet veraltete Füllungen)."""
         self.board = pcbnew.LoadBoard(self.pfad)
@@ -284,6 +302,10 @@ class Leiterplatte:
             subprocess.run(['pkill', '-f', dsn])
         ok = os.path.exists(ses)
         if ok:
+            # Freerouting liefert alle Leiterbahnen (auch bereits vorhandene) -> vorher entfernen
+            # Alte Leiterbahnen in der Datei entfernen (Board.Remove beschädigt KiCads
+            # Python-Bindung), neu laden und das vollständige Ergebnis importieren
+            self.leiterbahnen_aus_datei_entfernen()
             self.ses_importieren(ses)
             os.remove(ses)
         os.remove(dsn)

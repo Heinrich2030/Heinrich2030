@@ -124,7 +124,6 @@ def kanalkarte(lp):
         raise RuntimeError(f'Kanalkarte: kein Platz für {len(rest)} Bauteile: {rest[:8]}')
     lp.text('KABELTESTER KANALKARTE 64 TP v1.0', b / 2, idc[1] - 1.5, 1.0, unten=True)
     lp.flaeche('GND', pcbnew.In1_Cu)
-    lp.flaeche('5VA', pcbnew.In2_Cu)
     lp.flaeche('GND', pcbnew.B_Cu)
     lp.flaeche('GND', pcbnew.F_Cu)
 
@@ -176,5 +175,4 @@ def messkarte(lp):
         raise RuntimeError(f'Messkarte: kein Platz für {rest}')
     lp.text('KABELTESTER MESSKARTE v1.0', 75, h - 15.5, 1.2)
     lp.flaeche('GND', pcbnew.In1_Cu)
-    lp.flaeche('5VA', pcbnew.In2_Cu)
     lp.flaeche('GND', pcbnew.B_Cu)
