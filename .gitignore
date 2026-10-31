@@ -10,3 +10,4 @@ fp-info-cache
 *.ses
 .netzliste.tmp
 kabeltester/hardware/kicad/*/fertigung/*.step
+*.freerouting.log
