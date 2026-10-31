@@ -252,14 +252,16 @@ class Leiterplatte:
         self.fuellen()
         pcbnew.SaveBoard(self.pfad, self.board)
 
-    def routen(self, durchgaenge=40, threads=4, zeitlimit=3600):
+    def routen(self, durchgaenge=60, threads=1, zeitlimit=5400):
         dsn = self.pfad.replace('.kicad_pcb', '.dsn')
         ses = self.pfad.replace('.kicad_pcb', '.ses')
         self.fuellen()
         if not pcbnew.ExportSpecctraDSN(self.board, dsn):
             raise RuntimeError('DSN-Export fehlgeschlagen')
-        cmd = ['java', '-Djava.awt.headless=true', '-jar', FREEROUTING, '-de', dsn, '-do', ses,
-               '-mp', str(durchgaenge), '-mt', str(threads)]
+        # Freerouting 1.9 braucht eine grafische Oberfläche -> virtueller Bildschirm (xvfb-run).
+        # Mehr als ein Thread bei der Optimierung erzeugt laut Freerouting Abstandsfehler.
+        cmd = ['xvfb-run', '-a', 'java', '-jar', FREEROUTING, '-de', dsn, '-do', ses,
+               '-mp', str(durchgaenge), '-mt', str(threads), '-dct', '0']
         log = open(self.pfad.replace('.kicad_pcb', '.freerouting.log'), 'w')
         subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, timeout=zeitlimit)
         if not os.path.exists(ses):
