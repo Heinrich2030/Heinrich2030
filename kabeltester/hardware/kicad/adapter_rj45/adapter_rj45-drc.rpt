@@ -1,93 +1,9 @@
 ** Drc report for /home/user/Heinrich2030/kabeltester/hardware/kicad/adapter_rj45/adapter_rj45.kicad_pcb **
-** Created on 2026-10-30 22:39:47 **
+** Created on 2026-10-31 20:39:06 **
 
 ** Found 0 DRC violations **
 
-** Found 21 unconnected pads **
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(76.6700 mm, 47.1900 mm): PTH pad b6 [3V3] of J1
-    @(79.2100 mm, 47.1900 mm): PTH pad b5 [3V3] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(55.0000 mm, 33.7750 mm): Pad 1 [3V3] of C1 on F.Cu
-    @(51.1375 mm, 33.9500 mm): Pad 4 [3V3] of U1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(76.6700 mm, 47.1900 mm): PTH pad b6 [3V3] of J1
-    @(55.0000 mm, 33.7750 mm): Pad 1 [3V3] of C1 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(48.8625 mm, 32.0500 mm): Pad 1 [SCL] of U1 on F.Cu
-    @(71.5900 mm, 47.1900 mm): PTH pad b8 [SCL] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(48.8625 mm, 33.9500 mm): Pad 3 [SDA] of U1 on F.Cu
-    @(74.1300 mm, 47.1900 mm): PTH pad b7 [SDA] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(29.4450 mm, 14.4700 mm): PTH pad 1 [TP1] of J2
-    @(89.3700 mm, 49.7300 mm): PTH pad a1 [TP1] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(66.5100 mm, 49.7300 mm): PTH pad a10 [TP10] of J1
-    @(78.1750 mm, 17.0100 mm): PTH pad 2 [TP10] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(63.9700 mm, 49.7300 mm): PTH pad a11 [TP11] of J1
-    @(76.9050 mm, 14.4700 mm): PTH pad 3 [TP11] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(61.4300 mm, 49.7300 mm): PTH pad a12 [TP12] of J1
-    @(75.6350 mm, 17.0100 mm): PTH pad 4 [TP12] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(58.8900 mm, 49.7300 mm): PTH pad a13 [TP13] of J1
-    @(74.3650 mm, 14.4700 mm): PTH pad 5 [TP13] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(56.3500 mm, 49.7300 mm): PTH pad a14 [TP14] of J1
-    @(73.0950 mm, 17.0100 mm): PTH pad 6 [TP14] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(53.8100 mm, 49.7300 mm): PTH pad a15 [TP15] of J1
-    @(71.8250 mm, 14.4700 mm): PTH pad 7 [TP15] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(51.2700 mm, 49.7300 mm): PTH pad a16 [TP16] of J1
-    @(70.5550 mm, 17.0100 mm): PTH pad 8 [TP16] of J3
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(28.1750 mm, 17.0100 mm): PTH pad 2 [TP2] of J2
-    @(86.8300 mm, 49.7300 mm): PTH pad a2 [TP2] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(26.9050 mm, 14.4700 mm): PTH pad 3 [TP3] of J2
-    @(84.2900 mm, 49.7300 mm): PTH pad a3 [TP3] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(25.6350 mm, 17.0100 mm): PTH pad 4 [TP4] of J2
-    @(81.7500 mm, 49.7300 mm): PTH pad a4 [TP4] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(24.3650 mm, 14.4700 mm): PTH pad 5 [TP5] of J2
-    @(79.2100 mm, 49.7300 mm): PTH pad a5 [TP5] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(23.0950 mm, 17.0100 mm): PTH pad 6 [TP6] of J2
-    @(76.6700 mm, 49.7300 mm): PTH pad a6 [TP6] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(21.8250 mm, 14.4700 mm): PTH pad 7 [TP7] of J2
-    @(74.1300 mm, 49.7300 mm): PTH pad a7 [TP7] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(20.5550 mm, 17.0100 mm): PTH pad 8 [TP8] of J2
-    @(71.5900 mm, 49.7300 mm): PTH pad a8 [TP8] of J1
-[unconnected_items]: Missing connection between items
-    Local override; Severity: error
-    @(69.0500 mm, 49.7300 mm): PTH pad a9 [TP9] of J1
-    @(79.4450 mm, 14.4700 mm): PTH pad 1 [TP9] of J3
+** Found 0 unconnected pads **
 
 ** Found 0 Footprint errors **
 

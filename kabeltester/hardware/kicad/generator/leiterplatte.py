@@ -39,6 +39,17 @@ class Leiterplatte:
         self._laden(root_uuid, blatt_uuid)
         self._kontur()
 
+    @classmethod
+    def aus_datei(cls, platine, ordner, breite, hoehe, lagen):
+        """Vorhandene .kicad_pcb laden (z. B. zum Routen), ohne neu zu platzieren."""
+        lp = cls.__new__(cls)
+        lp.p, lp.b, lp.h, lp.lagen, lp.ordner = platine, breite, hoehe, lagen, ordner
+        lp.pfad = os.path.join(ordner, f'{platine.name}.kicad_pcb')
+        lp.board = pcbnew.LoadBoard(lp.pfad)
+        lp.fps = {fp.GetReference(): fp for fp in lp.board.GetFootprints()}
+        lp.netze = {n: lp.board.FindNet(n) for n in platine.netze()}
+        return lp
+
     # ------------------------------------------------------------------
     def _regeln(self):
         ds = self.board.GetDesignSettings()
@@ -195,17 +206,20 @@ class Leiterplatte:
         z.SetLayer(lage)
         z.SetNet(self.netze[netz])
         z.SetAssignedPriority(prio) if hasattr(z, 'SetAssignedPriority') else z.SetPriority(prio)
-        z.SetMinThickness(mm(0.2))
-        z.SetLocalClearance(mm(0.25))
-        z.SetThermalReliefGap(mm(0.3))
-        z.SetThermalReliefSpokeWidth(mm(0.35))
-        z.SetPadConnection(pcbnew.ZONE_CONNECTION_THERMAL)
+        self.flaeche_einstellen(z)
         o = z.Outline()
         o.NewOutline()
         for x, y in ((rand, rand), (self.b - rand, rand), (self.b - rand, self.h - rand), (rand, self.h - rand)):
             o.Append(mm(x), mm(y))
         self.board.Add(z)
         return z
+
+    @staticmethod
+    def flaeche_einstellen(z):
+        """Volle Anbindung: auch Pads zwischen dichten Steckerreihen bekommen Masse."""
+        z.SetMinThickness(mm(0.2))
+        z.SetLocalClearance(mm(0.2))
+        z.SetPadConnection(pcbnew.ZONE_CONNECTION_FULL)
 
     def fuellen(self):
         self.board.BuildConnectivity()
@@ -253,23 +267,133 @@ class Leiterplatte:
         pcbnew.SaveBoard(self.pfad, self.board)
 
     def routen(self, durchgaenge=60, threads=1, zeitlimit=5400):
+        """Autorouting mit Freerouting. Gibt True zurück, wenn ein Ergebnis importiert wurde."""
         dsn = self.pfad.replace('.kicad_pcb', '.dsn')
         ses = self.pfad.replace('.kicad_pcb', '.ses')
         self.fuellen()
         if not pcbnew.ExportSpecctraDSN(self.board, dsn):
             raise RuntimeError('DSN-Export fehlgeschlagen')
         # Freerouting 1.9 braucht eine grafische Oberfläche -> virtueller Bildschirm (xvfb-run).
-        # Mehr als ein Thread bei der Optimierung erzeugt laut Freerouting Abstandsfehler.
+        # Optimierung mit mehr als einem Thread erzeugt laut Freerouting Abstandsfehler; 0 = aus.
         cmd = ['xvfb-run', '-a', 'java', '-jar', FREEROUTING, '-de', dsn, '-do', ses,
                '-mp', str(durchgaenge), '-mt', str(threads), '-dct', '0']
         log = open(self.pfad.replace('.kicad_pcb', '.freerouting.log'), 'w')
-        subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, timeout=zeitlimit)
-        if not os.path.exists(ses):
-            raise RuntimeError('Freerouting lieferte keine SES-Datei')
-        pcbnew.ImportSpecctraSES(self.board, ses)
-        for f in (dsn, ses):
-            os.remove(f)
+        try:
+            subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, timeout=zeitlimit)
+        except subprocess.TimeoutExpired:
+            subprocess.run(['pkill', '-f', dsn])
+        ok = os.path.exists(ses)
+        if ok:
+            self.ses_importieren(ses)
+            os.remove(ses)
+        os.remove(dsn)
         self.fuellen()
+        return ok
+
+    def ses_importieren(self, ses):
+        """Liest Leiterbahnen und Vias aus einer Freerouting-SES-Datei (KiCad 7 kann das in
+        Python nicht selbst). Koordinaten: Einheit laut (resolution), y gespiegelt."""
+        import re
+        from sexp import parse, find, findall
+        root = parse(open(ses).read())
+        routes = find(root, 'routes')
+        res = find(routes, 'resolution')
+        einheit = {'um': 0.001, 'mm': 1.0, 'mil': 0.0254, 'inch': 25.4}[str(res[1])] / float(res[2])
+        lagen = {self.board.GetLayerName(l): l for l in range(pcbnew.PCB_LAYER_ID_COUNT)}
+
+        def pt(x, y):
+            return pcbnew.VECTOR2I(mm(float(x) * einheit), mm(-float(y) * einheit))
+        bahnen = vias = 0
+        for netz in findall(find(routes, 'network_out'), 'net'):
+            ni = self.board.FindNet(str(netz[1]))
+            for w in findall(netz, 'wire'):
+                pfad = find(w, 'path')
+                lage = lagen[str(pfad[1])]
+                breite = mm(float(pfad[2]) * einheit)
+                k = pfad[3:]
+                for i in range(0, len(k) - 2, 2):
+                    t = pcbnew.PCB_TRACK(self.board)
+                    t.SetStart(pt(k[i], k[i + 1]))
+                    t.SetEnd(pt(k[i + 2], k[i + 3]))
+                    t.SetWidth(breite)
+                    t.SetLayer(lage)
+                    t.SetNet(ni)
+                    self.board.Add(t)
+                    bahnen += 1
+            for v in findall(netz, 'via'):
+                m = re.search(r'_(\d+):(\d+)_um', str(v[1]))
+                via = pcbnew.PCB_VIA(self.board)
+                via.SetPosition(pt(v[2], v[3]))
+                via.SetWidth(mm(int(m.group(1)) / 1000))
+                via.SetDrill(mm(int(m.group(2)) / 1000))
+                via.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu)
+                via.SetViaType(pcbnew.VIATYPE_THROUGH)
+                via.SetNet(ni)
+                self.board.Add(via)
+                vias += 1
+        return bahnen, vias
+
+    def naehen(self, netz='GND', raster=5.0, abstand=0.35, rand=1.2):
+        """Masse-Durchkontaktierungen im Raster setzen, wo kein fremdes Kupfer in der Nähe ist.
+        Verbindet die Masseflächen aller Lagen (auch Inseln zwischen Leiterbahnen)."""
+        import math
+        ni = self.board.FindNet(netz)
+        via_r = 0.3            # Via 0,6 / 0,3 mm
+        hindernisse = []       # (art, daten) in mm
+        for t in self.board.GetTracks():
+            if t.GetNetname() == netz and t.Type() != pcbnew.PCB_VIA_T:
+                continue
+            if t.Type() == pcbnew.PCB_VIA_T:
+                p = t.GetPosition()
+                hindernisse.append(('kreis', pcbnew.ToMM(p.x), pcbnew.ToMM(p.y), pcbnew.ToMM(t.GetWidth()) / 2))
+            else:
+                a, b = t.GetStart(), t.GetEnd()
+                hindernisse.append(('linie', pcbnew.ToMM(a.x), pcbnew.ToMM(a.y), pcbnew.ToMM(b.x), pcbnew.ToMM(b.y),
+                                    pcbnew.ToMM(t.GetWidth()) / 2))
+        for fp in self.board.GetFootprints():
+            for pad in fp.Pads():
+                bb = pad.GetBoundingBox()
+                bohrung = pad.GetDrillSize().x > 0
+                if pad.GetNetname() == netz and not bohrung:
+                    continue
+                hindernisse.append(('box', pcbnew.ToMM(bb.GetLeft()), pcbnew.ToMM(bb.GetTop()),
+                                    pcbnew.ToMM(bb.GetRight()), pcbnew.ToMM(bb.GetBottom())))
+        def frei(x, y):
+            m = via_r + abstand
+            for h in hindernisse:
+                if h[0] == 'kreis':
+                    if math.hypot(x - h[1], y - h[2]) < h[3] + m:
+                        return False
+                elif h[0] == 'box':
+                    if h[1] - m < x < h[3] + m and h[2] - m < y < h[4] + m:
+                        return False
+                else:
+                    _, x1, y1, x2, y2, r = h
+                    dx, dy = x2 - x1, y2 - y1
+                    l2 = dx * dx + dy * dy
+                    t = 0 if l2 == 0 else max(0, min(1, ((x - x1) * dx + (y - y1) * dy) / l2))
+                    if math.hypot(x - x1 - t * dx, y - y1 - t * dy) < r + m:
+                        return False
+            return True
+        n = 0
+        y = rand
+        while y <= self.h - rand:
+            x = rand + (raster / 2 if int(round(y / raster)) % 2 else 0)
+            while x <= self.b - rand:
+                if frei(x, y):
+                    v = pcbnew.PCB_VIA(self.board)
+                    v.SetPosition(V(x, y))
+                    v.SetWidth(mm(0.6))
+                    v.SetDrill(mm(0.3))
+                    v.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu)
+                    v.SetViaType(pcbnew.VIATYPE_THROUGH)
+                    v.SetNet(ni)
+                    self.board.Add(v)
+                    hindernisse.append(('kreis', x, y, raster / 2 - via_r - abstand))
+                    n += 1
+                x += raster
+            y += raster
+        return n
 
     def offene_verbindungen(self):
         self.board.BuildConnectivity()

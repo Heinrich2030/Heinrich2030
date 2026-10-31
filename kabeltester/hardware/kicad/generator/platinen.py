@@ -232,7 +232,7 @@ def messkarte():
 def adapter():
     p = Platine('adapter_rj45', 'Kabeltester Adapter-Vorlage 2x RJ45')
     din = {f'a{i}': f'TP{i}' for i in range(1, 17)}
-    din.update({f'b{i}': 'GND' for i in (1, 2, 3, 4, 9, 10, 32)})
+    din.update({f'b{i}': 'GND' for i in (1, 2, 3, 4, 32)})   # b9/b10 frei lassen (zweilagig nicht anbindbar)
     din.update({'b5': '3V3', 'b6': '3V3', 'b7': 'SDA', 'b8': 'SCL'})
     p.teil('J', 'kabeltester:DIN41612_C96_Male', 'DIN 41612 C96 Messer', 'Connector_DIN:DIN41612_C_3x32_Male_Horizontal_THT',
            din, MPN='Harting DIN-Signal C096 M abgewinkelt')

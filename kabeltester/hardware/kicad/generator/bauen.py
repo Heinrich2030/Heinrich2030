@@ -27,8 +27,11 @@ def main(nur_schaltplan=False):
     eigene_bibliothek.schreibe_symbole(os.path.join(ZIEL, 'bibliothek', 'kabeltester.kicad_sym'))
     eigene_bibliothek.schreibe_footprints(os.path.join(ZIEL, 'bibliothek', 'kabeltester.pretty'))
     ergebnis = {}
+    nur = sys.argv[sys.argv.index('--nur') + 1] if '--nur' in sys.argv else None
     for bau in (platinen.kanalkarte, platinen.messkarte, platinen.adapter):
         p = bau()
+        if nur and p.name != nur:
+            continue
         offen = p.pruefe()
         if offen:
             raise SystemExit(f'{p.name}: Netze mit nur einem Anschluss: {offen}')
