@@ -32,3 +32,9 @@ Pos;Baugruppe;Menge;Bauteil;Hersteller-Nr.;Funktion;Preis ca. EUR/Stk;Bezug (Bei
 31;Zubehoer;1;Kurzschlussadapter (alle 64 Kontakte auf Kupferschiene je Seite);-;Nullabgleich;5;-
 32;Messkarte;5;JST-PH-Stecker 2-4-polig (Display, LED, Taster, Fussschalter);JST B2B/B3B/B4B-PH-K;Bedienung;0.20;LCSC
 33;Zubehoer;1;Kabel JST-PH 2-polig auf USB-C-Stecker (Display-Versorgung);-;Display;3;-
+34;Kabelsatz;1;Kabel JST-PH 4-polig, ca. 300 mm, eine Seite offen (Messkarte J7 -> Start-Taster);z. B. JST PHR-4 + SPH-002T-P0.5S;Start-Taster + Tasterbeleuchtung;1.50;Reichelt, Eckstein
+35;Kabelsatz;1;Kabel JST-PH 3-polig, ca. 300 mm, eine Seite offen (Messkarte J6 -> LED-Streifen);z. B. JST PHR-3 + SPH-002T-P0.5S;Gut/Fehler-Leuchte;1.50;Reichelt, Eckstein
+36;Kabelsatz;1;Kabel JST-PH 2-polig, ca. 250 mm, eine Seite offen (Messkarte J8 -> Klinkenbuchse);z. B. JST PHR-2 + SPH-002T-P0.5S;Fussschalter;1.20;Reichelt, Eckstein
+37;Gehaeuse;1;Klinkenbuchse 3,5 mm Einbau, mono, Mutter M6;-;Fussschalter-Anschluss;1.50;Reichelt
+38;Gehaeuse;1;LED-Halter (3D-Druck, gehaeuse/step/led_halter.stl) + Lichtleiter Acryl 3 mm (8 x 30 mm, satiniert);-;Gut/Fehler-Leuchte;1;-
+39;Zubehoer;1;Fussschalter mit 3,5-mm-Klinkenstecker (Schliesser);-;Serienpruefung mit freien Haenden;12;Reichelt, Conrad

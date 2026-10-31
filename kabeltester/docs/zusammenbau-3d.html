@@ -314,7 +314,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   zyl(mk, 60, 18, 9.6, 6, 9.5, M.piezo);                   // Summer
   box(mk, 60, 92, 9.6, 43, 9, 9.1, M.din);                 // Flachbandstecker Kanalkarte A
   box(mk, 113, 50, 9.6, 9, 43, 9.1, M.din);                // Flachbandstecker Kanalkarte B
-  [[12, 14], [24, 14], [33, 14], [44, 14], [80, 14]].forEach(q => box(mk, q[0], q[1], 9.6, 8, 5, 6, M.din)); // JST-PH: Display, LED, Taster, Fuß
+  // JST-PH-Stecker (Positionen aus der KiCad-Platine): J4 Display-UART, J5 Display-5V, J6 LED, J7 Taster, J8 Fußschalter
+  [21.1, 30.3, 38.6, 48.8, 58.1].forEach(x => box(mk, x - 4, 20.8, 9.6, 8, 5, 6, M.din));
 
   // ===== 4./5. Kanalkarten =====
   function kanalkarte(id, name, x0) {
@@ -406,6 +407,9 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   kl.rotation.x = Math.PI / 2; kl.position.copy(W(B - 25, -1.2, HV / 2)); add(geh, kl);
   const klL = new THREE.Mesh(new THREE.CylinderGeometry(1.8, 1.8, 3.2, 16), M.loch);
   klL.rotation.x = Math.PI / 2; klL.position.copy(W(B - 25, -1.3, HV / 2)); add(geh, klL);
+  const klK = new THREE.Mesh(new THREE.CylinderGeometry(4, 4, 15.6, 20), M.metall);   // Buchsenkörper innen
+  klK.rotation.x = Math.PI / 2; klK.position.copy(W(B - 25, WD + 7.8, HV / 2)); add(geh, klK);
+  box(geh, B - 28, WD + 15.6, HV / 2 - 4, 6, 4, 8, M.schwarz);                       // Lötfahnen
   // Lüftungsschlitze (angedeutet)
   for (let i = 0; i < 6; i++) {
     box(geh, -0.1, 120 + i * 10, 15, 0.3, 4, 30, M.loch);
@@ -413,7 +417,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   }
 
   // ===== 8. Start-Taster und Leuchte (in der Oberschale) =====
-  const bed = part('bedien', 'Start-Taster & Leuchte', 'Beleuchteter Taster (Ø 22 mm) für den Prüfstart, LED-Lichtleiter grün/rot für Gut/Fehler. Fußschalter an der Klinke vorne.',
+  const bed = part('bedien', 'Start-Taster & Leuchte', 'Beleuchteter Taster (Ø 22 mm) startet die Prüfung, Lichtleiter mit LED-Streifen grün/rot zeigt Gut/Fehler (LED-Halter als 3D-Druckteil). Fußschalter an der Klinke vorne. Angeschlossen über den Kabelsatz an J6/J7/J8 der Messkarte.',
     '#2bd46a', 320, aufSchraege(tx, dy + glasH * 0.7, 6));
   bed.target = schraege(bed);
   const tk = new THREE.Mesh(new THREE.CylinderGeometry(10.4, 10.4, 5, 32), M.tasterKappe);
@@ -424,6 +428,12 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   bed.target.add(ring);
   lbox(bed, bed.target, tx - 3.6, dy + 20.5, -1.8, 7.2, 14, 2, M.ledGruen);
   lbox(bed, bed.target, tx - 3.6, dy + 5.5, -1.8, 7.2, 14, 2, M.ledRot);
+  // Taster-Gehäuse und Anschlüsse hinter der Schräge, LED-Halter (3D-Druck) unter dem Lichtleiter
+  const tkoerper = new THREE.Mesh(new THREE.CylinderGeometry(9.5, 9.5, 27.6, 28), M.metall);
+  tkoerper.rotation.x = Math.PI / 2; tkoerper.position.set(tx, dy + glasH * 0.7, -2.4 - 13.8);
+  tkoerper.userData.part = 'bedien'; tkoerper.castShadow = true; bed.target.add(tkoerper);
+  lbox(bed, bed.target, tx - 5, dy + glasH * 0.7 - 5, -36, 10, 10, 6, M.schwarz);
+  lbox(bed, bed.target, tx - 6.5, dy + 2, -2.4 - 8, 13, 36, 8, M.boden);
 
   // ===== 9./10. Adapter =====
   function adapter(id, name, desc, x0, aufbau) {
@@ -472,15 +482,26 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 
   // ===== Verbindungskabel (folgen beim Auseinanderziehen) =====
   const leitungen = [];
-  function leitung(von, nach, r, m, bogen) {
+  function leitung(von, nach, r, m, bogen, ueber = [], teil = 'messkarte') {
     const mesh = new THREE.Mesh(new THREE.BufferGeometry(), m);
-    mesh.castShadow = true; mesh.userData.part = 'messkarte';
+    mesh.castShadow = true; mesh.userData.part = teil;
     assembly.add(mesh);
-    leitungen.push({ mesh, von, nach, r, bogen });
+    leitungen.push({ mesh, von, nach, r, bogen, ueber });
   }
   leitung({ p: mk, q: W(81.5, 96.5, 18.7) }, { p: ka.k, q: W(ka.header[0], ka.header[1], ka.header[2]) }, 1.8, M.flach, 4);
   leitung({ p: mk, q: W(117.5, 71.5, 18.7) }, { p: kb.k, q: W(kb.header[0], kb.header[1], kb.header[2]) }, 1.8, M.flach, 4);
   leitung({ p: mk, q: W(16, 16.5, 15.6) }, { p: disp, q: aufSchraege(dx + 95, dy + 10.5, -15.8) }, 1.4, M.schwarz, 8);
+  // Kabelsatz Bedienung: von J6/J7/J8 nach vorne, über dem Boden nach rechts, dann zu Taster, LED, Klinke
+  const ks = part('kabelsatz', 'Kabelsatz Bedienung', 'Drei fertige JST-PH-Kabel: J7 → Start-Taster (4-polig), J6 → LED-Streifen (3-polig), J8 → Fußschalter-Buchse (2-polig). Verlauf über dem Gehäuseboden, vor der Messkarte.',
+    '#8a2a22', 40, W(140, 6, 4));
+  const ueberBoden = (x, yb, x2, y2) => [W(x, 9, 17.6), W(x, yb, 3), W(x2, yb, 3), W(x2, y2, 3)].map(q => ({ p: mk, q }));
+  const M_ks = { t: mat(0x1d1f22, { roughness: 0.6 }), l: mat(0xb3261e, { roughness: 0.6 }), f: mat(0x34508f, { roughness: 0.6 }) };
+  leitung({ p: mk, q: W(48.8, 23.3, 17.6) }, { p: bed, q: aufSchraege(tx, dy + glasH * 0.7, -36) }, 1.5, M_ks.t, 0,
+    ueberBoden(48.8, 5, tx, 95), 'kabelsatz');
+  leitung({ p: mk, q: W(38.6, 23.3, 17.6) }, { p: bed, q: aufSchraege(tx, dy + 36, -6.9) }, 1.3, M_ks.l, 0,
+    ueberBoden(38.6, 7.5, tx + 4, 40), 'kabelsatz');
+  leitung({ p: mk, q: W(58.1, 23.3, 17.6) }, { p: geh, q: W(B - 25, WD + 19.6, HV / 2) }, 1.2, M_ks.f, 0,
+    ueberBoden(58.1, 10, B - 25, 26), 'kabelsatz');
 
   // ---------- Bildschirminhalt (Oberfläche "Pruefen") ----------
   function malBildschirm(c, w, h) {
@@ -529,12 +550,18 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
     leitungen.forEach(l => {
       tmpA.copy(l.von.q); tmpA.y += versatz(l.von.p);
       tmpB.copy(l.nach.q); tmpB.y += versatz(l.nach.p);
-      const mitte = tmpA.clone().lerp(tmpB, 0.5); mitte.y = Math.max(tmpA.y, tmpB.y) + l.bogen;
-      const a1 = tmpA.clone(); a1.y += l.bogen * 0.6;
-      const b1 = tmpB.clone(); b1.y += l.bogen * 0.6;
-      const kurve = new THREE.CatmullRomCurve3([tmpA.clone(), a1, mitte, b1, tmpB.clone()]);
+      let kurve;
+      if (l.ueber.length) {                 // fester Kabelweg über Stützpunkte
+        const pts = [tmpA.clone(), ...l.ueber.map(u => { const v = u.q.clone(); v.y += versatz(u.p); return v; }), tmpB.clone()];
+        kurve = new THREE.CatmullRomCurve3(pts, false, 'catmullrom', 0.08);
+      } else {
+        const mitte = tmpA.clone().lerp(tmpB, 0.5); mitte.y = Math.max(tmpA.y, tmpB.y) + l.bogen;
+        const a1 = tmpA.clone(); a1.y += l.bogen * 0.6;
+        const b1 = tmpB.clone(); b1.y += l.bogen * 0.6;
+        kurve = new THREE.CatmullRomCurve3([tmpA.clone(), a1, mitte, b1, tmpB.clone()]);
+      }
       l.mesh.geometry.dispose();
-      l.mesh.geometry = new THREE.TubeGeometry(kurve, 40, l.r, 8, false);
+      l.mesh.geometry = new THREE.TubeGeometry(kurve, l.ueber.length ? 160 : 40, l.r, 8, false);
     });
   }
   const slider = document.getElementById('explode');
@@ -585,7 +612,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   const liste = document.getElementById('teile');
   const info = document.getElementById('info'), infoName = document.getElementById('infoName'), infoText = document.getElementById('infoText');
   let auswahl = null;
-  const reihenfolge = ['display', 'gehaeuse', 'bedien', 'messkarte', 'kanalA', 'kanalB', 'adapterA', 'adapterB', 'kabel', 'usb', 'boden'];
+  const reihenfolge = ['display', 'gehaeuse', 'bedien', 'kabelsatz', 'messkarte', 'kanalA', 'kanalB', 'adapterA', 'adapterB', 'kabel', 'usb', 'boden'];
   reihenfolge.forEach(id => {
     const p = byId[id];
     const l = document.createElement('div'); l.className = 'lbl'; l.textContent = p.name;

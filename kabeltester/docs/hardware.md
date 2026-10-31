@@ -192,6 +192,22 @@ Adapter bauen: [`adapter.md`](adapter.md).
 Die Analogbusse liegen zwischen Masseadern. Beide Kanalkarten sind identisch, die Kette der
 Schieberegister läuft Messkarte → Karte A → Karte B.
 
-## 10. KiCad-Projekte
+## 10. Bedienteile und Verkabelung
+
+Die Bedienteile sitzen im Gehäuse, nicht auf einer Platine. Sie werden mit fertig gecrimpten
+JST-PH-Kabeln an die Messkarte gesteckt. Die Kabel laufen vorne über dem Gehäuseboden nach rechts
+(siehe 3D-Ansicht, Teil „Kabelsatz Bedienung“).
+
+| Bedienteil | Ort | Stecker Messkarte | Belegung | Firmware |
+|---|---|---|---|---|
+| Start-Taster Ø 22 mm, beleuchtet | Schräge rechts neben dem Display | J7, JST-PH 4-polig | 1 GND · 2 START · 3 Taster-LED (3,3 V über 150 Ω) · 4 frei | GP14 → `TASTE` |
+| LED-Streifen grün/rot im LED-Halter | unter dem Lichtleiter-Schlitz | J6, JST-PH 3-polig | 1 +5 V · 2 Grün (Kathode) · 3 Rot (Kathode) | GP10/GP11 über AO3400 |
+| Klinkenbuchse 3,5 mm (Fußschalter) | Vorderwand rechts | J8, JST-PH 2-polig | 1 GND (Hülse) · 2 START (Spitze) | parallel zum Taster |
+
+Der LED-Streifen schaltet nach Masse (Low-Side über MOSFET), die Anode liegt an +5 V. Bei
+fertigen 5-V-LED-Streifen sind die Vorwiderstände eingebaut; bei einzelnen LEDs je Farbe einen
+Vorwiderstand (z. B. 220 Ω) vorsehen.
+
+## 11. KiCad-Projekte
 
 Schaltpläne, Leiterplatten und Fertigungsdaten: [`../hardware/kicad/`](../hardware/kicad/README.md).

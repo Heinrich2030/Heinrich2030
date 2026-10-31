@@ -125,6 +125,104 @@ def display():
     return w.rotate((0, 0, 0), (1, 0, 0), WINKEL).translate((0, 0, HV))
 
 
+# --- Bedienteile und Verkabelung ---------------------------------------------
+TASTER_U = B - (B - DISP_X - DISP_MODUL[0]) / 2        # Mitte rechts neben dem Display
+TASTER_V = DISP_Y + DISP_MODUL[1] * 0.7
+LED_V = (DISP_Y + 5, DISP_Y + 35)                      # Lichtleiter-Schlitz auf der Schräge
+KLINKE = (B - 25, HV / 2)                              # x, z in der Vorderwand
+# Stecker auf der Messkarte (Gehäusekoordinaten, aus der KiCad-Platine)
+JST = {'J6': (38.6, 23.3), 'J7': (48.8, 23.3), 'J8': (58.1, 23.3)}
+JST_OBEN = MESSKARTE['z'] + 1.6 + 6.0
+
+
+def auf_schraege(u, v, w):
+    """Punkt in Schrägflächen-Koordinaten (u quer, v die Schräge hinauf, w nach außen)."""
+    a = math.radians(WINKEL)
+    return (u, v * math.cos(a) - w * math.sin(a), HV + v * math.sin(a) + w * math.cos(a))
+
+
+def _schraeg(form):
+    return form.rotate((0, 0, 0), (1, 0, 0), WINKEL).translate((0, 0, HV))
+
+
+def taster():
+    """Beleuchteter Taster Ø 22 mm (Kappe, Ring, Gehäuse, Mutter, Anschlüsse)."""
+    u, v = TASTER_U, TASTER_V
+    t = (cq.Workplane('XY').center(u, v).circle(10.4).extrude(4.0)
+         .union(cq.Workplane('XY').center(u, v).circle(12.5).circle(10.6).extrude(1.2))
+         .union(cq.Workplane('XY').workplane(offset=-30).center(u, v).circle(9.5).extrude(27.6))
+         .union(cq.Workplane('XY').workplane(offset=-5.4).center(u, v).polygon(6, 27).extrude(3.0))
+         .union(cq.Workplane('XY').workplane(offset=-36).center(u, v).rect(10, 10).extrude(6)))
+    return _schraeg(t)
+
+
+def led_halter(druck=False):
+    """3D-Druckteil: Rinne für den LED-Streifen (8 mm) hinter dem Lichtleiter-Schlitz.
+    Wird an die Innenseite der Schräge geklebt. druck=True: flach, Klebefläche unten."""
+    u, (v0, v1) = (0.0, (0.0, LED_V[1] - LED_V[0])) if druck else (TASTER_U, LED_V)
+    lang = v1 - v0 + 6
+    h = (cq.Workplane('XY').workplane(offset=-WD - 8).center(u, (v0 + v1) / 2).rect(13, lang).extrude(8)
+         .cut(cq.Workplane('XY').workplane(offset=-WD - 6).center(u, (v0 + v1) / 2).rect(8.4, lang - 4).extrude(6))
+         .cut(cq.Workplane('XY').workplane(offset=-WD - 6).center(u, v1 + 1).rect(4, 4).extrude(3)))   # Kabelauslass
+    if druck:
+        return h.rotate((0, 0, 0), (1, 0, 0), 180).translate((0, 0, -WD))
+    return _schraeg(h)
+
+
+def led_streifen():
+    u, (v0, v1) = TASTER_U, LED_V
+    s = cq.Workplane('XY').workplane(offset=-WD - 6).center(u, (v0 + v1) / 2).rect(8, v1 - v0 - 1).extrude(1.6)
+    return _schraeg(s)
+
+
+def lichtleiter():
+    u, (v0, v1) = TASTER_U, LED_V
+    return _schraeg(cq.Workplane('XY').workplane(offset=-WD).center(u, (v0 + v1) / 2).rect(7.8, v1 - v0 - 0.2).extrude(WD))
+
+
+def klinke():
+    """3,5-mm-Einbaubuchse (Fußschalter) in der Vorderwand."""
+    x, z = KLINKE
+    k = (cq.Workplane('XZ').center(x, z).circle(4.0).extrude(-15.6).translate((0, WD, 0))
+         .union(cq.Workplane('XZ').center(x, z).circle(4.6).extrude(-1.5).translate((0, -1.5, 0)))
+         .union(cq.Workplane('XY').box(6, 4, 8).translate((x, WD + 17.6, z))))
+    return k
+
+
+def kabel(punkte, r):
+    """Kabel als Folge von Zylindern mit Kugeln an den Knicken."""
+    form = None
+    for (a, b) in zip(punkte, punkte[1:]):
+        va, vb = cq.Vector(*a), cq.Vector(*b)
+        d = vb - va
+        if d.Length < 1e-6:
+            continue
+        z = cq.Solid.makeCylinder(r, d.Length, va, d.normalized())
+        form = z if form is None else form.fuse(z)
+    for p in punkte[1:-1]:
+        form = form.fuse(cq.Solid.makeSphere(r, cq.Vector(*p)))
+    return cq.Workplane('XY').add(form)
+
+
+def kabelwege():
+    """Drei JST-PH-Kabel von der Messkarte zu den Bedienteilen (über dem Gehäuseboden)."""
+    def von(j, y_boden):
+        x, y = JST[j]
+        return [(x, y, JST_OBEN), (x, y, JST_OBEN + 2), (x, 9, JST_OBEN + 2), (x, y_boden, 3.0)]
+    tx, tv = TASTER_U, TASTER_V
+    t_end = auf_schraege(tx, tv, -36)
+    l_end = auf_schraege(tx, LED_V[1] + 1, -WD - 4.5)
+    k_end = (KLINKE[0], WD + 19.6, KLINKE[1])
+    wege = {
+        'Kabel_Taster_JST-PH4': (von('J7', 5.0) + [(tx, 5.0, 3.0), (tx, t_end[1], 3.0), t_end], 1.5),
+        'Kabel_LED_JST-PH3': (von('J6', 7.5) + [(tx + 4, 7.5, 3.0), (tx + 4, l_end[1] + 3, 3.0),
+                                                (tx + 4, l_end[1] + 3, l_end[2] - 3), l_end], 1.3),
+        'Kabel_Fussschalter_JST-PH2': (von('J8', 10.0) + [(k_end[0] - 4, 10.0, 3.0), (k_end[0], k_end[1] + 4, 3.0),
+                                                         (k_end[0], k_end[1] + 4, k_end[2]), k_end], 1.2),
+    }
+    return {n: kabel(p, r) for n, (p, r) in wege.items()}
+
+
 def baugruppe():
     a = cq.Assembly(name='Kabeltester')
     a.add(boden(), name='Bodenplatte', color=cq.Color(0.29, 0.32, 0.31))
@@ -138,6 +236,14 @@ def baugruppe():
     for i, x in enumerate((SCHACHT['x'][0] + SCHACHT['l'] / 2 - 50, SCHACHT['x'][1] + SCHACHT['l'] / 2 - 50)):
         loc = cq.Location(cq.Vector(x, T - 29.3, ADAPTER_Z_OBEN), cq.Vector(1, 0, 0), 90)
         a.add(platine('adapter_rj45'), name=f'Adapter_{"AB"[i]}', loc=loc)
+    a.add(taster(), name='Start-Taster_22mm', color=cq.Color(0.85, 0.86, 0.88))
+    a.add(led_halter(), name='LED-Halter_3D-Druck', color=cq.Color(0.2, 0.2, 0.22))
+    a.add(led_streifen(), name='LED-Streifen_gruen-rot', color=cq.Color(0.1, 0.6, 0.3))
+    a.add(lichtleiter(), name='Lichtleiter_Acryl', color=cq.Color(0.9, 0.95, 1.0, 0.5))
+    a.add(klinke(), name='Klinkenbuchse_3.5mm', color=cq.Color(0.7, 0.72, 0.75))
+    farben = {'Taster': cq.Color(0.1, 0.1, 0.1), 'LED': cq.Color(0.7, 0.1, 0.1), 'Fussschalter': cq.Color(0.2, 0.3, 0.6)}
+    for name, form in kabelwege().items():
+        a.add(form, name=name, color=next(f for k, f in farben.items() if k in name))
     return a
 
 
@@ -147,6 +253,8 @@ def main():
     cq.exporters.export(boden(), os.path.join(AUS, 'gehaeuse_boden.step'))
     cq.exporters.export(oberschale(), os.path.join(AUS, 'gehaeuse_oberschale.stl'))
     cq.exporters.export(boden(), os.path.join(AUS, 'gehaeuse_boden.stl'))
+    cq.exporters.export(led_halter(), os.path.join(AUS, 'led_halter.step'))
+    cq.exporters.export(led_halter(druck=True), os.path.join(AUS, 'led_halter.stl'))   # Drucklage
     ziel = os.path.join(AUS, 'kabeltester_baugruppe.step')
     baugruppe().save(ziel)
     import zipfile
