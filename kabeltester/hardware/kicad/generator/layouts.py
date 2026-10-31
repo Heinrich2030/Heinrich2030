@@ -176,3 +176,4 @@ def messkarte(lp):
     lp.text('KABELTESTER MESSKARTE v1.0', 75, h - 15.5, 1.2)
     lp.flaeche('GND', pcbnew.In1_Cu)
     lp.flaeche('GND', pcbnew.B_Cu)
+    lp.flaeche('GND', pcbnew.F_Cu)

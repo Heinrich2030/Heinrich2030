@@ -417,6 +417,209 @@ class Leiterplatte:
             y += raster
         return n
 
+    def unverbundene_pads(self, netz='GND'):
+        """(Referenz, Pad) aller Pads des Netzes, die der DRC als unverbunden meldet."""
+        import re
+        bericht = self.drc()
+        treffer = set()
+        for m in re.finditer(r'Pad (\S+) \[' + re.escape(netz) + r'\] of (\S+) on', open(bericht).read()):
+            treffer.add((m.group(2), m.group(1)))
+        return treffer
+
+    def masse_anbinden(self, netz='GND', via_d=0.6, bohr=0.3, bahn=0.25, abstand=0.23, nur=None):
+        """Fanout: jedes SMD-Pad am Massenetz bekommt eine kurze Leitung zu einem Via in die
+        Masselage (Freerouting überlässt Flächennetze der Fläche und setzt diese Vias nicht)."""
+        import math
+        ni = self.board.FindNet(netz)
+        hind = []
+        for t in self.board.GetTracks():
+            if t.GetNetname() == netz:
+                continue
+            if t.Type() == pcbnew.PCB_VIA_T:
+                p = t.GetPosition()
+                hind.append(('k', pcbnew.ToMM(p.x), pcbnew.ToMM(p.y), pcbnew.ToMM(t.GetWidth()) / 2, None))
+            else:
+                a, b = t.GetStart(), t.GetEnd()
+                hind.append(('l', pcbnew.ToMM(a.x), pcbnew.ToMM(a.y), pcbnew.ToMM(b.x), pcbnew.ToMM(b.y),
+                             pcbnew.ToMM(t.GetWidth()) / 2, t.GetLayer()))
+        pads = []
+        for fp in self.board.GetFootprints():
+            for pad in fp.Pads():
+                bb = pad.GetBoundingBox()
+                box = (pcbnew.ToMM(bb.GetLeft()), pcbnew.ToMM(bb.GetTop()), pcbnew.ToMM(bb.GetRight()), pcbnew.ToMM(bb.GetBottom()))
+                tht = pad.GetDrillSize().x > 0
+                lage = None if tht else (pcbnew.B_Cu if pad.IsOnLayer(pcbnew.B_Cu) else pcbnew.F_Cu)
+                if pad.GetNetname() == netz and not tht:
+                    if nur is None or (fp.GetReference(), str(pad.GetNumber())) in nur:
+                        pads.append((pad, box, lage))
+                elif pad.GetNetname() != netz or tht:
+                    hind.append(('b',) + box + (lage,))
+
+        def seg_dist(px, py, x1, y1, x2, y2):
+            dx, dy = x2 - x1, y2 - y1
+            l2 = dx * dx + dy * dy
+            t = 0 if l2 == 0 else max(0, min(1, ((px - x1) * dx + (py - y1) * dy) / l2))
+            return math.hypot(px - x1 - t * dx, py - y1 - t * dy)
+
+        def frei(x, y, r, lage):
+            """Kreis (x, y, r) frei von fremdem Kupfer; lage None = alle Lagen (Via)."""
+            if not (0.8 < x < self.b - 0.8 and 0.8 < y < self.h - 0.8):
+                return False
+            for h in hind:
+                if h[0] == 'k':
+                    if math.hypot(x - h[1], y - h[2]) < h[3] + r + abstand:
+                        return False
+                elif h[0] == 'l':
+                    if lage is not None and h[6] != lage:
+                        continue
+                    if seg_dist(x, y, h[1], h[2], h[3], h[4]) < h[5] + r + abstand:
+                        return False
+                else:
+                    if lage is not None and h[5] is not None and h[5] != lage:
+                        continue
+                    if h[1] - r - abstand < x < h[3] + r + abstand and h[2] - r - abstand < y < h[4] + r + abstand:
+                        return False
+            return True
+
+        masse_vias = [(pcbnew.ToMM(t.GetPosition().x), pcbnew.ToMM(t.GetPosition().y)) for t in self.board.GetTracks()
+                      if t.Type() == pcbnew.PCB_VIA_T and t.GetNetname() == netz]
+        n = 0
+        for pad, box, lage in pads:
+            cx, cy = (box[0] + box[2]) / 2, (box[1] + box[3]) / 2
+            halb = max(box[2] - box[0], box[3] - box[1]) / 2
+            gesetzt = False
+            # Kandidaten: vorhandene Masse-Vias (nur Leitung nötig), dann neue Via-Positionen
+            kandidaten = sorted((math.hypot(vx - cx, vy - cy), vx, vy, False) for vx, vy in masse_vias
+                                if math.hypot(vx - cx, vy - cy) < 4.0)
+            for i in range(12):
+                dist = halb + 0.5 + i * 0.25
+                for w in range(0, 360, 15):
+                    kandidaten.append((dist + 10, cx + dist * math.cos(math.radians(w)),
+                                       cy + dist * math.sin(math.radians(w)), True))
+            for _, vx, vy, neu in kandidaten:
+                if True:
+                    if neu and not frei(vx, vy, via_d / 2, None):
+                        continue
+                    # Leitung vom Padrand zum Via prüfen (Stützpunkte)
+                    ok = True
+                    for k in range(1, 8):
+                        f = k / 8
+                        if not frei(cx + (vx - cx) * f, cy + (vy - cy) * f, bahn / 2, lage):
+                            # innerhalb des eigenen Pads ist erlaubt
+                            px, py = cx + (vx - cx) * f, cy + (vy - cy) * f
+                            if not (box[0] <= px <= box[2] and box[1] <= py <= box[3]):
+                                ok = False
+                                break
+                    if not ok:
+                        continue
+                    if neu:
+                        v = pcbnew.PCB_VIA(self.board)
+                        v.SetPosition(V(vx, vy)); v.SetWidth(mm(via_d)); v.SetDrill(mm(bohr))
+                        v.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu); v.SetViaType(pcbnew.VIATYPE_THROUGH)
+                        v.SetNet(ni)
+                        self.board.Add(v)
+                        masse_vias.append((vx, vy))
+                    t = pcbnew.PCB_TRACK(self.board)
+                    t.SetStart(V(cx, cy)); t.SetEnd(V(vx, vy)); t.SetWidth(mm(bahn)); t.SetLayer(lage); t.SetNet(ni)
+                    self.board.Add(t)
+                    hind.append(('l', cx, cy, vx, vy, bahn / 2, lage))
+                    n += 1
+                    gesetzt = True
+                    break
+        return n
+
+    def inseln_naehen(self, netz='GND', via_d=0.6, abstand=0.23, raster=0.25):
+        """Setzt in jede Insel der Außenlagen-Masseflächen ein Via (falls sie noch keins hat).
+        Inseln ohne Platz merken sich ihre GND-Pads in self._insel_pads (für masse_anbinden)."""
+        import math
+        self._insel_pads = set()
+        self.fuellen()
+        ni = self.board.FindNet(netz)
+        r = via_d / 2
+        # fremdes Kupfer auf allen Lagen
+        hind = []
+        for t in self.board.GetTracks():
+            if t.GetNetname() == netz:
+                continue
+            if t.Type() == pcbnew.PCB_VIA_T:
+                p = t.GetPosition()
+                hind.append(('k', pcbnew.ToMM(p.x), pcbnew.ToMM(p.y), pcbnew.ToMM(t.GetWidth()) / 2))
+            else:
+                a, b = t.GetStart(), t.GetEnd()
+                hind.append(('l', pcbnew.ToMM(a.x), pcbnew.ToMM(a.y), pcbnew.ToMM(b.x), pcbnew.ToMM(b.y),
+                             pcbnew.ToMM(t.GetWidth()) / 2))
+        for fp in self.board.GetFootprints():
+            for pad in fp.Pads():
+                if pad.GetNetname() == netz and pad.GetDrillSize().x == 0:
+                    continue
+                bb = pad.GetBoundingBox()
+                hind.append(('b', pcbnew.ToMM(bb.GetLeft()), pcbnew.ToMM(bb.GetTop()),
+                             pcbnew.ToMM(bb.GetRight()), pcbnew.ToMM(bb.GetBottom())))
+
+        def frei(x, y):
+            m = r + abstand
+            for h in hind:
+                if h[0] == 'k':
+                    if math.hypot(x - h[1], y - h[2]) < h[3] + m:
+                        return False
+                elif h[0] == 'b':
+                    if h[1] - m < x < h[3] + m and h[2] - m < y < h[4] + m:
+                        return False
+                else:
+                    _, x1, y1, x2, y2, w = h
+                    dx, dy = x2 - x1, y2 - y1
+                    l2 = dx * dx + dy * dy
+                    t = 0 if l2 == 0 else max(0, min(1, ((x - x1) * dx + (y - y1) * dy) / l2))
+                    if math.hypot(x - x1 - t * dx, y - y1 - t * dy) < w + m:
+                        return False
+            return True
+        vias = [(t.GetPosition().x, t.GetPosition().y) for t in self.board.GetTracks()
+                if t.Type() == pcbnew.PCB_VIA_T and t.GetNetname() == netz]
+        n = 0
+        for z in self.board.Zones():
+            lage = z.GetLayerSet().Seq()[0]
+            if z.GetNetname() != netz or lage not in (pcbnew.F_Cu, pcbnew.B_Cu):
+                continue
+            polys = z.GetFilledPolysList(lage)
+            for i in range(polys.OutlineCount()):
+                umriss = polys.Outline(i)
+                einzel = pcbnew.SHAPE_POLY_SET()
+                einzel.AddOutline(umriss)
+                if any(einzel.Contains(pcbnew.VECTOR2I(x, y)) for x, y in vias):
+                    continue
+                bb = umriss.BBox()
+                x0, y0 = pcbnew.ToMM(bb.GetLeft()), pcbnew.ToMM(bb.GetTop())
+                x1, y1 = pcbnew.ToMM(bb.GetRight()), pcbnew.ToMM(bb.GetBottom())
+                gefunden = False
+                y = y0
+                while y <= y1 and not gefunden:
+                    x = x0
+                    while x <= x1:
+                        # Via-Kreis muss ganz in der Insel liegen
+                        if all(einzel.Contains(V(x + r * math.cos(a), y + r * math.sin(a)))
+                               for a in [k * math.pi / 4 for k in range(8)]) and \
+                                einzel.Contains(V(x, y)) and frei(x, y):
+                            v = pcbnew.PCB_VIA(self.board)
+                            v.SetPosition(V(x, y)); v.SetWidth(mm(via_d)); v.SetDrill(mm(0.3))
+                            v.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu); v.SetViaType(pcbnew.VIATYPE_THROUGH)
+                            v.SetNet(ni)
+                            self.board.Add(v)
+                            vias.append((mm(x), mm(y)))
+                            hind.append(('k', x, y, r))
+                            n += 1
+                            gefunden = True
+                            break
+                        x += raster
+                    y += raster
+                if not gefunden:
+                    # Kein Platz für ein Via: GND-Pads in dieser Insel per Fanout anbinden
+                    for fp in self.board.GetFootprints():
+                        for pad in fp.Pads():
+                            if pad.GetNetname() == netz and einzel.Contains(pad.GetPosition()):
+                                self._insel_pads.add((fp.GetReference(), str(pad.GetNumber())))
+        self.fuellen()
+        return n
+
     def offene_verbindungen(self):
         self.board.BuildConnectivity()
         return self.board.GetConnectivity().GetUnconnectedCount(False)
