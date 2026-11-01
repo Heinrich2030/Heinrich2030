@@ -333,7 +333,8 @@ class Leiterplatte:
             while proc.poll() is None:
                 time.sleep(15)
                 c = cpu()
-                if c is not None and c != stand:
+                # Leerlauf-Threads der JVM verbrauchen etwas Rechenzeit; Fortschritt = > 1 s je 15 s
+                if c is not None and (stand is None or c - stand > 100):
                     stand, letzte_aenderung = c, time.time()
                 elif time.time() - letzte_aenderung > 30:
                     subprocess.run(['xdotool', 'key', 'Return'], env=env, capture_output=True)
