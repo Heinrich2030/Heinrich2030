@@ -52,7 +52,7 @@ Gehäuse und Gesamtbaugruppe als STEP liegen in [`../../gehaeuse/step/`](../../g
 In KiCad: *Plugin- und Inhaltsverwaltung* → „Freerouting“ installieren → im Leiterplatten-Editor
 *Werkzeuge → Externe Plugins → Freerouting*. Danach *Flächen füllen* (Taste `B`) und *DRC*.
 
-Oder automatisch über den Generator (Java 17+ und die Datei `freerouting-1.9.0.jar` von
+Oder automatisch über den Generator (Java 17+, `Xvfb`, `xdotool` und die Datei `freerouting-1.9.0.jar` von
 github.com/freerouting/freerouting nötig):
 
 ```bash

@@ -303,7 +303,10 @@ class Leiterplatte:
 
     @staticmethod
     def _freerouting(cmd, dsn, zeitlimit, ruhezeit=300):
-        """Startet Freerouting. Gibt True zurück, wenn es ohne Rechenzeit hängen blieb (dann beendet)."""
+        """Startet Freerouting auf einem eigenen virtuellen Bildschirm (Xvfb).
+        Freerouting zeigt beim Einlesen teilweise gerouteter Platinen Warnfenster ("normalization of
+        net ... failed") und wartet auf OK – ohne Rechenzeit zu verbrauchen. Steht die Rechenzeit, wird
+        deshalb Enter geschickt (xdotool). Gibt True zurück, wenn es trotzdem hängen blieb (dann beendet)."""
         import re
         import time
 
@@ -315,24 +318,33 @@ class Leiterplatte:
                 return int(f[11]) + int(f[12])
             except (IndexError, OSError):
                 return None
+        nr = next(n for n in range(150, 250) if not os.path.exists(f'/tmp/.X11-unix/X{n}')
+                  and not os.path.exists(f'/tmp/.X{n}-lock'))
+        env = dict(os.environ, DISPLAY=f':{nr}')
+        env.pop('XAUTHORITY', None)
+        xvfb = subprocess.Popen(['Xvfb', f':{nr}', '-screen', '0', '1280x1024x24', '-nolisten', 'tcp'],
+                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        time.sleep(2)
         log = open(dsn.replace('.dsn', '.freerouting.log'), 'w')
-        proc = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT)
+        proc = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT, env=env)
         t0 = letzte_aenderung = time.time()
-        stand = None
-        while proc.poll() is None:
-            time.sleep(15)
-            c = cpu()
-            if c is not None and c != stand:
-                stand, letzte_aenderung = c, time.time()
-            if time.time() - t0 > zeitlimit:
-                subprocess.run(['pkill', '-f', dsn])
-                proc.wait()
-                return False
-            if time.time() - letzte_aenderung > ruhezeit:
-                subprocess.run(['pkill', '-f', dsn])
-                proc.wait()
-                return True
-        return False
+        stand, haengt = None, False
+        try:
+            while proc.poll() is None:
+                time.sleep(15)
+                c = cpu()
+                if c is not None and c != stand:
+                    stand, letzte_aenderung = c, time.time()
+                elif time.time() - letzte_aenderung > 30:
+                    subprocess.run(['xdotool', 'key', 'Return'], env=env, capture_output=True)
+                if time.time() - t0 > zeitlimit or time.time() - letzte_aenderung > ruhezeit:
+                    haengt = time.time() - t0 <= zeitlimit
+                    subprocess.run(['pkill', '-f', dsn])
+                    proc.wait()
+        finally:
+            xvfb.terminate()
+            xvfb.wait()
+        return haengt
 
     def neu_laden_und_fuellen(self):
         """Gespeicherte Platine neu laden und Flächen füllen (vermeidet veraltete Füllungen)."""
@@ -348,9 +360,9 @@ class Leiterplatte:
         self.fuellen()
         if not pcbnew.ExportSpecctraDSN(self.board, dsn):
             raise RuntimeError('DSN-Export fehlgeschlagen')
-        # Freerouting 1.9 braucht eine grafische Oberfläche -> virtueller Bildschirm (xvfb-run).
+        # Freerouting 1.9 braucht eine grafische Oberfläche -> virtueller Bildschirm (siehe _freerouting).
         # Optimierung mit mehr als einem Thread erzeugt laut Freerouting Abstandsfehler; 0 = aus.
-        cmd = ['xvfb-run', '-a', 'java', '-jar', FREEROUTING, '-de', dsn, '-do', ses,
+        cmd = ['java', '-jar', FREEROUTING, '-de', dsn, '-do', ses,
                '-mp', str(durchgaenge), '-mt', str(threads), '-dct', '0']
         for versuch in range(2):
             if not self._freerouting(cmd, dsn, zeitlimit):
