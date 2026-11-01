@@ -118,8 +118,13 @@ def kanalkarte(lp):
         kette += [r33[n], ptc[n], force_d[n]]
         if n % 2 == 0:
             kette.append(esd[n // 2])
-    rest = lp.packe(kette + rest, (0.6, 0.6, b - 0.6, din[1] - 0.2), rot=90, unten=True, hindernisse=sperre)
-    rest = lp.packe(rest + ruhe + sonst, (0.6, din[3] + 0.2, b - 0.6, h - 0.6), rot=90, unten=True, hindernisse=sperre)
+    # Mit Luft zwischen den Bauteilen, damit Vias und Leiterbahnen durchpassen: der Force-Pfad
+    # verteilt sich auf den Bereich hinter und vor der DIN-Leiste (dichter gepackt war er nicht routbar).
+    luft = 1.0
+    rest = lp.packe(kette + rest, (0.6, 0.6, b - 0.6, din[1] - 0.2), rot=90, unten=True, abstand=luft,
+                    hindernisse=sperre)
+    rest = lp.packe(rest + ruhe + sonst, (0.6, din[3] + 0.2, b - 0.6, h - 0.6), rot=90, unten=True,
+                    abstand=luft, hindernisse=sperre)
     if rest:
         raise RuntimeError(f'Kanalkarte: kein Platz für {len(rest)} Bauteile: {rest[:8]}')
     lp.text('KABELTESTER KANALKARTE 64 TP v1.0', b / 2, idc[1] - 1.5, 1.0, unten=True)
