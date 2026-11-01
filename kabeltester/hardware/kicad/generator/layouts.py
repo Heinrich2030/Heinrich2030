@@ -9,7 +9,7 @@ Mechanische Bezüge (Gehäuse gehaeuse.scad, x = Breite, y = Tiefe ab Vorderkant
 import re
 
 MECH = {
-    'kanalkarte': {'breite': 118.0, 'hoehe': 74.0, 'lagen': 4},
+    'kanalkarte': {'breite': 118.0, 'hoehe': 74.0, 'lagen': 6},
     'messkarte': {'breite': 120.0, 'hoehe': 90.0, 'lagen': 4},
     'adapter_rj45': {'breite': 100.0, 'hoehe': 60.0, 'lagen': 2},
 }

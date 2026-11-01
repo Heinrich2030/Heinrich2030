@@ -216,10 +216,12 @@ class Leiterplatte:
         return z
 
     def lagen_typen(self):
-        """4 Lagen: In1 = Masselage (Power, Autorouter lässt sie frei), In2 = Signallage."""
-        if self.board.GetCopperLayerCount() == 4:
+        """In1 = Masselage (Power, Autorouter lässt sie frei), alle weiteren Innenlagen = Signallagen."""
+        n = self.board.GetCopperLayerCount()
+        if n >= 4:
             self.board.SetLayerType(pcbnew.In1_Cu, pcbnew.LT_POWER)
-            self.board.SetLayerType(pcbnew.In2_Cu, pcbnew.LT_SIGNAL)
+            for i in range(2, n - 1):
+                self.board.SetLayerType(getattr(pcbnew, f'In{i}_Cu'), pcbnew.LT_SIGNAL)
 
     @staticmethod
     def flaeche_einstellen(z):
@@ -634,7 +636,7 @@ class Leiterplatte:
         fo = os.path.join(self.ordner, 'fertigung')
         gerb = os.path.join(fo, 'gerber')
         os.makedirs(gerb, exist_ok=True)
-        lagen = 'F.Cu,In1.Cu,In2.Cu,B.Cu' if self.lagen == 4 else 'F.Cu,B.Cu'
+        lagen = ','.join(['F.Cu'] + [f'In{i}.Cu' for i in range(1, self.lagen - 1)] + ['B.Cu'])
         lagen += ',F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts'
         subprocess.run(['kicad-cli', 'pcb', 'export', 'gerbers', '--layers', lagen, '--subtract-soldermask',
                         '-o', gerb + '/', self.pfad], check=True, capture_output=True)
