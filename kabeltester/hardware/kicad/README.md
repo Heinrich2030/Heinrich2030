@@ -24,7 +24,7 @@ Gehäuse und Gesamtbaugruppe als STEP liegen in [`../../gehaeuse/step/`](../../g
 |---|---|
 | Schaltpläne | fertig; KiCads eigene Netzliste stimmt mit dem Modell überein (automatisch geprüft) |
 | Bauteilplatzierung | fertig; keine Überlappungen, Befestigungslöcher passen zu den Gehäusedomen |
-| Masseflächen | GND (In1), 5VA (In2), GND auf Außenlagen |
+| Lagenaufbau | Messkarte 4 Lagen (In1 GND, In2 Signal), Kanalkarte 6 Lagen (In1 GND, In2–In4 Signal), Adapter 2 Lagen; GND-Flächen auf den Außenlagen, 5VA als 0,4-mm-Leiterbahn |
 | 3D-Kollisionsprüfung | Platinen, Display, Gehäuse und Boden überschneiden sich nicht |
 | **Leiterbahnen** | **offen** – Kanalkarte 944, Messkarte 294, Adapter 21 Verbindungen (siehe unten) |
 | Gerber | erzeugt, aber **erst nach dem Routen bestellbar** |
@@ -59,8 +59,9 @@ github.com/freerouting/freerouting nötig):
 FREEROUTING_JAR=/pfad/zu/freerouting-1.9.0.jar python3.12 generator/bauen.py --routen
 ```
 
-Die Kanalkarte ist sehr dicht (413 Bauteile, 4 Lagen). Rechne mit mehreren Durchläufen und etwas
-Handarbeit an den Multiplexer-Bussen.
+Die Kanalkarte ist sehr dicht (413 Bauteile). Mit 4 Lagen blieben nach dem Autorouter rund 290
+Verbindungen offen, deshalb hat sie 6 Lagen. Das Routing läuft in Runden (`generator/routen.py`),
+nach jeder Runde wird gespeichert.
 
 ## Neu erzeugen
 

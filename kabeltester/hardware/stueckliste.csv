@@ -27,7 +27,7 @@ Pos;Baugruppe;Menge;Bauteil;Hersteller-Nr.;Funktion;Preis ca. EUR/Stk;Bezug (Bei
 26;Verbindung;2;Flachbandkabel 34-polig + IDC-Buchsen;-;Busse + Steuerung Messkarte <-> Kanalkarten;1;Reichelt
 27;Adapter;1 je Adapter;Messerleiste DIN 41612 Bauform C, 96-polig, abgewinkelt;z. B. Harting DIN-Signal C096 M;Gegenstueck auf Adapterplatine;4;Reichelt
 28;Adapter;1 je Adapter;EEPROM 2 kBit I2C;Microchip 24AA02;Adapter-Kennung und Name;0.30;Reichelt
-29;Leiterplatten;1;Messkarte + 2 Kanalkarten, 4 Lagen;-;JLCPCB / Aisler / Multi-CB;30;-
+29;Leiterplatten;1;Messkarte (4 Lagen) + 2 Kanalkarten (6 Lagen);-;JLCPCB / Aisler / Multi-CB;60;-
 30;Gehaeuse;1;Pultgehaeuse 3D-Druck (PETG) nach gehaeuse/gehaeuse.scad, alternativ Hammond 1456-Serie;-;Tischgeraet;15;-
 31;Zubehoer;1;Kurzschlussadapter (alle 64 Kontakte auf Kupferschiene je Seite);-;Nullabgleich;5;-
 32;Messkarte;5;JST-PH-Stecker 2-4-polig (Display, LED, Taster, Fussschalter);JST B2B/B3B/B4B-PH-K;Bedienung;0.20;LCSC
