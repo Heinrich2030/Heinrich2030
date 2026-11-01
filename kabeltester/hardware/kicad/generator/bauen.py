@@ -83,6 +83,10 @@ def netzklassen(ordner, name):
         basis = dict(klassen[0]) if klassen else {}
         basis.update({'name': 'Leistung', 'track_width': 0.4, 'clearance': 0.2, 'via_diameter': 0.7, 'via_drill': 0.35})
         klassen.append(basis)
+    # Standardklasse wie in der Platine (Freerouting routet mit diesen Werten; JLCPCB kann 0,1 mm)
+    for k in klassen:
+        if k.get('name') == 'Default':
+            k.update({'clearance': 0.15, 'track_width': 0.2, 'via_diameter': 0.6, 'via_drill': 0.3})
     ns['netclass_patterns'] = [{'netclass': 'Leistung', 'pattern': n} for n in sorted(leiterplatte.LEISTUNG)]
     json.dump(pro, open(pfad, 'w'), indent=2)
 
