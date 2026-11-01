@@ -280,6 +280,60 @@ class Leiterplatte:
         self.board = pcbnew.LoadBoard(self.pfad)
         self.fps = {fp.GetReference(): fp for fp in self.board.GetFootprints()}
 
+    def nullbahnen_entfernen(self):
+        """Entfernt Leiterbahnstücke ohne Länge (Start = Ende) im Dateitext und lädt neu.
+        Solche Reste aus dem SES-Import bringen Freerouting beim Laden zum Stehen."""
+        from sexp import parse, dump, find
+        pcbnew.SaveBoard(self.pfad, self.board)
+        baum = parse(open(self.pfad).read())
+
+        def null(e):
+            if not (isinstance(e, list) and e and e[0] == 'segment'):
+                return False
+            a, b = find(e, 'start'), find(e, 'end')
+            return abs(float(a[1]) - float(b[1])) < 1e-4 and abs(float(a[2]) - float(b[2])) < 1e-4
+        neu = [e for e in baum if not null(e)]
+        if len(neu) == len(baum):
+            return 0
+        with open(self.pfad, 'w') as f:
+            f.write(dump(neu) + '\n')
+        self.board = pcbnew.LoadBoard(self.pfad)
+        self.fps = {fp.GetReference(): fp for fp in self.board.GetFootprints()}
+        return len(baum) - len(neu)
+
+    @staticmethod
+    def _freerouting(cmd, dsn, zeitlimit, ruhezeit=300):
+        """Startet Freerouting. Gibt True zurück, wenn es ohne Rechenzeit hängen blieb (dann beendet)."""
+        import re
+        import time
+
+        def cpu():
+            try:
+                pid = subprocess.run(['pgrep', '-f', '^java -jar.*' + re.escape(dsn)], capture_output=True,
+                                     text=True).stdout.split()[0]
+                f = open(f'/proc/{pid}/stat').read().rsplit(')', 1)[1].split()
+                return int(f[11]) + int(f[12])
+            except (IndexError, OSError):
+                return None
+        log = open(dsn.replace('.dsn', '.freerouting.log'), 'w')
+        proc = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT)
+        t0 = letzte_aenderung = time.time()
+        stand = None
+        while proc.poll() is None:
+            time.sleep(15)
+            c = cpu()
+            if c is not None and c != stand:
+                stand, letzte_aenderung = c, time.time()
+            if time.time() - t0 > zeitlimit:
+                subprocess.run(['pkill', '-f', dsn])
+                proc.wait()
+                return False
+            if time.time() - letzte_aenderung > ruhezeit:
+                subprocess.run(['pkill', '-f', dsn])
+                proc.wait()
+                return True
+        return False
+
     def neu_laden_und_fuellen(self):
         """Gespeicherte Platine neu laden und Flächen füllen (vermeidet veraltete Füllungen)."""
         self.board = pcbnew.LoadBoard(self.pfad)
@@ -290,6 +344,7 @@ class Leiterplatte:
         """Autorouting mit Freerouting. Gibt True zurück, wenn ein Ergebnis importiert wurde."""
         dsn = self.pfad.replace('.kicad_pcb', '.dsn')
         ses = self.pfad.replace('.kicad_pcb', '.ses')
+        self.nullbahnen_entfernen()
         self.fuellen()
         if not pcbnew.ExportSpecctraDSN(self.board, dsn):
             raise RuntimeError('DSN-Export fehlgeschlagen')
@@ -297,11 +352,11 @@ class Leiterplatte:
         # Optimierung mit mehr als einem Thread erzeugt laut Freerouting Abstandsfehler; 0 = aus.
         cmd = ['xvfb-run', '-a', 'java', '-jar', FREEROUTING, '-de', dsn, '-do', ses,
                '-mp', str(durchgaenge), '-mt', str(threads), '-dct', '0']
-        log = open(self.pfad.replace('.kicad_pcb', '.freerouting.log'), 'w')
-        try:
-            subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, timeout=zeitlimit)
-        except subprocess.TimeoutExpired:
-            subprocess.run(['pkill', '-f', dsn])
+        for versuch in range(2):
+            if not self._freerouting(cmd, dsn, zeitlimit):
+                break
+            # Freerouting blieb ohne Rechenzeit stehen (passiert gelegentlich beim Laden) -> neu starten
+            print(f'  Freerouting hing, Versuch {versuch + 2}', flush=True)
         ok = os.path.exists(ses)
         if ok:
             # Freerouting liefert alle Leiterbahnen (auch bereits vorhandene) -> vorher entfernen
@@ -336,6 +391,8 @@ class Leiterplatte:
                 breite = mm(float(pfad[2]) * einheit)
                 k = pfad[3:]
                 for i in range(0, len(k) - 2, 2):
+                    if k[i] == k[i + 2] and k[i + 1] == k[i + 3]:
+                        continue  # Stück ohne Länge
                     t = pcbnew.PCB_TRACK(self.board)
                     t.SetStart(pt(k[i], k[i + 1]))
                     t.SetEnd(pt(k[i + 2], k[i + 3]))
