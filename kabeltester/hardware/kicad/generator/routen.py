@@ -14,6 +14,8 @@ a.add_argument('--durchgaenge', type=int, default=30)
 a.add_argument('--threads', type=int, default=1)
 a.add_argument('--zeitlimit', type=int, default=5400)
 a.add_argument('--nur-nachbearbeiten', action='store_true', help='nicht routen, nur Masse anbinden + Fertigung')
+a.add_argument('--runden', type=int, default=3,
+               help='kurze Freerouting-Läufe nacheinander; nach jeder Runde wird gespeichert (übersteht Abbrüche)')
 arg = a.parse_args()
 
 p = {'kanalkarte': platinen.kanalkarte, 'messkarte': platinen.messkarte, 'adapter_rj45': platinen.adapter}[arg.name]()
@@ -35,15 +37,22 @@ for z in list(lp.board.Zones()):
     lp.flaeche_einstellen(z)
 vorher = lp.offene_verbindungen()
 t0 = time.time()
-ok = True if arg.nur_nachbearbeiten else lp.routen(arg.durchgaenge, arg.threads, arg.zeitlimit)
-# Nachrouten: Freerouting übernimmt das vorhandene Ergebnis und versucht die Reste
-for runde in range(2):
+ok = True
+# Runden: jeder Lauf übernimmt das gespeicherte Ergebnis des vorigen und routet weiter.
+# Nach jeder Runde wird die Platine gespeichert – ein Abbruch kostet höchstens eine Runde.
+ohne_fortschritt = 0
+for runde in range(0 if arg.nur_nachbearbeiten else arg.runden):
     offen = lp.offene_verbindungen()
-    print(f'  nach Runde {runde + 1}: {offen} offen', flush=True)
-    if arg.nur_nachbearbeiten or not ok or offen == 0 or time.time() - t0 > arg.zeitlimit:
+    if offen == 0 or time.time() - t0 > arg.zeitlimit:
         break
-    ok = lp.routen(max(5, arg.durchgaenge // 2), arg.threads, arg.zeitlimit) or ok
-    if lp.offene_verbindungen() >= offen:
+    r0 = time.time()
+    erfolg = lp.routen(arg.durchgaenge, arg.threads, arg.zeitlimit)
+    lp.speichern()
+    neu = lp.offene_verbindungen()
+    print(f'  Runde {runde + 1}: {offen} -> {neu} offen ({(time.time() - r0) / 60:.0f} min)', flush=True)
+    ok = ok and erfolg
+    ohne_fortschritt = ohne_fortschritt + 1 if neu >= offen else 0
+    if not erfolg or ohne_fortschritt >= 2:
         break
 vias = lp.naehen()
 vias += lp.inseln_naehen()
