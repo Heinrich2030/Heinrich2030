@@ -1,7 +1,7 @@
 (kicad_sch
   (version 20230121)
   (generator eeschema)
-  (uuid "5b3e3d5b-106b-43f4-96d0-ef2833aab07c")
+  (uuid "39ba1ace-b7dd-444d-9dfa-60f7ed1ea030")
   (paper "A2")
   (title_block
     (title "Kabeltester Kanalkarte (64 Testpunkte) – Block 3 (TP33-TP48)")
@@ -1072,7 +1072,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "a90bb179-6919-422d-9431-602a23eeea0b")
+    (uuid "4ecdf417-a744-4817-b724-46252f9b7d65")
     (property "Reference" "U11"
       (at 43.18 31.42 0)
       (effects
@@ -1106,64 +1106,64 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "9740ba83-ba4b-42de-a2e5-aa3536487359"))
+      (uuid "15213db1-a9e1-49fb-9481-25bc05f1d715"))
     (pin "10"
-      (uuid "d930ca39-eaa4-47eb-b66b-9c6fa215a03a"))
+      (uuid "78bb433a-6a26-42cf-ae0c-0d4659e36208"))
     (pin "11"
-      (uuid "2d65d031-545d-4cc9-898e-99256757aff7"))
+      (uuid "325b633a-e15f-4e00-a494-73277ba71d12"))
     (pin "12"
-      (uuid "0b388946-22e7-4b1f-89ef-2e9cfe345355"))
+      (uuid "7ca784d1-6e7a-4bab-ad79-33f112a211f3"))
     (pin "13"
-      (uuid "3d31a616-01db-4b05-af5e-83ee3f2b857f"))
+      (uuid "e52e9184-fa18-49ad-be81-f1d9d2c4c6e1"))
     (pin "14"
-      (uuid "3314e05d-7cd7-4f1c-a31c-2329f35fbe77"))
+      (uuid "2ac318d6-773d-46fe-8532-e01d06d845e8"))
     (pin "15"
-      (uuid "99000c5c-c2b2-4e35-be18-26a046b382d3"))
+      (uuid "fb98e6e1-49cb-4938-a46d-91b5ea830f85"))
     (pin "16"
-      (uuid "0ad65194-37d8-45eb-ab98-a2a092b75557"))
+      (uuid "e6160834-c85e-432a-9542-e3ebefc3f9a9"))
     (pin "17"
-      (uuid "a28f3d24-f97d-44c6-919e-317b0aca9945"))
+      (uuid "eea4b159-7cbd-4636-9dff-aace6a9b6237"))
     (pin "18"
-      (uuid "adbd8747-4158-45a2-a50b-bda5ddf6edb6"))
+      (uuid "31143955-14ef-4779-aec9-bd4ab7dff3f1"))
     (pin "19"
-      (uuid "61506142-307e-403d-9c64-a409d699b551"))
+      (uuid "cfe6575f-bda6-4eb2-8cd7-6f3c9b9056b8"))
     (pin "2"
-      (uuid "180fb05b-5bc2-44fc-a9ef-bd4457516165"))
+      (uuid "bf61bd2c-a3f2-4b12-b62e-b5e837cc5334"))
     (pin "20"
-      (uuid "a6f1870d-6446-4cc8-bf71-36f489d3301e"))
+      (uuid "14a8d32f-ce17-4e2d-b2f7-a9d5b4ba367f"))
     (pin "21"
-      (uuid "23bf7d49-9c01-409b-85f2-8e0d398ee434"))
+      (uuid "ab05c8fd-1622-414a-a243-c0bb4fac55fc"))
     (pin "22"
-      (uuid "e5b88cb9-b45f-4e81-a3f3-168323fb7084"))
+      (uuid "fb791785-032d-4c87-9f82-d206ba4210ad"))
     (pin "23"
-      (uuid "50ba6b02-e01b-4ee1-929a-4f96e8d2694d"))
+      (uuid "9517d0a3-cbf9-4346-8271-0e5f5c3d88fd"))
     (pin "24"
-      (uuid "bcf2bcdf-2620-4b69-90ee-824ef1cd5fee"))
+      (uuid "5cbd79ce-49e1-4495-94b7-e35fef761b22"))
     (pin "25"
-      (uuid "d1c70cc4-9f72-4377-b659-ac15999788e8"))
+      (uuid "4013e448-9885-4d4d-a7bb-e611d70e997d"))
     (pin "26"
-      (uuid "b0e9a0d7-1d51-4ef1-9acd-3d92353a361e"))
+      (uuid "8ae87abc-973d-4c2d-9480-5b831fcb2df6"))
     (pin "27"
-      (uuid "fc5b8e67-125e-4529-a685-7983794f1c35"))
+      (uuid "38666bd1-1169-4a65-ba3a-b937dba6e160"))
     (pin "28"
-      (uuid "14277bf5-606e-4df2-97cf-a572e36af2ff"))
+      (uuid "e3a3aeba-8453-4224-9e62-2857b826cbec"))
     (pin "3"
-      (uuid "15abab6c-1dbe-44d5-a8cd-2a7b4415cc1d"))
+      (uuid "c6c37112-38c1-4e47-a0a9-3cdb6c82132a"))
     (pin "4"
-      (uuid "65468a5d-b218-4ff2-a6f9-83ef2db5100e"))
+      (uuid "fad42592-645f-4017-8d9c-dfc4b05833b6"))
     (pin "5"
-      (uuid "48fdad4e-bbf7-4e3f-92c8-4b1aa7f8309a"))
+      (uuid "9f2f6ed6-3549-4168-9b66-1918292254ed"))
     (pin "6"
-      (uuid "a0e2ad52-7de6-49a7-b9c3-9df752b5dfe1"))
+      (uuid "5356b801-0227-4747-b931-dcb61ba6cf2a"))
     (pin "7"
-      (uuid "ccd451f5-8cc6-4108-8124-649c38685bbf"))
+      (uuid "b6d0df84-c17a-4522-9c81-2f1cad0a4446"))
     (pin "8"
-      (uuid "d2696bd4-e51e-471c-81df-998fac7ed6f9"))
+      (uuid "06a18dc8-1e50-48e5-ae4a-fead44953750"))
     (pin "9"
-      (uuid "80784ba1-7e10-494a-bcb1-5137dde22dbb"))
+      (uuid "5d486a32-674f-4107-9b95-8d1d1ccb78de"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "U11")
           (unit 1)))))
   (global_label "5VA"
@@ -1174,7 +1174,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "b34fd9de-db72-4cee-a057-dcfb0a78d186")
+    (uuid "d4171008-cec1-41e5-991d-fb1759cd9d20")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 35.56 0)
       (effects
@@ -1188,7 +1188,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "34b2dadd-9560-4199-98eb-0fb60ac145ef")
+    (uuid "1e9564de-7509-4b91-ab42-9f67493caa71")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 38.1 0)
       (effects
@@ -1202,7 +1202,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "6f9ded8e-60e5-4a0f-955f-29f9050e930b")
+    (uuid "5cc56b2a-1825-4cfc-8c49-e0375bbff6ce")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 40.64 0)
       (effects
@@ -1216,7 +1216,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "509a8e39-7971-428e-bde8-0b424e07d9bb")
+    (uuid "99fa574c-dc52-473c-9bcf-6b6c7f113f90")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 45.72 0)
       (effects
@@ -1230,7 +1230,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "bbf8551e-a881-49b4-9a6f-536426a19b29")
+    (uuid "f22d5899-6c02-4d04-bcea-82bd75f36c67")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 48.26 0)
       (effects
@@ -1244,7 +1244,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "052d326f-e5eb-4d03-b7ea-abb3cc160fd3")
+    (uuid "5d74dbb7-0086-41c1-b91f-fa486dbff827")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 50.8 0)
       (effects
@@ -1258,7 +1258,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "9e35be5f-84bc-482f-bd04-783b5dc6d9ef")
+    (uuid "e8756b4f-9e1b-4cc3-9a97-be312a9c64e9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 53.34 0)
       (effects
@@ -1272,7 +1272,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "9e349679-a322-4692-9569-e03e71795012")
+    (uuid "345e79ee-535c-4a3f-b58b-49afacd1be7e")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 55.88 0)
       (effects
@@ -1286,7 +1286,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "ec36d1e6-46d6-439d-aee6-23185b2fc35f")
+    (uuid "d1965827-6857-4975-8e85-e4d557a365d8")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 34.29 60.96 0)
       (effects
@@ -1294,13 +1294,13 @@
           (size 1.27 1.27)) hide)))
   (no_connect
     (at 34.29 66.04)
-    (uuid "6bc228da-8a5e-4241-8bca-53e229575806"))
+    (uuid "9decbeaf-1aa1-434a-b4f9-2dc0df50902a"))
   (no_connect
     (at 34.29 68.58)
-    (uuid "a6c5a2ab-cff9-4084-a57f-ca032263bbf7"))
+    (uuid "96d60198-edd6-4249-b45c-36ac37c06004"))
   (no_connect
     (at 34.29 71.12)
-    (uuid "eaa51f41-ccc7-4ede-b188-f828765137f0"))
+    (uuid "e112037e-4750-43be-ac68-37aa7bd382bd"))
   (label "F33"
     (at 52.07 35.56 0)
     (fields_autoplaced)
@@ -1308,7 +1308,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "aab9f72e-cc6c-4cd4-a85a-98a4863cd269"))
+    (uuid "35a52892-2338-40dd-90ab-8743b5aea9cc"))
   (label "F34"
     (at 52.07 38.1 0)
     (fields_autoplaced)
@@ -1316,7 +1316,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "4ab515d7-b3e6-4738-825a-bd6767f34ab3"))
+    (uuid "56b19074-a459-4f2c-84f7-35ce968dbf01"))
   (label "F35"
     (at 52.07 40.64 0)
     (fields_autoplaced)
@@ -1324,7 +1324,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "3a33a914-2714-4bd4-b505-89f1485afa55"))
+    (uuid "cb64e2d5-5356-43da-91fa-0cb5ff4c0da3"))
   (label "F36"
     (at 52.07 43.18 0)
     (fields_autoplaced)
@@ -1332,7 +1332,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "9445c6e6-5d44-4ae4-9077-847df576f824"))
+    (uuid "60fa2eec-610b-4881-8e0e-11e1dfc7c5c1"))
   (label "F37"
     (at 52.07 45.72 0)
     (fields_autoplaced)
@@ -1340,7 +1340,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "54b9411c-b197-4e10-93f0-afcd63108f1b"))
+    (uuid "33430965-9c2c-4dc0-8681-243c79473218"))
   (label "F38"
     (at 52.07 48.26 0)
     (fields_autoplaced)
@@ -1348,7 +1348,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "d7ae4518-38cf-404f-8f2a-935ea8f19ee9"))
+    (uuid "6382feef-025b-4468-955b-4ec6f6db2087"))
   (label "F39"
     (at 52.07 50.8 0)
     (fields_autoplaced)
@@ -1356,7 +1356,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "0de2b4f0-2850-4f52-9d6e-ef441769a9af"))
+    (uuid "28bea7f5-d74a-40e4-ac89-8eac1953b920"))
   (label "F40"
     (at 52.07 53.34 0)
     (fields_autoplaced)
@@ -1364,7 +1364,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "451e354f-b7fe-4f3b-96a5-4e57657b21c9"))
+    (uuid "4da8a51d-830a-4127-a7ff-8d5b2f27ccc3"))
   (label "F41"
     (at 52.07 55.88 0)
     (fields_autoplaced)
@@ -1372,7 +1372,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "afb52229-8494-46b9-9dec-04b9bdd46577"))
+    (uuid "c632f41f-d7b1-48a8-9a88-e394a041c3b2"))
   (label "F42"
     (at 52.07 58.42 0)
     (fields_autoplaced)
@@ -1380,7 +1380,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "4c558ce9-299c-473a-b77c-7413019580f1"))
+    (uuid "adebeafa-bcf4-41a0-9ca9-3a9042fa6a67"))
   (label "F43"
     (at 52.07 60.96 0)
     (fields_autoplaced)
@@ -1388,7 +1388,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "7bf34c19-4569-425e-8481-1e3f4bc10258"))
+    (uuid "8676cace-3e8c-4c68-a79a-053a87ceb5fa"))
   (label "F44"
     (at 52.07 63.5 0)
     (fields_autoplaced)
@@ -1396,7 +1396,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "93d7df42-d8aa-47c9-b4b5-37fdc1da4b1e"))
+    (uuid "0515b664-7b9d-4f78-843b-055ba519a5aa"))
   (label "F45"
     (at 52.07 66.04 0)
     (fields_autoplaced)
@@ -1404,7 +1404,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "ac5d63a4-3009-44d9-a60e-6440f5064263"))
+    (uuid "299be9f8-ba85-458b-9c01-e5e8200d3083"))
   (label "F46"
     (at 52.07 68.58 0)
     (fields_autoplaced)
@@ -1412,7 +1412,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "2d752214-8da7-4b65-97a9-77e3ad7fce7b"))
+    (uuid "d82e755c-47df-4e19-a172-8c08c15df64b"))
   (label "F47"
     (at 52.07 71.12 0)
     (fields_autoplaced)
@@ -1420,7 +1420,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "2641fb9f-4dc8-4d0a-9826-60bcb83d3f3b"))
+    (uuid "b53bb63a-cd93-4b52-adfd-bf0fca5baf41"))
   (label "F48"
     (at 52.07 73.66 0)
     (fields_autoplaced)
@@ -1428,7 +1428,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "b53f518d-a334-4ef2-b847-1f3b181e6c64"))
+    (uuid "2c3a921d-9513-40f0-97e0-b6837d97e9a0"))
   (symbol
     (lib_id "Device:C")
     (at 71.12 43.18 0)
@@ -1436,7 +1436,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "69acd8d7-2d3d-4c38-a15e-b69569d3a445")
+    (uuid "d5f78ab3-7277-4aa6-bc9b-287138186f5c")
     (property "Reference" "C13"
       (at 71.12 37.77 0)
       (effects
@@ -1465,12 +1465,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "5a307b8f-00fa-4502-8516-6c333e236b89"))
+      (uuid "03097342-98a0-4b78-b95f-2588aaf919d7"))
     (pin "2"
-      (uuid "d177cbbf-30be-4bda-a5e0-dc193b28d677"))
+      (uuid "8c68c1d9-acbd-424f-aa29-cd5a97b049c4"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "C13")
           (unit 1)))))
   (global_label "5VA"
@@ -1481,7 +1481,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "3fab7e19-be47-4d12-9fb1-4e8436045459")
+    (uuid "41923a79-4112-4b45-a761-38ae96cd8599")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 71.12 39.37 0)
       (effects
@@ -1495,7 +1495,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "975836f1-427e-4b9e-b026-44018b1e67dc")
+    (uuid "23492e05-9e11-4595-ac26-a3a67751d9c5")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 71.12 46.99 0)
       (effects
@@ -1508,7 +1508,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "aa28b437-19f8-4550-b4f1-7093e5640b02")
+    (uuid "2a4f3ea2-967e-4145-abbc-358492f6d508")
     (property "Reference" "U12"
       (at 106.68 36.5 0)
       (effects
@@ -1532,56 +1532,56 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "c33aefac-9985-4ce3-bf22-b1b535a72f91"))
+      (uuid "4e9a9ed2-d52f-4fd2-980c-44d53b4efbf6"))
     (pin "10"
-      (uuid "fd0d40ef-e145-49f4-a7cf-f0e9e42de2d4"))
+      (uuid "9a043a46-f971-436f-915c-83a056e59c23"))
     (pin "11"
-      (uuid "0ab2df54-fa5c-46d9-a635-3ae41b9d9bbd"))
+      (uuid "87dd4fa5-f825-47be-9bb9-e9b4f40da90a"))
     (pin "12"
-      (uuid "2d7a20cd-1afd-4fac-a77f-98321575718b"))
+      (uuid "40b5616a-22fa-47c1-99c1-7a5f27c100a5"))
     (pin "13"
-      (uuid "623da86c-8158-4b57-b31c-c3f242e99081"))
+      (uuid "0b23cc8d-6f25-491c-b127-c304c075349d"))
     (pin "14"
-      (uuid "51cfdc41-ba52-4cdc-a752-71333ae126a3"))
+      (uuid "3262366f-c64d-44cb-abb7-b623fad349b1"))
     (pin "15"
-      (uuid "d4cdb362-2a37-4b9b-ad87-3196619e8e4d"))
+      (uuid "1802d459-a88b-4ff7-b437-7a05048b5f02"))
     (pin "16"
-      (uuid "1e92f76b-55be-4d5f-bfd5-4de4c68f8dce"))
+      (uuid "3cd71b05-0f58-40ce-a301-9881c06a6116"))
     (pin "17"
-      (uuid "aa9cb031-2af4-46a0-b676-9853f98a5173"))
+      (uuid "055a4a98-37d1-461b-8afd-61c5ab20cbe7"))
     (pin "18"
-      (uuid "227198da-5342-4b5b-8d33-9d8812bcec96"))
+      (uuid "80ac992c-8e8f-4bc6-9ed3-1a59c8a201ae"))
     (pin "19"
-      (uuid "cb422545-8516-426c-9aa9-be90cb4471df"))
+      (uuid "39e20262-fc2d-4f7d-9fb6-dcd425252620"))
     (pin "2"
-      (uuid "840add77-1278-483a-887d-d74ae29609bd"))
+      (uuid "160354d3-9a66-4e8a-b677-d4b2e6ad4902"))
     (pin "20"
-      (uuid "d0077b3d-eb80-4f2d-aeb4-547b59ac86f6"))
+      (uuid "ca5a3353-8507-42ee-a269-981f3b212488"))
     (pin "21"
-      (uuid "23d1c937-643a-46e6-895a-2804b7803b7d"))
+      (uuid "c7ba0c6d-62ed-4d24-b105-32c5202c9df6"))
     (pin "22"
-      (uuid "7fa2b7a9-7fd3-41d1-be1a-ac94af93453c"))
+      (uuid "d08aa79c-b191-44ea-8fb4-d167938de858"))
     (pin "23"
-      (uuid "373a173b-4b33-498e-8b96-ac2c58dbf458"))
+      (uuid "c36db519-70a3-454f-97b9-2397fb6a958d"))
     (pin "24"
-      (uuid "bfbca3f5-42b7-4d86-9e8f-20158edcc3fe"))
+      (uuid "7da60778-dee9-40c1-a57a-d08ce6981852"))
     (pin "3"
-      (uuid "46086046-8056-4186-838d-84ba73394ced"))
+      (uuid "143ce51c-5f6e-4950-8519-0aadfa03437f"))
     (pin "4"
-      (uuid "f1834371-2f9f-41c9-a0ef-9e78e4c5cbea"))
+      (uuid "21bebc4e-dfa1-4673-9608-389d18a9796e"))
     (pin "5"
-      (uuid "4f807f22-f64c-406d-b7a0-a36f19bb9ccc"))
+      (uuid "e9c0c886-df0c-4c0e-a0d1-8f490f2d0c58"))
     (pin "6"
-      (uuid "1306512c-1b0f-414f-bc09-c3288c5af4d3"))
+      (uuid "18ab081f-1a52-434a-9a05-28ad2900b696"))
     (pin "7"
-      (uuid "bd4b0414-8dca-471e-b618-66e3a7f8e8c4"))
+      (uuid "77d8e516-8f74-4a81-bb18-81e46dd4e798"))
     (pin "8"
-      (uuid "a6a2b7c7-5f06-4a06-a855-80c7e4f89b0f"))
+      (uuid "496a8f30-37b7-4a0b-8fc9-86d29dbfe8f9"))
     (pin "9"
-      (uuid "cfa153d1-0d9f-45f1-823e-1b86e83849f1"))
+      (uuid "fce07cf4-50cd-4c21-9056-990c8e7122a4"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "U12")
           (unit 1)))))
   (global_label "HI_S"
@@ -1592,7 +1592,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "f29d77a2-94b0-4c3f-a04d-79b597b60903")
+    (uuid "24dd3691-6e64-49fd-a999-d0aae1963b1d")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 50.8 0)
       (effects
@@ -1606,7 +1606,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "ec672dfd-fef3-491f-980b-8d723db1081d")
+    (uuid "460b38ab-feae-44c5-b015-0e920522d858")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 60.96 0)
       (effects
@@ -1620,7 +1620,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "fc032052-9c3f-4034-8459-bd3d69b75e32")
+    (uuid "e94bc6e1-0176-4687-9f6d-ef04ee519aad")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 63.5 0)
       (effects
@@ -1634,7 +1634,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "0923f953-1c65-4ac9-9e8b-e235b1310e34")
+    (uuid "38a7e9cd-1880-4808-9aea-9ba91a24498b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 106.68 91.44 0)
       (effects
@@ -1648,7 +1648,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "73af97a1-6de6-49cb-ac3c-9accd7c7d846")
+    (uuid "eff8f3ef-3303-493d-a2ee-73943bb086f4")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 68.58 0)
       (effects
@@ -1662,7 +1662,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "75b8f9cb-4a4f-49e8-b474-160bb392fb1a")
+    (uuid "c4685e2b-1437-470d-aafa-4cfa9ce1b46b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 66.04 0)
       (effects
@@ -1676,7 +1676,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "64110575-498e-4a73-a9ea-d1d91e7c0bec")
+    (uuid "43e11cd7-dea2-411f-805e-512560c7d7f9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 78.74 0)
       (effects
@@ -1689,7 +1689,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "00914ce3-c9a5-44ec-8e76-6dc6af8b42ec"))
+    (uuid "4cea1e8f-0cec-443e-b600-56aaa169d90c"))
   (label "S47"
     (at 119.38 81.28 0)
     (fields_autoplaced)
@@ -1697,7 +1697,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "7dea9601-0683-44ba-8b9b-50bbb397f32b"))
+    (uuid "f82a9f96-1d9c-42af-b55e-bb9f9aaf76a6"))
   (label "S46"
     (at 119.38 78.74 0)
     (fields_autoplaced)
@@ -1705,7 +1705,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "1137b4e8-a5ee-4612-854f-24c1c572f8e7"))
+    (uuid "42243300-78f5-4ebd-8763-d3857abcafb1"))
   (label "S45"
     (at 119.38 76.2 0)
     (fields_autoplaced)
@@ -1713,7 +1713,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "1266eb42-6360-41ce-9d9b-eb33383bf115"))
+    (uuid "a46a686c-9177-4ea1-9b02-056c9606514e"))
   (label "S40"
     (at 119.38 63.5 0)
     (fields_autoplaced)
@@ -1721,7 +1721,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "aececec9-9537-44ae-ad06-c02d04640f15"))
+    (uuid "d2a373a1-ea93-4ac3-abe5-db8b809279b1"))
   (label "S44"
     (at 119.38 73.66 0)
     (fields_autoplaced)
@@ -1729,7 +1729,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "8bde5842-1ecf-4d57-8372-a8b8b2a9904c"))
+    (uuid "f8dc0d97-5b58-45f2-a42e-abcd22a49361"))
   (label "S43"
     (at 119.38 71.12 0)
     (fields_autoplaced)
@@ -1737,7 +1737,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "794b9257-796e-450e-888c-a8a5eaf69298"))
+    (uuid "dcc377b6-e709-4012-b52c-2759cf12b617"))
   (label "S42"
     (at 119.38 68.58 0)
     (fields_autoplaced)
@@ -1745,7 +1745,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "11b61b19-e38c-4e89-a145-ffc7fae52557"))
+    (uuid "29ca0999-721a-4e8b-975d-6a57e975fe18"))
   (label "S41"
     (at 119.38 66.04 0)
     (fields_autoplaced)
@@ -1753,7 +1753,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "8c8dcf8e-1786-44d0-89d9-082badd91e19"))
+    (uuid "b77186e7-4d69-458a-82fd-2e172ba992dc"))
   (global_label "5VA"
     (shape bidirectional)
     (at 106.68 38.1 90)
@@ -1762,7 +1762,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "d269773e-640d-4c53-8e05-e2466bde0b1d")
+    (uuid "9b0af093-8a7a-44ed-9499-05e1b0cb4637")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 106.68 38.1 0)
       (effects
@@ -1775,7 +1775,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "3cdf0cca-072a-4648-ad40-bcd44f4abc64"))
+    (uuid "eaa42b8e-79c4-44dd-84ff-aad98a188294"))
   (label "S38"
     (at 119.38 58.42 0)
     (fields_autoplaced)
@@ -1783,7 +1783,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "a9dffa1e-54c1-4b0f-aaeb-4482394af257"))
+    (uuid "f4120c9d-8a38-4462-9277-2161735ca988"))
   (label "S37"
     (at 119.38 55.88 0)
     (fields_autoplaced)
@@ -1791,7 +1791,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "f7fa6bf7-4ba2-445b-ac61-8c608401b61c"))
+    (uuid "2cc23477-6579-4b41-aae4-e55fae8f3f8a"))
   (label "S36"
     (at 119.38 53.34 0)
     (fields_autoplaced)
@@ -1799,7 +1799,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "db98fcb6-4545-46b7-a69d-1fdbde3011d3"))
+    (uuid "1a4cc807-bb6f-4fd7-ab4a-c3ea2c09cc5a"))
   (label "S35"
     (at 119.38 50.8 0)
     (fields_autoplaced)
@@ -1807,7 +1807,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "5d251901-fede-4ce0-ac4e-edf54fcdd631"))
+    (uuid "879963ed-db8b-4e4d-8e1b-733b430c6021"))
   (label "S34"
     (at 119.38 48.26 0)
     (fields_autoplaced)
@@ -1815,7 +1815,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "81ccc7a4-6695-4f16-b6dc-d68886b591e6"))
+    (uuid "a11d14b3-5a47-46be-b813-fa178d3c9eb8"))
   (label "S33"
     (at 119.38 45.72 0)
     (fields_autoplaced)
@@ -1823,7 +1823,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "9bfc6594-a06e-431d-83ca-9924c52cd77c"))
+    (uuid "031954b4-6d0c-4ff5-a02e-f7f945c59192"))
   (symbol
     (lib_id "Device:C")
     (at 134.62 43.18 0)
@@ -1831,7 +1831,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "47810f82-bf4b-4f48-ba97-33168905a439")
+    (uuid "265058b6-148f-45cc-9b4e-fc0245c1e1b9")
     (property "Reference" "C14"
       (at 134.62 37.77 0)
       (effects
@@ -1860,12 +1860,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "f896bdff-ede4-456d-857b-163091ff922c"))
+      (uuid "fe133bf3-d44c-45f0-b5cf-3018b791a9f8"))
     (pin "2"
-      (uuid "a9116185-2c1f-4a8a-b1c8-ec1d8ba3f903"))
+      (uuid "486f0754-e5b3-4cc2-8618-a9f6d103d32a"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "C14")
           (unit 1)))))
   (global_label "5VA"
@@ -1876,7 +1876,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "b49e50d7-e4f1-4cc9-a77a-d58fb9255d89")
+    (uuid "85f5157c-dd0b-43b3-acc6-ffc6fb2191eb")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 134.62 39.37 0)
       (effects
@@ -1890,7 +1890,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "fc7c1a98-35b5-4817-aedd-c882d5fff7de")
+    (uuid "695a612a-e416-4049-af31-9d35c575511d")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 134.62 46.99 0)
       (effects
@@ -1903,7 +1903,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "95eab797-174e-4e84-a9b1-b5fc7b7541ac")
+    (uuid "06672630-effd-4a8e-9e39-1f8370f4763c")
     (property "Reference" "U13"
       (at 165.1 31.42 0)
       (effects
@@ -1937,64 +1937,64 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "c5c34e04-23a1-4a3f-8b5e-a1d1c62a2f92"))
+      (uuid "149eb279-0702-4ec9-980b-4be7e8fc2663"))
     (pin "10"
-      (uuid "ef553084-5866-4425-9d28-727b86b2504e"))
+      (uuid "9cfcacaa-a9a4-4365-965c-7e14ea036941"))
     (pin "11"
-      (uuid "2005b46d-fcd2-4ebe-b2a1-74fb15b199ad"))
+      (uuid "7b98f3ad-e3ce-4173-96c8-e740ec800d07"))
     (pin "12"
-      (uuid "1bf94a9f-5085-444b-af23-4c1ca239fadd"))
+      (uuid "ccc178dc-1f9b-46f2-b52e-97ecba404673"))
     (pin "13"
-      (uuid "01f736fe-4a6d-4893-92e0-cfded62ee3fb"))
+      (uuid "0e35272e-918d-4f51-be38-bff08784c41d"))
     (pin "14"
-      (uuid "db742332-5b99-4dd0-85a4-d782831974af"))
+      (uuid "5211661d-c184-4169-9c18-a6631b4f0641"))
     (pin "15"
-      (uuid "19b14c8c-b53b-416e-b6d4-f58d0072f8a6"))
+      (uuid "1b661486-2fbb-45c4-a740-140085795afe"))
     (pin "16"
-      (uuid "f477a1e4-830d-4ad7-ad0b-e72d24c21c73"))
+      (uuid "8e500828-bf9a-472e-9d9a-9dce24f18abf"))
     (pin "17"
-      (uuid "b67bf603-719b-4dd0-8cb2-88361bcb57c9"))
+      (uuid "0e24eab0-296b-4206-bac6-abd2617f66ae"))
     (pin "18"
-      (uuid "fc6ee9a5-7b21-4115-8c8f-34c83cc6779d"))
+      (uuid "1b220182-2927-4436-b995-3a8134873a71"))
     (pin "19"
-      (uuid "e42f1691-a644-40fe-aa87-a6100536ebd1"))
+      (uuid "42225fc6-3e51-453b-8bda-8e7a1b2f9d41"))
     (pin "2"
-      (uuid "5adcbe21-3bff-45b7-9fe2-2e6e8a63dd39"))
+      (uuid "ea9ec8b7-9c51-4925-a73e-41dc315c5641"))
     (pin "20"
-      (uuid "197e066d-29a2-426a-8865-ff31ccda626e"))
+      (uuid "c17fd1c1-0fff-46eb-a490-04e869a063cf"))
     (pin "21"
-      (uuid "8b7c4306-d603-42a7-9a6d-e440d7749173"))
+      (uuid "c157c030-e8e1-4b91-9e10-fc12b0c5a966"))
     (pin "22"
-      (uuid "165a8931-cc5c-48d0-b269-9f0c98775117"))
+      (uuid "035f7eab-86e7-4af7-b194-fcce47172b46"))
     (pin "23"
-      (uuid "4d7b878d-25d3-4960-8769-43cf80f8b8c3"))
+      (uuid "c6685bfe-1b4f-4401-92b4-71b5bf9cfd1f"))
     (pin "24"
-      (uuid "304078f8-5846-4ac8-912e-feea57a03093"))
+      (uuid "3ed32a88-4124-4ecb-b48b-5fa5c90ff796"))
     (pin "25"
-      (uuid "12de67a1-092f-4b31-8dd4-9ca1e98e51da"))
+      (uuid "b7d1ddb9-ddf8-4f8a-ad3f-6251ec79b763"))
     (pin "26"
-      (uuid "9d95a64b-50f3-46ae-9cfb-ef3af45e55a5"))
+      (uuid "2c51d49f-a218-4352-84b9-a404088edf94"))
     (pin "27"
-      (uuid "5fd6cbd4-7c19-4fd9-a5c8-e3dc120d971f"))
+      (uuid "d86a2e21-4904-4a3a-be11-45022dc0cabe"))
     (pin "28"
-      (uuid "0c72acf4-47b9-47a6-9dfe-116aff8997b2"))
+      (uuid "e19914dd-b83a-43fa-8d5c-61c255443a4a"))
     (pin "3"
-      (uuid "d17dc2fb-f23f-4c2a-9900-e03755512025"))
+      (uuid "ee7adbc7-3823-48df-8b6a-de073d99805c"))
     (pin "4"
-      (uuid "e6768c18-12e2-43bc-8809-56b23291c740"))
+      (uuid "71855e00-4380-4b87-8b2a-2c4e66bf9818"))
     (pin "5"
-      (uuid "e491732c-89bf-4971-8ff0-ac3393339615"))
+      (uuid "54bd4a35-08c9-486e-9f07-f592d7c0e505"))
     (pin "6"
-      (uuid "bab127b2-e726-4573-8523-c98259e8673a"))
+      (uuid "524d677b-c4eb-41ab-bd75-8c74a88b0bd8"))
     (pin "7"
-      (uuid "529dcf52-dd12-4828-9ab0-653bf47e08a1"))
+      (uuid "a63048a8-1dea-4874-86bd-87e931ad5302"))
     (pin "8"
-      (uuid "1ebdb941-b4f8-4356-8cb0-434b81d1e4c2"))
+      (uuid "7fd38b30-d5df-4b9b-a1d7-079005356eb8"))
     (pin "9"
-      (uuid "19c6b01c-8966-4b5a-a508-3ad563f75962"))
+      (uuid "73442998-f98f-4b57-afc7-092a9d548fdf"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "U13")
           (unit 1)))))
   (global_label "5VA"
@@ -2005,7 +2005,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "f70f91bf-7217-48f7-83e1-9167c923c783")
+    (uuid "3b48ac5b-6e7f-4784-b00a-2b4d1583a512")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 35.56 0)
       (effects
@@ -2019,7 +2019,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "97dd4967-b141-47fb-8bff-007326bdcaab")
+    (uuid "efa30140-296a-4ecf-ad46-1a29f0337969")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 38.1 0)
       (effects
@@ -2033,7 +2033,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "7c5d348d-18cf-4e00-a8cd-4be0a219f715")
+    (uuid "fdf409c9-25e1-4f28-9fcb-ea74f4947d06")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 40.64 0)
       (effects
@@ -2047,7 +2047,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "8b0dac2b-de68-492c-a80b-ffbd7f7768dd")
+    (uuid "714a4e5b-3179-4746-818f-78657b8380d7")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 45.72 0)
       (effects
@@ -2061,7 +2061,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "86bcec8b-7f57-4190-be27-02c15d34b19c")
+    (uuid "eb6f88da-3e33-458f-ac60-8e49110228d6")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 48.26 0)
       (effects
@@ -2075,7 +2075,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a81a6329-f2aa-4765-98ef-cd8eb1f33342")
+    (uuid "3db37978-f87b-4ff5-b83a-c29173bb7309")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 50.8 0)
       (effects
@@ -2089,7 +2089,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "3da2e926-12d0-49f5-8ac4-77bac2bd13b2")
+    (uuid "bd0f5820-13fd-448e-9ece-9d441b4ae95b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 53.34 0)
       (effects
@@ -2103,7 +2103,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "78c55d0e-cd24-45d3-8fb0-102331dfe0f4")
+    (uuid "18042e63-c3e3-44d9-9fcc-56f210959a42")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 55.88 0)
       (effects
@@ -2117,7 +2117,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "2e4b6d6d-7f8c-475f-aa3d-90604ac11271")
+    (uuid "86073a7a-cb28-452a-ae4f-068dd23617ad")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 60.96 0)
       (effects
@@ -2125,13 +2125,13 @@
           (size 1.27 1.27)) hide)))
   (no_connect
     (at 156.21 66.04)
-    (uuid "b8b39329-cc9d-4d63-ad52-a3de63c40b1b"))
+    (uuid "b6cd1837-6768-4587-be36-b1ff84a7ead8"))
   (no_connect
     (at 156.21 68.58)
-    (uuid "dc16b925-fa43-4570-8765-b61cc2d20a15"))
+    (uuid "0787ecfb-51d4-444a-b63f-fb170161372d"))
   (no_connect
     (at 156.21 71.12)
-    (uuid "c6308c80-95d9-4c1b-8b08-8f5cda7b6ad7"))
+    (uuid "29968627-61dd-478c-be5b-05dbc81edc2a"))
   (label "F33"
     (at 173.99 35.56 0)
     (fields_autoplaced)
@@ -2139,7 +2139,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "0567c287-96c6-4763-87f2-244eb66b47b1"))
+    (uuid "de5e4e07-4fcd-4bb3-bea6-312a2bebe427"))
   (label "F34"
     (at 173.99 38.1 0)
     (fields_autoplaced)
@@ -2147,7 +2147,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "1d5d39af-83be-4d0e-a992-465d21fd4504"))
+    (uuid "91b0b857-dc80-4eb1-a769-63b80828572b"))
   (label "F35"
     (at 173.99 40.64 0)
     (fields_autoplaced)
@@ -2155,7 +2155,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "94141018-a9dc-42ac-aa0e-853f31022ac0"))
+    (uuid "6e5ec929-c82c-4cfc-9bd2-03a5144183b6"))
   (label "F36"
     (at 173.99 43.18 0)
     (fields_autoplaced)
@@ -2163,7 +2163,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "a72a9288-cd0a-4efa-bfc9-1881ef487733"))
+    (uuid "431e67a3-4a7f-4a8f-8900-0fb42ded201f"))
   (label "F37"
     (at 173.99 45.72 0)
     (fields_autoplaced)
@@ -2171,7 +2171,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "25a39c3d-e250-49cf-849f-a6a1fb7785f7"))
+    (uuid "39c560a0-1dd9-4e54-bb85-26f309a7417e"))
   (label "F38"
     (at 173.99 48.26 0)
     (fields_autoplaced)
@@ -2179,7 +2179,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "eec60766-2d3c-443e-a4af-35fc8e68b08b"))
+    (uuid "d74b82a1-0b7f-478e-9a44-47facf3862d8"))
   (label "F39"
     (at 173.99 50.8 0)
     (fields_autoplaced)
@@ -2187,7 +2187,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "73e72d99-bc0d-49fc-ba20-6d46ede73378"))
+    (uuid "229e5010-4cf0-4e86-bb95-472dc1347a6a"))
   (label "F40"
     (at 173.99 53.34 0)
     (fields_autoplaced)
@@ -2195,7 +2195,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "e8a36f05-4439-4e1f-80ad-a244f477f273"))
+    (uuid "ed540c05-567c-429c-97b4-94b3c7487ec2"))
   (label "F41"
     (at 173.99 55.88 0)
     (fields_autoplaced)
@@ -2203,7 +2203,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "a149508b-1f69-483d-82bc-8d302b1d0514"))
+    (uuid "f4f02bde-6bb1-45dc-9c83-e5b043478652"))
   (label "F42"
     (at 173.99 58.42 0)
     (fields_autoplaced)
@@ -2211,7 +2211,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "67eca246-cdf7-4a27-b250-2a26dfd5385a"))
+    (uuid "2133ea97-b7bc-438d-be3c-8d738f12f93d"))
   (label "F43"
     (at 173.99 60.96 0)
     (fields_autoplaced)
@@ -2219,7 +2219,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "46406ed2-a258-4b9f-916b-9fca5ba2795c"))
+    (uuid "df82cdbc-96d2-44e4-982c-26e7642dd86c"))
   (label "F44"
     (at 173.99 63.5 0)
     (fields_autoplaced)
@@ -2227,7 +2227,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "377b6312-e091-4b89-9fd4-f084b44d4265"))
+    (uuid "d9b8feaf-2637-4056-aa71-312e44b70c86"))
   (label "F45"
     (at 173.99 66.04 0)
     (fields_autoplaced)
@@ -2235,7 +2235,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "0d495ea6-d692-41e5-a4fa-2627a72d7621"))
+    (uuid "dcfb7f12-9455-4358-92b1-d7672cdb3a5c"))
   (label "F46"
     (at 173.99 68.58 0)
     (fields_autoplaced)
@@ -2243,7 +2243,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "2878cfc7-b3b8-406d-80f8-c08c41fbad9a"))
+    (uuid "6d5a9900-9ab9-49ef-94d7-02696ef63877"))
   (label "F47"
     (at 173.99 71.12 0)
     (fields_autoplaced)
@@ -2251,7 +2251,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "de0e81e9-5d57-4aa2-bb9d-5409a636dbc8"))
+    (uuid "e0585c1e-c6d3-4f67-acda-126a2c93eeac"))
   (label "F48"
     (at 173.99 73.66 0)
     (fields_autoplaced)
@@ -2259,7 +2259,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "c25e6f44-7199-4e78-9221-b79490da67e3"))
+    (uuid "fa39c985-bf16-4dec-900b-74f0942f7df6"))
   (symbol
     (lib_id "Device:C")
     (at 190.5 43.18 0)
@@ -2267,7 +2267,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "d6daeee8-5892-4ff5-84ea-032f5829efdb")
+    (uuid "e3933dc8-fb37-43ab-8635-e69d8aa461f8")
     (property "Reference" "C15"
       (at 190.5 37.77 0)
       (effects
@@ -2296,12 +2296,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ecbda38c-7391-4f6d-b1fc-0e624d9db31c"))
+      (uuid "5500e122-eca2-474a-8c13-0fbcfb696a17"))
     (pin "2"
-      (uuid "d81f4bbe-a41d-4e3a-8f8e-bbe939cdbaa4"))
+      (uuid "933bc552-eec9-4eaf-9a13-b50947ee0ad2"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "C15")
           (unit 1)))))
   (global_label "5VA"
@@ -2312,7 +2312,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "27121ea8-c691-49de-a896-088de38082d7")
+    (uuid "b24eda4c-1713-459c-8dbd-6532e8ea9009")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 190.5 39.37 0)
       (effects
@@ -2326,7 +2326,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "432566dd-d9f0-456d-9975-0606caf2ad0b")
+    (uuid "8c7de179-f427-45b3-979b-6dae9193bf36")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 190.5 46.99 0)
       (effects
@@ -2339,7 +2339,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "13a7351e-d15e-40f6-96b6-4b428f527ec2")
+    (uuid "8e8a57f5-159f-449f-b3be-529e7e632899")
     (property "Reference" "U14"
       (at 228.6 36.5 0)
       (effects
@@ -2363,56 +2363,56 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "5fe7e956-4710-4dd4-aa48-8cdc9d72b947"))
+      (uuid "f6888972-d307-4cb8-8fd7-ec5c2075b277"))
     (pin "10"
-      (uuid "b4491297-effb-4dda-bf81-a0ea5b5d0966"))
+      (uuid "f05d1a2b-5112-4477-80b9-86ab4e0335ad"))
     (pin "11"
-      (uuid "5308f541-dc9e-4097-b800-af3ad8a6e5d2"))
+      (uuid "a202197d-3dd8-40f4-9c2b-9c4051fd5ecd"))
     (pin "12"
-      (uuid "7e7c6d76-60e6-4375-a80d-e2908ade554f"))
+      (uuid "3fe9555b-cce7-45df-a57c-6e8c43d4505e"))
     (pin "13"
-      (uuid "ca6bab65-981b-4d39-a1f3-839e18542a47"))
+      (uuid "96b84fa4-2856-41bb-81cc-447149bb32c3"))
     (pin "14"
-      (uuid "124f9a1a-f158-428f-a9ee-7d7e0b1f21fd"))
+      (uuid "b177e7e2-bffb-4056-8ca6-c883959c5a13"))
     (pin "15"
-      (uuid "54255902-2ee4-4575-bc54-3f9d85cef510"))
+      (uuid "d759fa95-8148-46be-9594-c9179f1d6afa"))
     (pin "16"
-      (uuid "096afdf6-5929-4baf-a08f-e6730f87bf8a"))
+      (uuid "989d1463-aa13-4828-aade-654b14116600"))
     (pin "17"
-      (uuid "99d53462-bfec-4ec2-9054-fe6d82cec9b9"))
+      (uuid "7d281099-ffb2-4a4f-976d-78106eda5032"))
     (pin "18"
-      (uuid "47da0999-354e-447a-ba77-c1936310fe52"))
+      (uuid "c2c61b8b-8955-44f5-9b27-12a993e34c7e"))
     (pin "19"
-      (uuid "99d9b4e7-e9a1-47b3-bab6-283eaa82627f"))
+      (uuid "3e181d91-7594-4014-baa9-d39202e2e618"))
     (pin "2"
-      (uuid "f0ab21e6-6e5d-444b-be5c-bc798a3ca5ef"))
+      (uuid "2ece0486-6aab-425f-baa7-94e5bb13d690"))
     (pin "20"
-      (uuid "79087410-ccd8-4162-bc58-be38c6502633"))
+      (uuid "4890595c-a0b2-42cc-a8f8-bddfdfc40a67"))
     (pin "21"
-      (uuid "9691ed8d-052f-4881-88eb-ac40f116a625"))
+      (uuid "e90a2f21-2467-45c2-8c80-1e2a7a73d480"))
     (pin "22"
-      (uuid "f4992e8f-a3fa-4afd-9830-6326f217202c"))
+      (uuid "b802e8e1-c173-41fa-8b7e-3e9f07ab44aa"))
     (pin "23"
-      (uuid "d9e60994-02b0-49c4-b736-f9e8ca331651"))
+      (uuid "1f9323c2-b05b-43e1-b12d-f8d77868dd67"))
     (pin "24"
-      (uuid "9977f11f-f004-411a-8ce9-dad19eec90bb"))
+      (uuid "290af9f9-6eb8-4e43-9c8b-44662ffa2642"))
     (pin "3"
-      (uuid "89b64a76-d410-4df8-b974-2a5b47d955e0"))
+      (uuid "5a264b44-6d1d-4f65-aa58-236477741ffd"))
     (pin "4"
-      (uuid "f640477a-79e9-4f27-a33c-a604b401df1f"))
+      (uuid "eb6af070-b101-4458-88f5-891dd2cb41cc"))
     (pin "5"
-      (uuid "7d666e78-c01a-4e6e-bd69-1179648035df"))
+      (uuid "b0ceec11-9855-41cc-aea4-8e692d468929"))
     (pin "6"
-      (uuid "be5c43b6-578c-4457-b930-703bfe2c0457"))
+      (uuid "0a07a1b2-e0cc-4b57-9e5e-510f465ae523"))
     (pin "7"
-      (uuid "eb9a714c-5641-465b-b70c-88e2e3381be9"))
+      (uuid "8a919fe8-6065-4b7d-9c6d-5721a5551c49"))
     (pin "8"
-      (uuid "6e7f595b-1ae2-4f99-8768-1e923596cafd"))
+      (uuid "69e45b9f-0bad-4015-bcd3-bd059b2f65a9"))
     (pin "9"
-      (uuid "45271304-e231-4ebf-9446-186c2f2b2328"))
+      (uuid "af0ecb4e-d935-4d28-913a-cdd3a243cfb4"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "U14")
           (unit 1)))))
   (global_label "LO_S"
@@ -2423,7 +2423,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "e8ceab87-5a33-4150-879b-b423b17518eb")
+    (uuid "4fa78855-88ce-4fdb-b133-c2040e5f8cb6")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 215.9 50.8 0)
       (effects
@@ -2437,7 +2437,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "22aa3413-264b-428c-bf54-abfff2853927")
+    (uuid "b0d034b0-1f2a-4592-ba68-a265f8f5b2b6")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 215.9 60.96 0)
       (effects
@@ -2451,7 +2451,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "9b87bf91-c8c6-45bc-9656-e44b90ca6524")
+    (uuid "875a83ca-8bee-4bc3-b913-deabfe19c4c4")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 215.9 63.5 0)
       (effects
@@ -2465,7 +2465,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "b178dc22-42a4-4c1a-a9d5-d94a71432713")
+    (uuid "35f75127-d5f1-42bd-b8fd-f0d05832d898")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 228.6 91.44 0)
       (effects
@@ -2479,7 +2479,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a0442dd0-1583-4373-9950-aefa375c4cd3")
+    (uuid "611c6230-5048-4ae2-8dac-9ed54ad34d4c")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 215.9 68.58 0)
       (effects
@@ -2493,7 +2493,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "20a878fc-352e-4d98-88de-4ee59c704b5b")
+    (uuid "c7148ca8-d21b-4d0e-b981-5393ef323744")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 215.9 66.04 0)
       (effects
@@ -2507,7 +2507,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "34cc8c5c-498c-49d6-a0e1-1d94355414c7")
+    (uuid "b17c372d-beb3-44ea-90d1-87b69948af03")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 215.9 78.74 0)
       (effects
@@ -2520,7 +2520,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "18433d22-949c-4a6a-bfd9-759518b5cca9"))
+    (uuid "7508f462-d5d3-4400-b9e0-3116b53fe2a5"))
   (label "S47"
     (at 241.3 81.28 0)
     (fields_autoplaced)
@@ -2528,7 +2528,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "178af394-d75e-4187-a218-8682e503c3ce"))
+    (uuid "146a7dff-d536-4a0b-842e-62fa9c5af46c"))
   (label "S46"
     (at 241.3 78.74 0)
     (fields_autoplaced)
@@ -2536,7 +2536,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "5066c529-61e9-4bdb-89fc-6bebb51f2bee"))
+    (uuid "0d0a401f-116f-479f-a1a7-f912c80b517c"))
   (label "S45"
     (at 241.3 76.2 0)
     (fields_autoplaced)
@@ -2544,7 +2544,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "1a5f0a04-73a6-4bd9-b755-c2f4d090458f"))
+    (uuid "575d37da-f44d-4f63-af84-8c683d637638"))
   (label "S40"
     (at 241.3 63.5 0)
     (fields_autoplaced)
@@ -2552,7 +2552,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "7ee708a4-3a09-476d-afd5-6cb2be15457b"))
+    (uuid "a0ca9190-a956-4311-9dd7-b1b3bed0f409"))
   (label "S44"
     (at 241.3 73.66 0)
     (fields_autoplaced)
@@ -2560,7 +2560,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "f7a1fc8a-fa22-4e79-a5fc-4264489550de"))
+    (uuid "1ef7c1f0-cb0a-40b3-aef9-5f5a5fa40541"))
   (label "S43"
     (at 241.3 71.12 0)
     (fields_autoplaced)
@@ -2568,7 +2568,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "97287cd4-ed1f-4dc6-b070-1df225f417b0"))
+    (uuid "ebbb5221-a411-4919-b81c-207c21d7eb46"))
   (label "S42"
     (at 241.3 68.58 0)
     (fields_autoplaced)
@@ -2576,7 +2576,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "bcf40271-c764-4cfc-bf9f-278b1519e699"))
+    (uuid "1e70bfd1-97d2-48f0-a65b-44f3c146f5fd"))
   (label "S41"
     (at 241.3 66.04 0)
     (fields_autoplaced)
@@ -2584,7 +2584,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "58a8f525-9b29-440c-9495-5541e75e0f9a"))
+    (uuid "121d2d38-751d-4f87-8e8e-599d8a69c772"))
   (global_label "5VA"
     (shape bidirectional)
     (at 228.6 38.1 90)
@@ -2593,7 +2593,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "1d0e21eb-6b54-4ada-9233-a66dbdeb9045")
+    (uuid "b56c290d-f0f9-44d1-b5bf-b3a6bfdfffb9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 228.6 38.1 0)
       (effects
@@ -2606,7 +2606,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "d72a8b99-cf2d-4e97-802e-fbb4bdfc7ee2"))
+    (uuid "464cdacc-8fa1-446c-8347-43c13990fe47"))
   (label "S38"
     (at 241.3 58.42 0)
     (fields_autoplaced)
@@ -2614,7 +2614,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "a0c680bc-b03a-4496-9413-28e100a74f79"))
+    (uuid "e4500b53-e641-44c4-a24f-432a628a1111"))
   (label "S37"
     (at 241.3 55.88 0)
     (fields_autoplaced)
@@ -2622,7 +2622,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "ce97389c-1dd8-4994-b7d2-d09e3cbb08ec"))
+    (uuid "053b6d9e-7334-48d2-a93c-0294d9465c1f"))
   (label "S36"
     (at 241.3 53.34 0)
     (fields_autoplaced)
@@ -2630,7 +2630,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "77f44cbc-de8b-4a8b-9150-a00eb19791be"))
+    (uuid "e3cf8214-0b3e-4ab0-a685-f8dce7d8a58f"))
   (label "S35"
     (at 241.3 50.8 0)
     (fields_autoplaced)
@@ -2638,7 +2638,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "40934786-818c-4afc-8a3b-bfb0a3500137"))
+    (uuid "0dbda0af-11ad-4c47-95a5-2b3bcbb07560"))
   (label "S34"
     (at 241.3 48.26 0)
     (fields_autoplaced)
@@ -2646,7 +2646,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "858e5bd1-bcc5-40b4-80d3-a6d14467c1c3"))
+    (uuid "4999461d-ee3c-48ed-98d8-928c29723d07"))
   (label "S33"
     (at 241.3 45.72 0)
     (fields_autoplaced)
@@ -2654,7 +2654,7 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid "fc2551d9-764f-4713-a73b-ba31041ed634"))
+    (uuid "caa21bf3-93ef-4fe3-8d55-dbb8a61eb4d4"))
   (symbol
     (lib_id "Device:C")
     (at 256.54 43.18 0)
@@ -2662,7 +2662,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "b8795b53-eea6-4925-a3e0-1c3c326a0977")
+    (uuid "51f52965-8c22-4b21-b3ac-93671596cd30")
     (property "Reference" "C16"
       (at 256.54 37.77 0)
       (effects
@@ -2691,12 +2691,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "9bb5560c-d1f7-4292-8d47-1c4d4bd349dc"))
+      (uuid "231c588d-a395-49ac-8e29-812d5e9d805e"))
     (pin "2"
-      (uuid "f7023865-8154-4a85-af3c-160879a6e766"))
+      (uuid "e256c5d8-bcae-4523-9d40-626664820dfa"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "C16")
           (unit 1)))))
   (global_label "5VA"
@@ -2707,7 +2707,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "7795a13f-c5c0-47c6-a551-41151932b429")
+    (uuid "0dae3290-ce6b-438e-b685-a18f84322062")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 256.54 39.37 0)
       (effects
@@ -2721,7 +2721,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "daec559e-0f92-44a3-8dee-88cced5b26a8")
+    (uuid "2c941b65-a01c-4746-a683-df5184cd2a98")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 256.54 46.99 0)
       (effects
@@ -2734,7 +2734,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "f95d3bc3-5488-4f55-abc4-525c94565acf")
+    (uuid "fc5022ff-3ce9-497d-9c7b-d8382c1357f5")
     (property "Reference" "R81"
       (at 269.24 37.77 0)
       (effects
@@ -2768,12 +2768,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "3b1b0136-d0df-414c-92fc-c224273687e1"))
+      (uuid "0a50dde3-b156-4329-b514-793d555dda3e"))
     (pin "2"
-      (uuid "f21c6df0-c3e6-47c6-9e95-3403062b2ec8"))
+      (uuid "4be4eeaf-d496-4c3f-8c3d-02f63e7a159a"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R81")
           (unit 1)))))
   (global_label "TP33"
@@ -2784,7 +2784,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "1c041668-b921-48ee-9658-adba09962116")
+    (uuid "c6ae2ecf-da00-423c-a4cd-bd3223a9d244")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 269.24 39.37 0)
       (effects
@@ -2797,7 +2797,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "6cfd1827-fce5-416f-82a3-37526b4b3fed"))
+    (uuid "baecb385-839f-443d-a7b3-0859cce087a0"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 281.94 43.18 0)
@@ -2805,7 +2805,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "76da62ae-9b6c-443d-80d4-86cbfb392ce2")
+    (uuid "00013138-bc55-48db-b19b-a21b1af6e702")
     (property "Reference" "F34"
       (at 281.94 37.77 0)
       (effects
@@ -2834,12 +2834,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0115fe87-4004-4e38-bb62-03ff11be17a8"))
+      (uuid "30053529-fab8-41a9-9cd6-e63c82df9825"))
     (pin "2"
-      (uuid "1ae380e7-1761-46cb-a25d-d84aefeaf805"))
+      (uuid "982f445c-f82b-419e-b456-6ef24b48ec84"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F34")
           (unit 1)))))
   (label "FR33"
@@ -2849,7 +2849,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "86050165-b87b-4c64-a814-c23c60a26b61"))
+    (uuid "71f25404-268d-4ac6-b32d-405954297449"))
   (label "F33"
     (at 281.94 46.99 270)
     (fields_autoplaced)
@@ -2857,7 +2857,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "0c74ccce-e331-4850-8d83-bc0dabab8702"))
+    (uuid "40e34dde-d795-46e7-9f1e-6e299e9b909a"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 302.26 38.1 0)
@@ -2865,7 +2865,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "7ff73fcf-8501-41ce-bf58-95b5b01ca253")
+    (uuid "b71e803c-1e1f-4289-936a-91f7efdb8620")
     (property "Reference" "D81"
       (at 302.26 31.42 0)
       (effects
@@ -2889,14 +2889,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "89730155-a883-4d21-ac44-ae9520adb08c"))
+      (uuid "37a48a00-971b-4e9b-a202-064db9f6ac11"))
     (pin "2"
-      (uuid "ee1bf4f7-8f3a-4fdd-9948-1464bbf356a4"))
+      (uuid "c6937dec-3c78-486b-956e-a786685ef8d0"))
     (pin "3"
-      (uuid "e700b88d-c5b8-4141-bb45-0b1b54217b68"))
+      (uuid "1ca90174-cbed-4529-b900-16428fb1e88b"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D81")
           (unit 1)))))
   (label "F33"
@@ -2906,7 +2906,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "a36a9dd8-5d80-4e8e-8e56-1d8903c273c6"))
+    (uuid "9a562de4-f840-4bc3-9b48-265fd6336a97"))
   (global_label "5VA"
     (shape bidirectional)
     (at 308.61 35.56 0)
@@ -2915,7 +2915,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "4db07a65-5977-4e7c-b3d5-abba7a24578a")
+    (uuid "a4136d70-55cb-4480-9af9-00c5d7f2fa8c")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 308.61 35.56 0)
       (effects
@@ -2929,7 +2929,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "554e0257-5a4a-4ab0-9c9c-78a9d94347ac")
+    (uuid "24a4df5f-627d-48fb-b17b-4ca4e0736e25")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 308.61 38.1 0)
       (effects
@@ -2942,7 +2942,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "8452829c-450a-4173-8c25-65d273d88571")
+    (uuid "54d406f6-5e02-4e6f-bace-076c6c963f20")
     (property "Reference" "R82"
       (at 325.12 37.77 0)
       (effects
@@ -2971,12 +2971,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "01cb87b0-88dc-4ecf-a7cb-23ed9b1f8ff2"))
+      (uuid "e3233603-cf88-4f0a-b43f-d8d6a52d8ffd"))
     (pin "2"
-      (uuid "d05193b0-3414-4bdb-a4f5-dd2715ae71d8"))
+      (uuid "9324ceb0-7a4c-4343-96e6-dc1823348f49"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R82")
           (unit 1)))))
   (global_label "TP33"
@@ -2987,7 +2987,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e8302146-b3f0-4e8e-ae4f-ef3cd0ce8cfe")
+    (uuid "b8083cef-1466-42c0-86f2-239cf0a46167")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 325.12 39.37 0)
       (effects
@@ -3000,7 +3000,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "ad22282d-99f2-46e8-90d4-3c8ccc6ba06d"))
+    (uuid "27e1adea-ad4f-4b53-9325-ae99db6d52ba"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 347.98 38.1 0)
@@ -3008,7 +3008,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "8836dc97-7c1c-4282-aca8-6c77332b8e7d")
+    (uuid "c373c6b0-b180-446c-98f5-f663ad015099")
     (property "Reference" "D82"
       (at 347.98 31.42 0)
       (effects
@@ -3032,14 +3032,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "065a68f3-ff19-4dda-84a3-64ca276506f2"))
+      (uuid "91c101c9-1433-4396-8380-b977e63766be"))
     (pin "2"
-      (uuid "e15ec926-8dad-4837-bb01-a6faf5300681"))
+      (uuid "7110e0c8-7bd2-40c1-8f22-ebf516436241"))
     (pin "3"
-      (uuid "9cbc3a76-2d60-4c96-87b0-b84d34a4c2e3"))
+      (uuid "e34e53df-d080-4a74-92e0-d722538af5ab"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D82")
           (unit 1)))))
   (label "S33"
@@ -3049,7 +3049,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "69791db1-87b2-4b98-8d8b-9e561c6e6fd0"))
+    (uuid "ef53f12e-9600-4265-a011-dc7ab83d469e"))
   (global_label "5VA"
     (shape bidirectional)
     (at 354.33 35.56 0)
@@ -3058,7 +3058,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "15fa7bbf-17ca-487f-ac84-5fe1b4a3c519")
+    (uuid "c118e4df-a536-42e8-b3dc-77e7263891a1")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 354.33 35.56 0)
       (effects
@@ -3072,7 +3072,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "ba87baf4-3a92-450e-898e-dc89c817eab3")
+    (uuid "a112e0a1-b487-4e27-9e4a-62526e44b89f")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 354.33 38.1 0)
       (effects
@@ -3085,7 +3085,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "a85fff69-1ced-4e67-824b-5350a7941a3b")
+    (uuid "0fbf10e1-6e85-494c-be1d-956eaf7f9d6c")
     (property "Reference" "D83"
       (at 381 31.42 0)
       (effects
@@ -3109,14 +3109,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "cf17d176-6829-4807-883d-c04fa2ddea00"))
+      (uuid "c0731e50-3006-403a-974b-44f841e3e329"))
     (pin "2"
-      (uuid "f604b04d-b17e-4459-8ef1-dfc4ac754079"))
+      (uuid "b8ca0722-7402-4f8e-b224-66f527a5e17e"))
     (pin "3"
-      (uuid "5a891730-ce73-4e4f-b0e2-de0c6819c1cc"))
+      (uuid "6fa7a710-6b2c-46c7-914e-cd1c065c2243"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D83")
           (unit 1)))))
   (global_label "TP33"
@@ -3127,7 +3127,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "26bf28b7-f344-4c45-b7ba-a0aeb97ff7db")
+    (uuid "96459141-8425-457d-82ce-379e767446c6")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 374.65 35.56 0)
       (effects
@@ -3141,7 +3141,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "658f882f-9cac-45b8-afc8-53c620034d3a")
+    (uuid "0ae98877-57eb-45a2-b9a4-6ed7cf126727")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 374.65 38.1 0)
       (effects
@@ -3155,7 +3155,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "26707358-2211-4a58-a9f4-99cff6d2d8d7")
+    (uuid "3db4e4bc-1a79-4575-9c88-7c64545985ba")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 387.35 35.56 0)
       (effects
@@ -3168,7 +3168,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "43380e29-b2be-40de-9684-3171f210ebae")
+    (uuid "5d4fdce6-72a0-4150-a3c7-621cfa3ab579")
     (property "Reference" "R83"
       (at 403.86 37.77 0)
       (effects
@@ -3202,12 +3202,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "30a7303a-f847-4b79-9958-ab5700fbab65"))
+      (uuid "a405ee03-38c7-4232-a378-18e2baf86953"))
     (pin "2"
-      (uuid "b8d839db-1e48-41f0-8d38-0d953ddd451e"))
+      (uuid "74e787dc-c41c-47a2-9fb9-4088d3275bc0"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R83")
           (unit 1)))))
   (global_label "TP34"
@@ -3218,7 +3218,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "8bf0728b-d5ce-4407-9546-0560bc1e9006")
+    (uuid "b506eb7b-4aed-45e0-ad1e-e606fa528a1e")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 403.86 39.37 0)
       (effects
@@ -3231,7 +3231,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "4a589696-f5ab-4216-923b-6025ab009808"))
+    (uuid "ca0e6901-4b2a-4b0a-b3a1-3231a01c9e8f"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 416.56 43.18 0)
@@ -3239,7 +3239,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "09fb0a1c-f918-41f2-b1f8-108871251880")
+    (uuid "7da6209e-d411-464d-8a86-383af40f9df8")
     (property "Reference" "F35"
       (at 416.56 37.77 0)
       (effects
@@ -3268,12 +3268,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "f21517bc-8c63-4d0a-95e3-01c512c87826"))
+      (uuid "159b8811-a72c-418c-9b86-291c5a821e6c"))
     (pin "2"
-      (uuid "8dd4d757-6f7b-4f9c-b616-211ee0dff404"))
+      (uuid "1abe35ae-935c-4b4a-8f44-46a0d13cbca7"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F35")
           (unit 1)))))
   (label "FR34"
@@ -3283,7 +3283,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "0a9c6bd6-11a1-49e1-bde2-be0d2942363b"))
+    (uuid "7d0417c0-080b-4aad-9b72-9cf3517698cd"))
   (label "F34"
     (at 416.56 46.99 270)
     (fields_autoplaced)
@@ -3291,7 +3291,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "cf130bba-162d-4f04-86a1-068450d98944"))
+    (uuid "6f4c3b1c-2539-4c08-9601-1b42533609b6"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 439.42 38.1 0)
@@ -3299,7 +3299,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "67ada3e2-4d87-4b6c-9939-5d31b7336406")
+    (uuid "04a6912a-48a8-4a2f-be9a-43470448fca9")
     (property "Reference" "D84"
       (at 439.42 31.42 0)
       (effects
@@ -3323,14 +3323,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "32b1c7a6-a8e6-41b9-a99f-e9603cf28d57"))
+      (uuid "e80a1ecc-9695-4025-b1bd-70bbd42b4f3b"))
     (pin "2"
-      (uuid "0f24f1d0-1c99-48bc-ad2f-e0757f56a538"))
+      (uuid "111baae0-ed64-47e2-81a4-3acee4dbd7eb"))
     (pin "3"
-      (uuid "c27a2912-8ad2-46ed-8fd0-bedb988ceb1c"))
+      (uuid "df9cb133-c3a0-4e04-821d-168f93f4747f"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D84")
           (unit 1)))))
   (label "F34"
@@ -3340,7 +3340,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "d81af740-c4ba-427e-9891-db505bf79380"))
+    (uuid "2cf86a42-fa05-44ae-83a9-7411bbd5f956"))
   (global_label "5VA"
     (shape bidirectional)
     (at 445.77 35.56 0)
@@ -3349,7 +3349,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "ef8d94ff-e324-4ce4-a88e-87261a35168a")
+    (uuid "d7bb7f27-7146-4092-8a82-c29395216e94")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 445.77 35.56 0)
       (effects
@@ -3363,7 +3363,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "f042f5f1-baa3-454e-af39-e862ebd1c437")
+    (uuid "aec34b88-305c-42cd-8805-0731c84b01a1")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 445.77 38.1 0)
       (effects
@@ -3376,7 +3376,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "5cc23a20-c566-4c06-8011-90680f1e93f4")
+    (uuid "4c65b32c-d246-4677-a72e-2f86bb6c227c")
     (property "Reference" "R84"
       (at 459.74 37.77 0)
       (effects
@@ -3405,12 +3405,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "16773cf9-9fcf-48c3-9d0d-65a5cbb6e81c"))
+      (uuid "8ce426a5-3cbf-49c2-bfc3-3f015fa578ce"))
     (pin "2"
-      (uuid "6aabe682-49a5-468f-9542-dcdd46f7a102"))
+      (uuid "979ee084-1634-4583-bd7d-c1d17a1ca675"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R84")
           (unit 1)))))
   (global_label "TP34"
@@ -3421,7 +3421,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "92c43138-44d2-4d0e-9920-1091a6f163fe")
+    (uuid "81e9b70e-4901-4d23-ba1a-8730207f6f94")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 459.74 39.37 0)
       (effects
@@ -3434,7 +3434,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "c3ee45e5-d854-42a1-af5e-df07cc0fd628"))
+    (uuid "3a06369c-12df-42d1-94e9-60f93778be0e"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 482.6 38.1 0)
@@ -3442,7 +3442,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "5c2161c5-57c7-47ba-b14f-3c034b64b86b")
+    (uuid "650de0c5-9427-4e6e-a55d-7a022faf1b87")
     (property "Reference" "D85"
       (at 482.6 31.42 0)
       (effects
@@ -3466,14 +3466,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "508cdd67-b8d9-4feb-bd8a-e07b394750cb"))
+      (uuid "5a791616-bc9b-4aa0-a2b3-5f6d06ef6801"))
     (pin "2"
-      (uuid "8841f57c-8205-40a3-b459-541100d10ff5"))
+      (uuid "31df066a-c68c-46dd-9393-f15d5dbe874e"))
     (pin "3"
-      (uuid "5bf85b19-51ce-42c3-886c-d477190864d9"))
+      (uuid "8bec7caa-92d4-4f1d-9254-f3b88f6a3787"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D85")
           (unit 1)))))
   (label "S34"
@@ -3483,7 +3483,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "35ee4b11-5174-433c-9aa7-27194d5f3f4d"))
+    (uuid "e91d7f62-5ff9-4d3f-abf8-af23f0931837"))
   (global_label "5VA"
     (shape bidirectional)
     (at 488.95 35.56 0)
@@ -3492,7 +3492,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e08d4c2c-646f-49cf-8a1f-dda51422f5c0")
+    (uuid "6db76d24-b9ed-4667-bae8-da6235feda80")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 488.95 35.56 0)
       (effects
@@ -3506,7 +3506,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "94671da4-2279-4c55-b8e4-381f52c76d56")
+    (uuid "0ba0a74f-b717-41df-a85c-53eb659862c1")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 488.95 38.1 0)
       (effects
@@ -3519,7 +3519,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "48f9f602-ea0c-4ab4-8dee-7461145a9ea9")
+    (uuid "4b494cab-44c6-478b-b71a-460e0b9c995e")
     (property "Reference" "R85"
       (at 505.46 37.77 0)
       (effects
@@ -3553,12 +3553,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ca88ec3e-6536-492c-81f7-91a28f8cc68d"))
+      (uuid "b2542184-c33e-482b-ad34-bee7928b45b6"))
     (pin "2"
-      (uuid "014e350b-3f02-4457-a700-5ccbc850d878"))
+      (uuid "28b04c7a-51ab-40b9-b053-2075f0e76791"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R85")
           (unit 1)))))
   (global_label "TP35"
@@ -3569,7 +3569,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "1c323e39-d9c4-4787-9e30-6a4e55004094")
+    (uuid "ea6a6f11-54f5-4686-bd42-24e9050cac27")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 505.46 39.37 0)
       (effects
@@ -3582,7 +3582,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d20e0d35-e84a-4d4e-b397-a64c6026d966"))
+    (uuid "b16daa02-207f-4d81-898d-8db8b022d6bf"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 515.62 43.18 0)
@@ -3590,7 +3590,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "d7002b9f-866c-4609-87e8-59984e9e7219")
+    (uuid "e80b4bad-d164-4841-92ca-8745735c2b4c")
     (property "Reference" "F36"
       (at 515.62 37.77 0)
       (effects
@@ -3619,12 +3619,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0e8cfcf0-798b-4337-9fbf-a14926a17022"))
+      (uuid "ec90293f-e3c9-4742-81c0-4853fbc892b0"))
     (pin "2"
-      (uuid "abae6599-3c65-4041-9a15-3131838d3f57"))
+      (uuid "f7ea470f-a956-4507-8161-c278203f51be"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F36")
           (unit 1)))))
   (label "FR35"
@@ -3634,7 +3634,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "38ca98bf-f106-463b-801d-6754d2aca245"))
+    (uuid "ff6ace90-e15a-41bd-aa93-ce1ae9c8f103"))
   (label "F35"
     (at 515.62 46.99 270)
     (fields_autoplaced)
@@ -3642,7 +3642,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "4c0b78f3-7bb7-4dc9-8861-6be16a943545"))
+    (uuid "adf15122-0140-4dbd-9939-278f26e7774f"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 538.48 38.1 0)
@@ -3650,7 +3650,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "58c83c64-4eb1-431e-9db0-d849bdabe6c1")
+    (uuid "cdc160ca-8a91-4863-9756-74ba594707c6")
     (property "Reference" "D86"
       (at 538.48 31.42 0)
       (effects
@@ -3674,14 +3674,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "562da7df-e4bb-4c22-8287-aee7449bccf5"))
+      (uuid "e098e8cf-3a07-4c27-82c0-8e4c02177d46"))
     (pin "2"
-      (uuid "58245d8a-74bb-4c52-9c88-9926732a4174"))
+      (uuid "a7763e3c-5401-495a-b4fa-cce08f2a3edd"))
     (pin "3"
-      (uuid "75751461-8889-4a72-a658-61addb38dd08"))
+      (uuid "add7c6a9-1b61-4b35-9f9b-6b466ad0a324"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D86")
           (unit 1)))))
   (label "F35"
@@ -3691,7 +3691,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "0d95dd14-7ebb-49d6-a555-e2f372b58745"))
+    (uuid "75207e27-306b-414b-a128-a559ac78af5b"))
   (global_label "5VA"
     (shape bidirectional)
     (at 544.83 35.56 0)
@@ -3700,7 +3700,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "fc4ce254-1907-4b23-89b4-50f6437c9781")
+    (uuid "8c7d5063-2c02-4fd9-876c-fa4ed92c4eaf")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 544.83 35.56 0)
       (effects
@@ -3714,7 +3714,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "6316f40a-8350-409f-8211-dd391e0fdb67")
+    (uuid "5fb944c4-e955-4ef7-a390-434160d9a900")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 544.83 38.1 0)
       (effects
@@ -3727,7 +3727,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "b654c773-9bd8-4503-829f-9b6e4f218aec")
+    (uuid "a7589516-6333-483e-8f64-3b1faf7c7b2c")
     (property "Reference" "R86"
       (at 561.34 37.77 0)
       (effects
@@ -3756,12 +3756,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "36d38c87-c1b2-496d-8cad-0d645e2a48ff"))
+      (uuid "238f2a3d-6b2a-42ad-af4f-621bd25ad372"))
     (pin "2"
-      (uuid "afca3b37-e371-473c-8fdd-b7ae47d67701"))
+      (uuid "ea7811d6-5a52-4b6f-82db-96848b91abe1"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R86")
           (unit 1)))))
   (global_label "TP35"
@@ -3772,7 +3772,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "a3c85db0-18e7-4584-87b8-11c41a0d7e33")
+    (uuid "cfd3b4bc-ecb9-4f2e-b3bb-f0793d6400d8")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 561.34 39.37 0)
       (effects
@@ -3785,7 +3785,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "2973f712-0cfe-4b2d-8963-879bdfa723f0"))
+    (uuid "4fefdbe4-89b7-48c5-a83a-fafdb97021ad"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 38.1 116.84 0)
@@ -3793,7 +3793,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "13d9c18a-3798-4756-a2ce-39bf0a37ad50")
+    (uuid "41e0282c-e0d1-494c-bdcf-fe9a39a737e7")
     (property "Reference" "D87"
       (at 38.1 110.16 0)
       (effects
@@ -3817,14 +3817,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "8e0f5bc6-bf50-4c9e-9d71-d160bcc56149"))
+      (uuid "00fcbcc9-54d4-43c4-88df-a5995732284c"))
     (pin "2"
-      (uuid "1635b131-bbdd-4ebd-a490-9712a6e6c9c2"))
+      (uuid "74a63c62-0c4b-4a32-9a85-e95bb64ac218"))
     (pin "3"
-      (uuid "32bf85fe-664d-4eb0-a58d-cb25ca961935"))
+      (uuid "f9355395-dcea-4b2c-9a8f-ed1337b5c1ad"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D87")
           (unit 1)))))
   (label "S35"
@@ -3834,7 +3834,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "3401df75-ff48-4ed4-9d78-6c795b7c4930"))
+    (uuid "05243876-5830-4d68-9a4c-b754e9be3494"))
   (global_label "5VA"
     (shape bidirectional)
     (at 44.45 114.3 0)
@@ -3843,7 +3843,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "69a3432d-8e0f-436c-b66a-5c4d3f495a00")
+    (uuid "24c2b242-39a3-4491-8268-0992205525da")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 44.45 114.3 0)
       (effects
@@ -3857,7 +3857,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "ee97e36f-ff91-40a9-b06f-57dc3ff5f833")
+    (uuid "fdb47400-0104-46d9-b78c-e43b790e5755")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 44.45 116.84 0)
       (effects
@@ -3870,7 +3870,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "3aff74a0-c240-4e53-9abf-097e80d7d1c9")
+    (uuid "0e579aaf-64df-4533-b4ac-7f7f3f3916c6")
     (property "Reference" "D88"
       (at 71.12 110.16 0)
       (effects
@@ -3894,14 +3894,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "3324a4f1-556b-466a-8172-18b4862702d7"))
+      (uuid "dd37d686-16b5-412c-b74c-93718246800d"))
     (pin "2"
-      (uuid "50e0ce00-35f2-4577-aa61-2355df1cb6ef"))
+      (uuid "02850914-4a1e-4c6d-97c3-bd6abbef9985"))
     (pin "3"
-      (uuid "00829289-cd0b-44a4-82b2-64e1f44545ae"))
+      (uuid "d174ca20-137c-4880-a0e3-1bc3a6872b8f"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D88")
           (unit 1)))))
   (global_label "TP35"
@@ -3912,7 +3912,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a9d773a7-73ba-45f4-9d8e-b59fd4c3abe3")
+    (uuid "9bd74a57-db69-44d0-9c9e-79a22ad55cf2")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 64.77 114.3 0)
       (effects
@@ -3926,7 +3926,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "cae70ac9-33b4-4fac-847c-77903b04d4e4")
+    (uuid "02449e98-9d22-4fd1-88d6-b57f7aa77eb5")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 64.77 116.84 0)
       (effects
@@ -3940,7 +3940,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "93496dc6-0a2e-4504-a530-8d2cd6b693c7")
+    (uuid "0e341503-9494-4432-a9ca-392c6ae54ede")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 77.47 114.3 0)
       (effects
@@ -3953,7 +3953,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "89f575cb-c850-40f0-8526-508e1fc95a5e")
+    (uuid "8c6735f8-83c4-4b5d-a5af-15fdbfe9185a")
     (property "Reference" "R87"
       (at 93.98 116.51 0)
       (effects
@@ -3987,12 +3987,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "29578513-9d86-4ad7-ab08-0763420e17d4"))
+      (uuid "e448f571-be44-4a3f-8c11-632eb256e749"))
     (pin "2"
-      (uuid "5713b393-ff1d-4cd1-a585-538a99e22f7a"))
+      (uuid "441041ac-8669-4f07-925a-1b9cc75b8dba"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R87")
           (unit 1)))))
   (global_label "TP36"
@@ -4003,7 +4003,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "2b75823b-bc60-48f3-9c97-54a14721d45b")
+    (uuid "6890ac72-e9f6-45f9-8ca8-c8d9477d8244")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 93.98 118.11 0)
       (effects
@@ -4016,7 +4016,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "e6d295a1-c4fc-41fe-a694-4b181e6c6fe0"))
+    (uuid "fdde73b2-decc-4241-b8e7-ca2b3c8bbe9a"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 106.68 121.92 0)
@@ -4024,7 +4024,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "62d0e0c2-0ce4-44aa-b80f-39b85e7f9b91")
+    (uuid "188a7a7b-48b1-4d39-8e42-fc3dadbc3e2c")
     (property "Reference" "F37"
       (at 106.68 116.51 0)
       (effects
@@ -4053,12 +4053,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ad945f34-bc4e-493b-ae95-cf133f38a747"))
+      (uuid "2e26f562-8ce1-4786-8c84-383104a0043f"))
     (pin "2"
-      (uuid "7dd8affe-8a60-49f0-96fc-2be2d4cbb31e"))
+      (uuid "1d2c4db8-6acf-4631-83de-d8fb144ed7e5"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F37")
           (unit 1)))))
   (label "FR36"
@@ -4068,7 +4068,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "7cb224f1-416c-48e9-93bb-63bc9598838a"))
+    (uuid "1e66b953-a91b-49e3-8483-7fe3c05da902"))
   (label "F36"
     (at 106.68 125.73 270)
     (fields_autoplaced)
@@ -4076,7 +4076,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "c712178a-ffca-4e85-a40b-19a6b081a830"))
+    (uuid "7adf142d-13a8-4489-9447-80694f3aa5d1"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 129.54 116.84 0)
@@ -4084,7 +4084,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "b7fbb589-b8e8-45b2-af49-4f4bdb338c73")
+    (uuid "3897ae25-b08d-4f90-b682-0a8fe15fd988")
     (property "Reference" "D89"
       (at 129.54 110.16 0)
       (effects
@@ -4108,14 +4108,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "a97a4d9d-303b-4124-afc4-3d1f01828d36"))
+      (uuid "ef818390-0bde-4c1b-9f94-62aa12956f2b"))
     (pin "2"
-      (uuid "443583fe-0611-4101-9222-a4a0212413de"))
+      (uuid "936e1766-00a8-400f-b658-771693e8d50b"))
     (pin "3"
-      (uuid "7605eb78-c48a-4f17-aa42-190c441df333"))
+      (uuid "391ce041-8d64-41b8-a835-229f5fc1b50f"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D89")
           (unit 1)))))
   (label "F36"
@@ -4125,7 +4125,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "10c6b2c2-23a4-4a70-93ea-ab21be848b9a"))
+    (uuid "2bbc68b7-0829-413b-883a-ca999ea9965a"))
   (global_label "5VA"
     (shape bidirectional)
     (at 135.89 114.3 0)
@@ -4134,7 +4134,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "cb33d558-a753-45d7-81cb-b700b2cddd12")
+    (uuid "9ddb3ada-2702-42fe-9a77-6551a889aaca")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 135.89 114.3 0)
       (effects
@@ -4148,7 +4148,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "380c63f7-dc04-42e1-8bf9-2bb154c6b11b")
+    (uuid "61531152-eb1c-4599-9f89-3dfaf2b0a18c")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 135.89 116.84 0)
       (effects
@@ -4161,7 +4161,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "bcd422b7-253d-4309-b244-fb020a28d3ec")
+    (uuid "fe91058a-bb7b-4713-a47d-aae9d21fdcd1")
     (property "Reference" "R88"
       (at 149.86 116.51 0)
       (effects
@@ -4190,12 +4190,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "1a740e54-b739-4eaf-bec6-ee161fd5227f"))
+      (uuid "4dbee503-fc79-40be-a779-2f64c74c0196"))
     (pin "2"
-      (uuid "7694978b-2fd8-4416-b460-ce386e163137"))
+      (uuid "4916529c-2e81-406a-9806-4e81c70c86fe"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R88")
           (unit 1)))))
   (global_label "TP36"
@@ -4206,7 +4206,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "153de404-40fe-43f3-b2ee-1d75310a9d88")
+    (uuid "2c376aca-aa4f-4806-aa6a-6e13483df335")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 149.86 118.11 0)
       (effects
@@ -4219,7 +4219,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d8c72513-f944-4f48-8fda-a5bfccf6b820"))
+    (uuid "62a5e7b2-3e51-41a7-ba30-acef63669db2"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 172.72 116.84 0)
@@ -4227,7 +4227,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "bdb47f0f-4734-4f81-bb4c-b2d06a7c62ba")
+    (uuid "aa367db3-41b1-4f28-9e9e-48a8bf8ab761")
     (property "Reference" "D90"
       (at 172.72 110.16 0)
       (effects
@@ -4251,14 +4251,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "9650820d-65fe-471b-8cd6-25f2be0ef30a"))
+      (uuid "a37ea030-6e19-49fa-9546-639ed4bff874"))
     (pin "2"
-      (uuid "9c81fd5a-ac5e-4444-a198-d3eae08f955b"))
+      (uuid "a74d37c6-480a-42c2-bfb3-8e10e352ab37"))
     (pin "3"
-      (uuid "324be0df-e9bd-484c-90c2-9bf32264038e"))
+      (uuid "1b703146-0597-42fb-97cf-2e0ba9a42c05"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D90")
           (unit 1)))))
   (label "S36"
@@ -4268,7 +4268,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "1157180a-4e7c-43f9-97aa-04157091742c"))
+    (uuid "28a7b775-64ae-4fc6-aa5a-374e27927524"))
   (global_label "5VA"
     (shape bidirectional)
     (at 179.07 114.3 0)
@@ -4277,7 +4277,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5a648574-3e63-4c06-9e0c-53d4730df6fc")
+    (uuid "bb5c7d67-2928-482d-9c16-6d08ecfa3b1f")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 179.07 114.3 0)
       (effects
@@ -4291,7 +4291,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "91cdc85a-a133-4afb-926c-24871d3ca009")
+    (uuid "11600911-9495-47b6-ad32-4578bc3ea53b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 179.07 116.84 0)
       (effects
@@ -4304,7 +4304,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "cdf5476a-524a-4d05-8b82-d34e1ebffa28")
+    (uuid "fb824568-0fd2-4306-bd3b-c2f0aa2fef42")
     (property "Reference" "R89"
       (at 195.58 116.51 0)
       (effects
@@ -4338,12 +4338,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ba5fd34f-d402-4522-b571-f6242977a548"))
+      (uuid "65048e1d-41b8-4f45-8f28-fd9c58eb3d42"))
     (pin "2"
-      (uuid "8fe1b1f4-f982-4376-8b0b-03e86bd1512a"))
+      (uuid "02169edb-73d8-41a5-9bef-98955d754d93"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R89")
           (unit 1)))))
   (global_label "TP37"
@@ -4354,7 +4354,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "34f99268-f52c-4142-88b4-f10d9082f14e")
+    (uuid "dc3f6c89-4b48-496b-b191-837cbc1dcd42")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 195.58 118.11 0)
       (effects
@@ -4367,7 +4367,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "1f3bc475-76ec-4124-b631-ef8505ef35d8"))
+    (uuid "b5fd8130-5581-47e0-befd-682237ef0e41"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 205.74 121.92 0)
@@ -4375,7 +4375,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "18f7cde1-da49-4cfc-870b-9cb12e7472dd")
+    (uuid "da3d9990-38f5-4b61-90e4-d3e67dd261a2")
     (property "Reference" "F38"
       (at 205.74 116.51 0)
       (effects
@@ -4404,12 +4404,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "be454362-5fe6-43b3-9f59-3999dcb87ee7"))
+      (uuid "e6c3188c-15bd-4dbf-ad87-e7f92ffd2378"))
     (pin "2"
-      (uuid "a2398cfa-1669-429c-94cd-9e13dd00eab7"))
+      (uuid "aa0309cd-2d9c-4c17-b91a-5eed715d28d3"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F38")
           (unit 1)))))
   (label "FR37"
@@ -4419,7 +4419,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "2fbd6a8a-1847-477c-a76e-1280bdf9cd48"))
+    (uuid "6d0d6403-040e-4e66-a20d-5ab9ddf8eac2"))
   (label "F37"
     (at 205.74 125.73 270)
     (fields_autoplaced)
@@ -4427,7 +4427,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d409f78b-e098-4321-bbf9-bd233ebd2d47"))
+    (uuid "b756f0d4-28c6-4de2-b497-b47eb87c3447"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 228.6 116.84 0)
@@ -4435,7 +4435,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "22627a3c-8536-449a-bd41-6f8df642417b")
+    (uuid "1541ced6-df63-435e-9e7e-170aeced3970")
     (property "Reference" "D91"
       (at 228.6 110.16 0)
       (effects
@@ -4459,14 +4459,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0ed9d852-75f9-4328-8c9e-326b33ca578e"))
+      (uuid "9d88c4f3-09d8-4e90-b9c9-b7d81455e641"))
     (pin "2"
-      (uuid "7995d544-8055-4f24-af0d-6416ee0a2e4d"))
+      (uuid "8368ef9f-dd72-4611-baa4-0ffa1f63cb3b"))
     (pin "3"
-      (uuid "f9d66f52-af7c-47c2-8c69-09528f50e5f3"))
+      (uuid "39f54509-50ef-4411-8153-7888a279c183"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D91")
           (unit 1)))))
   (label "F37"
@@ -4476,7 +4476,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "89038269-b035-490e-a063-78f6921695ad"))
+    (uuid "73c6c7f7-dc46-4bb1-90b8-9a6652b1e776"))
   (global_label "5VA"
     (shape bidirectional)
     (at 234.95 114.3 0)
@@ -4485,7 +4485,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "2974b944-37b9-4ae3-ae7d-e8973551df9c")
+    (uuid "3a0f449b-6995-469b-b4e1-c7786f6fd709")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 234.95 114.3 0)
       (effects
@@ -4499,7 +4499,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e3288319-25ec-49ac-8fb9-981567dc6a87")
+    (uuid "2929329f-cf16-468e-b343-cecd6bdd935d")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 234.95 116.84 0)
       (effects
@@ -4512,7 +4512,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "70f86e70-1b8d-479d-b4f3-e90bb6b3ed60")
+    (uuid "60db0058-242b-4e87-b369-ca6cb670076d")
     (property "Reference" "R90"
       (at 251.46 116.51 0)
       (effects
@@ -4541,12 +4541,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "9dad2c35-1082-4e2e-8278-d5f623ffcd64"))
+      (uuid "5de3ecfa-6ef0-41d3-be1f-d4261ca34d34"))
     (pin "2"
-      (uuid "56f26db1-510a-48e7-a2e1-060c0ce34fff"))
+      (uuid "08e0b1f1-13c0-4d02-927e-8b6163e67115"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R90")
           (unit 1)))))
   (global_label "TP37"
@@ -4557,7 +4557,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "8da97593-1b94-4c0c-846c-53f7f0d613a4")
+    (uuid "a3846677-a54b-4f60-9be3-f31f85caa828")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 251.46 118.11 0)
       (effects
@@ -4570,7 +4570,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "f059e4e7-3c63-42fd-a09b-350b1f7e3ba2"))
+    (uuid "3db86793-f25f-4916-a882-40bcf6ca291e"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 274.32 116.84 0)
@@ -4578,7 +4578,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "f49dde26-aafa-42a5-a6c5-a82c8631b4da")
+    (uuid "202070cd-e441-438f-9e45-498f1989473a")
     (property "Reference" "D92"
       (at 274.32 110.16 0)
       (effects
@@ -4602,14 +4602,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "b4e46cc1-144e-43dc-81ab-558c9a468001"))
+      (uuid "16683be7-4c39-45a5-82e0-094087b6d6cf"))
     (pin "2"
-      (uuid "31a37476-a4aa-4fd6-b43c-cd75261e4ada"))
+      (uuid "43472845-0e47-4d9e-8b8c-af0b83392e96"))
     (pin "3"
-      (uuid "86d9f823-9764-4d0d-ab7e-a7fc3e87c315"))
+      (uuid "3b6be183-a6b8-418e-971d-b1f4241f7ac6"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D92")
           (unit 1)))))
   (label "S37"
@@ -4619,7 +4619,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "67996b6a-ebe0-4069-927a-0d13a279e23a"))
+    (uuid "85142c0a-64a8-4193-b6d7-666eed0f5b2f"))
   (global_label "5VA"
     (shape bidirectional)
     (at 280.67 114.3 0)
@@ -4628,7 +4628,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e48f1bf3-2e68-4366-b9d3-9caafac5ae80")
+    (uuid "157c4ff7-2ee9-4cb0-992b-b9394828dfcf")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 280.67 114.3 0)
       (effects
@@ -4642,7 +4642,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5de5e36b-d18b-4361-a3e1-a6ff7a670ebc")
+    (uuid "e0f871c7-a3c4-497c-b3ea-7dbf1308aa86")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 280.67 116.84 0)
       (effects
@@ -4655,7 +4655,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "a6087589-41a3-4239-9b05-b17fab3187e2")
+    (uuid "6f939e89-0dfa-4924-9ceb-deb452471cb7")
     (property "Reference" "D93"
       (at 307.34 110.16 0)
       (effects
@@ -4679,14 +4679,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "1f54c84f-f7b1-46cd-b2e7-cfbf616d2e5c"))
+      (uuid "7456ed17-c9ea-4979-bb3e-442d40892a96"))
     (pin "2"
-      (uuid "75c74741-6963-4c60-ada1-253032db96a4"))
+      (uuid "29e08790-962d-4ba8-b63e-13317978b8d9"))
     (pin "3"
-      (uuid "a465a03e-940b-45bc-8524-8bc44fa40c04"))
+      (uuid "63193fa7-1073-450b-b0b7-ba109bc87887"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D93")
           (unit 1)))))
   (global_label "TP37"
@@ -4697,7 +4697,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "7c6a2398-82a2-483b-9054-be928bf1ce79")
+    (uuid "18e89510-636e-4257-b1b7-8a7c525f7390")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 300.99 114.3 0)
       (effects
@@ -4711,7 +4711,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "b51eae1a-4171-481e-a6e1-6c28a9c00db5")
+    (uuid "9d03a556-9baa-4704-9851-20d37a88cc2a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 300.99 116.84 0)
       (effects
@@ -4725,7 +4725,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "1a25fb22-bd98-4f22-b86d-e7748944317c")
+    (uuid "52c1bd9f-c525-47c9-b833-f187063ddfbb")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 313.69 114.3 0)
       (effects
@@ -4738,7 +4738,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "43b3ab42-828f-44a2-8e5c-005ad6e5bf30")
+    (uuid "4473528a-4c66-43c2-aa17-f4b017e73b58")
     (property "Reference" "R91"
       (at 330.2 116.51 0)
       (effects
@@ -4772,12 +4772,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "46d8aae0-6e7a-497e-adf6-76d621159aab"))
+      (uuid "0a3d51fe-f6a2-47b8-a2d0-acfe23dfe679"))
     (pin "2"
-      (uuid "54c7677d-4684-447d-ad61-cc93603130a1"))
+      (uuid "05fd98a7-80a0-408a-83ab-67f513667fb5"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R91")
           (unit 1)))))
   (global_label "TP38"
@@ -4788,7 +4788,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "a4e12090-84b3-41bf-aebc-816c6fa5cfb8")
+    (uuid "77363397-c639-44fb-9c20-da8b1ed2b2d9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 330.2 118.11 0)
       (effects
@@ -4801,7 +4801,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "14eab25f-25f6-4574-941e-7541efcf8b8b"))
+    (uuid "5f8f8ada-c35b-4b72-933a-5d2eaec785aa"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 342.9 121.92 0)
@@ -4809,7 +4809,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "fbd859af-f2e0-4c2d-8913-d9c05a052940")
+    (uuid "86bfc50d-7fef-479f-99a1-83b1bae7d304")
     (property "Reference" "F39"
       (at 342.9 116.51 0)
       (effects
@@ -4838,12 +4838,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "af3501e9-5e09-4a9f-9f55-b4a8abe22d4d"))
+      (uuid "14c20dd4-193c-483c-8b99-90c1b608008f"))
     (pin "2"
-      (uuid "adf2a51e-bf9d-4ee5-baaf-87427afe416d"))
+      (uuid "e717c8ad-b896-43cb-8745-48025b37bf1b"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F39")
           (unit 1)))))
   (label "FR38"
@@ -4853,7 +4853,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "aba3c87b-85d8-4647-b387-dddfbf9d0b11"))
+    (uuid "60674052-fa1d-43a3-a9be-ff564aee9d26"))
   (label "F38"
     (at 342.9 125.73 270)
     (fields_autoplaced)
@@ -4861,7 +4861,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "f8b938aa-9cae-46c6-b87d-8bfa93ca7ffe"))
+    (uuid "eee579cc-0564-4848-9885-4508b8107627"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 363.22 116.84 0)
@@ -4869,7 +4869,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "074c72e5-32c8-4927-831f-8f7aae1c71fa")
+    (uuid "cecd84d7-ade8-44ac-9752-79763fd19459")
     (property "Reference" "D94"
       (at 363.22 110.16 0)
       (effects
@@ -4893,14 +4893,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "7c11bb06-909c-40e4-a88c-c08817c78758"))
+      (uuid "4202c102-5fc0-4d6b-b5dc-5258a527b6d5"))
     (pin "2"
-      (uuid "fe2b4c00-5238-411f-8e57-5aeff4452472"))
+      (uuid "39ec4e9d-4432-4f0a-9eaa-35a110cd2564"))
     (pin "3"
-      (uuid "d0598e8a-0ca5-4c05-a054-dfb817ab261f"))
+      (uuid "d2161aab-277c-4d5b-acc5-10b59dbf3933"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D94")
           (unit 1)))))
   (label "F38"
@@ -4910,7 +4910,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "0fbded38-0d97-4fac-8239-14701c5412e7"))
+    (uuid "d9108189-3bfd-4ca4-9f2d-2625830e2386"))
   (global_label "5VA"
     (shape bidirectional)
     (at 369.57 114.3 0)
@@ -4919,7 +4919,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "26f031d9-0e1d-4bae-9383-63a381152ffd")
+    (uuid "3c2b3829-12dd-489a-bdff-19422182074a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 369.57 114.3 0)
       (effects
@@ -4933,7 +4933,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "2239f0e6-5b5f-4987-aee1-41a2b95d27c2")
+    (uuid "9cb7b343-94cd-40cd-823f-3fd3276bd2dc")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 369.57 116.84 0)
       (effects
@@ -4946,7 +4946,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "1be6c768-8e22-4443-96a1-7e409378dedf")
+    (uuid "18eda2e1-3737-47d4-9f7a-be4175fd6623")
     (property "Reference" "R92"
       (at 386.08 116.51 0)
       (effects
@@ -4975,12 +4975,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0c7cf76e-38b1-4d2a-944e-b8f8c41de876"))
+      (uuid "3f0d6e8f-8cb5-46a8-b689-4f9f97f0a710"))
     (pin "2"
-      (uuid "69c2d70c-7595-4653-8ab7-8ad83c4c6bc0"))
+      (uuid "89d36647-a462-4fe7-8d78-9c1c86b8de1e"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R92")
           (unit 1)))))
   (global_label "TP38"
@@ -4991,7 +4991,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "75b5218c-37a5-445c-9718-552330af5874")
+    (uuid "5b31006c-ffcc-449d-ae95-6b1166141538")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 386.08 118.11 0)
       (effects
@@ -5004,7 +5004,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "ff98d48a-16b6-4924-bad0-b2a0c327e5d1"))
+    (uuid "5337ba30-31d6-4f7d-b182-d690e7ce31a4"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 408.94 116.84 0)
@@ -5012,7 +5012,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "2e1c9d9b-818b-4f0c-849c-9f735ef27a47")
+    (uuid "0e19b946-2630-4659-b5ad-613fe740d3aa")
     (property "Reference" "D95"
       (at 408.94 110.16 0)
       (effects
@@ -5036,14 +5036,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "b4e47751-7138-4f17-ad96-00c2c5505dee"))
+      (uuid "9ea22edb-b669-439c-9db1-0d4bdbee12f6"))
     (pin "2"
-      (uuid "35e266d1-8e24-474a-85c6-28ad55254287"))
+      (uuid "8224409b-aac5-47af-ad5e-0c3cf2cb3483"))
     (pin "3"
-      (uuid "ef58d112-321c-4d1e-9618-927869c72ddb"))
+      (uuid "d4dce6a1-55ac-49a4-98bb-3225236d2b5e"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D95")
           (unit 1)))))
   (label "S38"
@@ -5053,7 +5053,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "6e40fb6f-7b6e-41e2-85bd-15cdad1095ad"))
+    (uuid "0aa54da2-b56b-47f0-b9c0-39d70f32f717"))
   (global_label "5VA"
     (shape bidirectional)
     (at 415.29 114.3 0)
@@ -5062,7 +5062,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "c2218fc9-7929-4aea-a5e5-16da8cef4bfa")
+    (uuid "97e801d3-730d-4589-84ee-1c640490de69")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 415.29 114.3 0)
       (effects
@@ -5076,7 +5076,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "0ed82e99-911c-4739-9818-9a77f80c92fe")
+    (uuid "2b450354-9be1-42bf-afdf-cc8b232d3355")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 415.29 116.84 0)
       (effects
@@ -5089,7 +5089,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "8d4acbb5-2b13-4d3b-9ecf-334b5963a9aa")
+    (uuid "5d025331-6c8a-4c2f-a00c-1c69cf97b5a6")
     (property "Reference" "R93"
       (at 431.8 116.51 0)
       (effects
@@ -5123,12 +5123,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "642b7088-0f6d-4325-b998-9a3ead5b8fe8"))
+      (uuid "2085cc70-99a5-4584-b558-6027c836ed56"))
     (pin "2"
-      (uuid "59e70e4d-d66b-4978-afae-a19be752efbf"))
+      (uuid "70428f04-4556-425d-9cf9-1690135ba6c4"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R93")
           (unit 1)))))
   (global_label "TP39"
@@ -5139,7 +5139,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "aadb8597-cc2c-473d-aa64-4dc70c37079b")
+    (uuid "6d96f78e-b0f0-4b79-8a25-192ebfea91a9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 431.8 118.11 0)
       (effects
@@ -5152,7 +5152,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "e4192c84-6573-453b-8e88-350a74047554"))
+    (uuid "060d94c1-342b-4d76-9ecb-429887ffcabc"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 441.96 121.92 0)
@@ -5160,7 +5160,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ea8d0295-15a0-4c9a-b43a-ad1fae4feb0c")
+    (uuid "edb9a714-1574-47cf-9cfd-ae9d8f96397a")
     (property "Reference" "F40"
       (at 441.96 116.51 0)
       (effects
@@ -5189,12 +5189,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "534a3bc2-0855-4778-96ed-f6789814857c"))
+      (uuid "3b396deb-7330-40e7-bb36-ff7c00241cff"))
     (pin "2"
-      (uuid "d09a76e7-6da8-4444-875b-c38745bc3912"))
+      (uuid "a017e65a-101d-4a79-a23f-3b2adfbce2a3"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F40")
           (unit 1)))))
   (label "FR39"
@@ -5204,7 +5204,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "506c7afa-fc76-41b1-8e65-a266dbd61393"))
+    (uuid "acf3b31e-7a4d-42e7-87e8-12eb6fe665c1"))
   (label "F39"
     (at 441.96 125.73 270)
     (fields_autoplaced)
@@ -5212,7 +5212,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d57a5b88-b168-4b2c-9b6c-f0e45b3f4394"))
+    (uuid "ee3ce160-2285-4ae7-9e24-2d85603dc281"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 464.82 116.84 0)
@@ -5220,7 +5220,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "2bdda6a1-9e15-4f38-af09-539a3b5fdc0c")
+    (uuid "d7a788d3-b96e-4a9c-a955-5f6d2336a44e")
     (property "Reference" "D96"
       (at 464.82 110.16 0)
       (effects
@@ -5244,14 +5244,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "a972cfc9-5c91-4040-8805-618857d3ca6d"))
+      (uuid "9e18eb5f-ec86-4f2c-a009-02e458993cfd"))
     (pin "2"
-      (uuid "8d1fa0b8-5381-4eaf-80fe-7826a03290d4"))
+      (uuid "5c1e022b-0ab2-4ec9-a22f-acea32ceaf64"))
     (pin "3"
-      (uuid "860e3432-f86b-4e14-b41e-3fb6f59cb2ab"))
+      (uuid "2be5f028-b589-4bed-9cbd-3731108fe685"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D96")
           (unit 1)))))
   (label "F39"
@@ -5261,7 +5261,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "d9147b02-301e-4daf-b627-061a1a8d5441"))
+    (uuid "8724ff7c-3f36-4226-ad20-7523d7d17d4c"))
   (global_label "5VA"
     (shape bidirectional)
     (at 471.17 114.3 0)
@@ -5270,7 +5270,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "07165954-d845-42e4-9840-00546b1ec5dc")
+    (uuid "8fd853cc-545e-4538-9095-c19ece687d8a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 471.17 114.3 0)
       (effects
@@ -5284,7 +5284,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "2b1bdb07-6041-45c2-8a3c-6e3dd2278fb6")
+    (uuid "30b70ea7-3bc6-471a-9367-0f3dea8ab49d")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 471.17 116.84 0)
       (effects
@@ -5297,7 +5297,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "51786ba8-4acb-4e56-b46a-c6feffa4e7ca")
+    (uuid "4b7bdbe9-0db8-408f-a5e9-371e7de3c200")
     (property "Reference" "R94"
       (at 487.68 116.51 0)
       (effects
@@ -5326,12 +5326,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ad106ec3-1080-4236-91cb-dfcc27584213"))
+      (uuid "0a8c59cb-b1d7-406b-be5c-3f3ee0062515"))
     (pin "2"
-      (uuid "f4099102-0431-49bd-a106-7281f6432c36"))
+      (uuid "c005a3f5-9515-40c0-9641-35deba15f5fd"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R94")
           (unit 1)))))
   (global_label "TP39"
@@ -5342,7 +5342,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "4c289413-42b5-4c7c-b7b5-f029b639eb3e")
+    (uuid "622ceb3d-e528-4f6f-afab-4b2abff52b45")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 487.68 118.11 0)
       (effects
@@ -5355,7 +5355,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "3bbe6b89-a403-4c5c-bfda-139efa2859ca"))
+    (uuid "6b3f0f15-c7e1-4298-b360-977164757a8e"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 510.54 116.84 0)
@@ -5363,7 +5363,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "04710525-78f6-464a-9389-5dd05faf09c1")
+    (uuid "afd66f73-9724-4605-864b-ede6d427053e")
     (property "Reference" "D97"
       (at 510.54 110.16 0)
       (effects
@@ -5387,14 +5387,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "c3a2f8d3-294e-405c-91c1-e84240a0325d"))
+      (uuid "422cf77b-b5f4-4fc1-aac2-72947b53c422"))
     (pin "2"
-      (uuid "75872a93-fdf8-4560-993f-78515da6151b"))
+      (uuid "907b97ed-6e46-4b2e-ae77-f401b065131e"))
     (pin "3"
-      (uuid "04070139-d016-40bb-b6c1-c1f63782dce9"))
+      (uuid "f1bb337e-7fc9-4106-aa36-6215957ae69d"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D97")
           (unit 1)))))
   (label "S39"
@@ -5404,7 +5404,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "04d594f0-973a-4d7a-a94a-e4523eded72c"))
+    (uuid "87dc1ebd-443a-433c-ab64-02b63dfdf354"))
   (global_label "5VA"
     (shape bidirectional)
     (at 516.89 114.3 0)
@@ -5413,7 +5413,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "74d6e9dd-ddbf-4b5c-b330-48ec4157b0d2")
+    (uuid "d0801499-42f5-4342-b5df-772e37ee887f")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 516.89 114.3 0)
       (effects
@@ -5427,7 +5427,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "d4d47723-38f8-43e6-a8d0-95de93be9c96")
+    (uuid "748c220f-499b-49ad-b8a9-0b3c5380013d")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 516.89 116.84 0)
       (effects
@@ -5440,7 +5440,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "a27585df-36cc-40f6-8b8c-3d0af4a832ab")
+    (uuid "0a2012f7-197a-4221-a369-4c57cd097c24")
     (property "Reference" "D98"
       (at 543.56 110.16 0)
       (effects
@@ -5464,14 +5464,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "c6351715-5e61-4eb0-8072-6f6988942963"))
+      (uuid "6cf97425-89a2-41cf-977c-9650088b463b"))
     (pin "2"
-      (uuid "a198d7d6-bc87-429a-81d8-a630a252d22e"))
+      (uuid "9ef80082-5238-45d1-9197-c14c3896ad1d"))
     (pin "3"
-      (uuid "18eff308-e7e7-46b3-bbba-57f0be7cb57e"))
+      (uuid "1af04a3b-4a32-41a0-9702-22234a3fde3a"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D98")
           (unit 1)))))
   (global_label "TP39"
@@ -5482,7 +5482,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "b9e1786b-f33f-4812-9b5f-485789a884a8")
+    (uuid "95b2d080-eb93-49f3-9b66-576cd9db761c")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 537.21 114.3 0)
       (effects
@@ -5496,7 +5496,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "73026188-6248-4666-aa05-735e8d7785f4")
+    (uuid "9a42c32b-e66c-42c7-8ba8-2390e405f966")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 537.21 116.84 0)
       (effects
@@ -5510,7 +5510,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5914f47b-6958-4bed-8179-662c22f38801")
+    (uuid "ed82b316-d5eb-4c3b-b8e4-2e9a455e9989")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 549.91 114.3 0)
       (effects
@@ -5523,7 +5523,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "122a68e4-92c3-4928-8568-4088779e7656")
+    (uuid "aad8ab62-a1cd-4b07-ab73-a89b9c3beb82")
     (property "Reference" "R95"
       (at 566.42 116.51 0)
       (effects
@@ -5557,12 +5557,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "be36b6e3-fe0e-4433-a874-ee2ab67ec60f"))
+      (uuid "aaafc6fa-eb75-4671-bb1c-f1ca50a4ef66"))
     (pin "2"
-      (uuid "b740c772-d9bc-427c-9cc3-09c446659f1d"))
+      (uuid "8a13b76d-16f0-4bee-89f3-1e44a2ddadc5"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R95")
           (unit 1)))))
   (global_label "TP40"
@@ -5573,7 +5573,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "664f7801-e3a4-489f-89ef-f1d7db9f6447")
+    (uuid "ca055e79-f204-47ce-ba98-2ba6937c0e40")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 566.42 118.11 0)
       (effects
@@ -5586,7 +5586,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "505ff126-de06-4916-836b-78b4c00ca9c4"))
+    (uuid "05c03458-0313-4575-861e-e242021eeb74"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 27.94 157.48 0)
@@ -5594,7 +5594,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "329f46c0-1ae8-4e8e-aa1f-7877c86c8f83")
+    (uuid "cd92731e-b310-40b1-8679-1cbf78712a79")
     (property "Reference" "F41"
       (at 27.94 152.07 0)
       (effects
@@ -5623,12 +5623,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "8521df61-8bd5-4938-8ec7-016ce0f1a492"))
+      (uuid "d169c8a5-99bd-4ce5-91e3-ea58579c6c3d"))
     (pin "2"
-      (uuid "41239383-42fd-480e-ae24-1eae62899a61"))
+      (uuid "fe803854-cf38-488d-89fe-1ad83c411894"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F41")
           (unit 1)))))
   (label "FR40"
@@ -5638,7 +5638,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "0aa14518-9e37-4d84-b9ce-363bcbaa52d4"))
+    (uuid "4243e573-63fb-4faf-9676-10484024dc1f"))
   (label "F40"
     (at 27.94 161.29 270)
     (fields_autoplaced)
@@ -5646,7 +5646,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "140111ca-ffba-49c8-8758-0c29723a3516"))
+    (uuid "650077fa-9a3c-4c14-acc0-83914f1c7bb2"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 50.8 152.4 0)
@@ -5654,7 +5654,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "862de983-1ea8-4530-b7ea-c4fc67dba9da")
+    (uuid "1b0ada85-a76e-4488-b5f3-dd0dea5d9ca1")
     (property "Reference" "D99"
       (at 50.8 145.72 0)
       (effects
@@ -5678,14 +5678,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "125d6d44-88b8-43e1-b86a-734372ca0803"))
+      (uuid "6b60acfb-aab7-414e-ba07-41e37733a884"))
     (pin "2"
-      (uuid "008e13e1-c485-4d76-97c2-bd589ca127bc"))
+      (uuid "c49a3fd3-82bf-4c89-9558-5959aec96de3"))
     (pin "3"
-      (uuid "60524a50-9e41-46ec-9bbd-c5f59bce1620"))
+      (uuid "723e4877-f74c-40bb-8ff5-d96dfaeda374"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D99")
           (unit 1)))))
   (label "F40"
@@ -5695,7 +5695,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "295e9e7f-0a94-44c6-8a26-477190eb1eef"))
+    (uuid "0cdf6a6c-9a00-4e38-8f85-e956599d6355"))
   (global_label "5VA"
     (shape bidirectional)
     (at 57.15 149.86 0)
@@ -5704,7 +5704,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "9fcc9ebe-af93-4da5-91f6-d4d75139cebd")
+    (uuid "b62bb411-1f2a-4704-9bf9-6c26208264d9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 57.15 149.86 0)
       (effects
@@ -5718,7 +5718,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "4db3ac85-8d00-4cdc-bba7-743ea76e4d8f")
+    (uuid "fdc6e67b-0f51-489b-96eb-ad2cd9266859")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 57.15 152.4 0)
       (effects
@@ -5731,7 +5731,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "85d0f2de-c04a-4d44-9683-5521b70166e3")
+    (uuid "e24c05b7-7eaf-452a-8423-b69f15143735")
     (property "Reference" "R96"
       (at 71.12 152.07 0)
       (effects
@@ -5760,12 +5760,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "640e5836-9e0c-49fc-84d6-95efa8b7c4d2"))
+      (uuid "138cd6df-a5cf-48c7-b2fa-31827afd3e9b"))
     (pin "2"
-      (uuid "54da5038-bee2-453a-95b8-d9458d64bf98"))
+      (uuid "4e3269de-39b8-4eec-8b6a-c00968d9c976"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R96")
           (unit 1)))))
   (global_label "TP40"
@@ -5776,7 +5776,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "64c26c74-6b25-42e0-a887-e1657c195d90")
+    (uuid "e2ce37be-b64f-4f54-a931-12d9564367bf")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 71.12 153.67 0)
       (effects
@@ -5789,7 +5789,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "4cb5e369-8ca4-48eb-806e-a0b4618ac749"))
+    (uuid "ed2f53ee-ed29-4180-8315-d3a850fb8bad"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 93.98 152.4 0)
@@ -5797,7 +5797,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9705a30b-e0d6-4522-8f33-c5d045fc63cb")
+    (uuid "77d1e202-de58-4934-8819-0c7c7a6b6783")
     (property "Reference" "D100"
       (at 93.98 145.72 0)
       (effects
@@ -5821,14 +5821,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "52d117d3-f254-4860-84f5-9d70034950c5"))
+      (uuid "3f09a09c-a315-4ca5-81d1-cdb32b597db3"))
     (pin "2"
-      (uuid "09d82a7a-7fbd-487f-8853-c3ada520dc9e"))
+      (uuid "eff290c5-992d-4ffc-97d7-95fe8916b9a4"))
     (pin "3"
-      (uuid "97168d54-650a-4536-a774-470e93308335"))
+      (uuid "28b0f73c-a481-4753-8116-4c58f2e74b3b"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D100")
           (unit 1)))))
   (label "S40"
@@ -5838,7 +5838,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "efb10cb5-9488-4fd4-936e-483b276d9b2f"))
+    (uuid "be3d5e09-deda-4406-a5cf-039797c265dc"))
   (global_label "5VA"
     (shape bidirectional)
     (at 100.33 149.86 0)
@@ -5847,7 +5847,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "753004c7-aefc-4c35-a646-c059d37f5f2d")
+    (uuid "155c873a-41ac-44f9-8ae0-b2ded41fb889")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 100.33 149.86 0)
       (effects
@@ -5861,7 +5861,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "864ca2dd-8cba-41c6-a3d4-bbc9dced00de")
+    (uuid "72ee0bdc-a084-4feb-96c7-08344ff58885")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 100.33 152.4 0)
       (effects
@@ -5874,7 +5874,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ee2950aa-a26e-45f0-9e1c-bea5088b1218")
+    (uuid "b7375374-d73f-4fe2-8755-9c5e2b63dc08")
     (property "Reference" "R97"
       (at 116.84 152.07 0)
       (effects
@@ -5908,12 +5908,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "622489d4-2736-412b-bc22-0585b5d46047"))
+      (uuid "ca0cf79f-a0f0-47b1-87a8-2f25fb9cf42e"))
     (pin "2"
-      (uuid "06b2258b-cabc-428c-82c8-5e0fd34f87d2"))
+      (uuid "9830e0e4-5f70-4e7d-ab85-a97d34675f7f"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R97")
           (unit 1)))))
   (global_label "TP41"
@@ -5924,7 +5924,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "93b38df6-1621-4634-abbd-d5d86832b848")
+    (uuid "8091c65b-2132-41e1-b250-381a5b212fbe")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 116.84 153.67 0)
       (effects
@@ -5937,7 +5937,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a59c4707-9e87-4f4f-9291-b66e19d022ec"))
+    (uuid "ccc643b7-c1c8-4cae-affb-37b209530f7b"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 127 157.48 0)
@@ -5945,7 +5945,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ef4f68b9-1438-4af7-a0b9-665b72b62912")
+    (uuid "a0e4fa56-f418-4bb7-b822-14968b139a14")
     (property "Reference" "F42"
       (at 127 152.07 0)
       (effects
@@ -5974,12 +5974,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "2d95cca6-d3f4-435e-9b23-da57d8bb48a8"))
+      (uuid "ae08d7be-56fa-42c3-b2ce-5f41591ff2ba"))
     (pin "2"
-      (uuid "1b14963d-b72d-477d-91c7-fa96a24b2ff0"))
+      (uuid "512055bf-93d8-41fe-b240-8fb5e03413df"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F42")
           (unit 1)))))
   (label "FR41"
@@ -5989,7 +5989,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "457143d9-dae0-439e-a35f-63f06917eb26"))
+    (uuid "61a0bec2-ba2c-4fc5-b7f2-c42f2ed4f68e"))
   (label "F41"
     (at 127 161.29 270)
     (fields_autoplaced)
@@ -5997,7 +5997,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "2d19d3dd-4edc-4ad9-9e31-4a0fca8fa589"))
+    (uuid "bb7f10d5-ddff-4da8-8c2b-0fa4b0a9d18c"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 149.86 152.4 0)
@@ -6005,7 +6005,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "8b83aafa-83a3-4dbb-b925-0a2b9213ec23")
+    (uuid "d4f9a7d6-70ef-4d58-a23b-5c24b5cee929")
     (property "Reference" "D101"
       (at 149.86 145.72 0)
       (effects
@@ -6029,14 +6029,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "74ad4621-a68d-445b-95b9-68d56cb521aa"))
+      (uuid "a622f684-ed07-4f5e-ae7d-854e4f9b5dc4"))
     (pin "2"
-      (uuid "9d822a08-2581-4874-b2c9-a0da7961aab8"))
+      (uuid "0ad3b511-dc57-494c-95a2-13a80d23c607"))
     (pin "3"
-      (uuid "2342a9f1-51e6-4ee4-95a3-d5f508c4e86a"))
+      (uuid "7c681599-2727-4e55-b128-7eb2476e921f"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D101")
           (unit 1)))))
   (label "F41"
@@ -6046,7 +6046,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "eb1adc3a-1f8e-43f2-a6e1-dfeca98059e8"))
+    (uuid "bfa65cd2-aee9-46cb-9600-ca0bd5ac22ac"))
   (global_label "5VA"
     (shape bidirectional)
     (at 156.21 149.86 0)
@@ -6055,7 +6055,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "6ae28071-3dcb-47e1-84bc-95d111a204ba")
+    (uuid "b5083e67-0c72-4d61-af97-53c7067a35bd")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 149.86 0)
       (effects
@@ -6069,7 +6069,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "17b33ad1-1e09-4ab1-8cf4-2c89b4f58893")
+    (uuid "7cdce187-aaac-4a54-9b9e-59cb9444ebf8")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 156.21 152.4 0)
       (effects
@@ -6082,7 +6082,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "693c3138-3ce6-491c-95bb-bae758e19407")
+    (uuid "d0e655b7-1f9c-402d-aefc-280169e0959d")
     (property "Reference" "R98"
       (at 172.72 152.07 0)
       (effects
@@ -6111,12 +6111,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "71a4ce39-f7c2-4e26-a40e-c026c9e137e3"))
+      (uuid "089e44ce-4ab6-44a2-a18e-3eb23e164f90"))
     (pin "2"
-      (uuid "4046f68b-7549-4d2e-90f8-6797ddf5dff4"))
+      (uuid "233a55c8-43b4-43b4-966c-7def5e15c7d2"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R98")
           (unit 1)))))
   (global_label "TP41"
@@ -6127,7 +6127,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "34ca0d75-b6c4-4511-8fc7-4f2a9a9cb8e7")
+    (uuid "cf6126b4-b54e-4ffa-9aeb-71d37bfd1bab")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 172.72 153.67 0)
       (effects
@@ -6140,7 +6140,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "08d0fce3-f3ae-47d5-8c6c-942bece69eec"))
+    (uuid "5720cc80-d3de-4ab0-9190-e00aa38ab701"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 195.58 152.4 0)
@@ -6148,7 +6148,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "f7d87d46-ad74-446c-a993-70b900b6b445")
+    (uuid "b1acc302-dd58-4208-ae57-ed0728865c40")
     (property "Reference" "D102"
       (at 195.58 145.72 0)
       (effects
@@ -6172,14 +6172,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "aebfb2fc-708d-451e-aa78-66aeea73c5e1"))
+      (uuid "6cda1a64-7078-45ee-ad5a-5041fd476e96"))
     (pin "2"
-      (uuid "ee58b13b-81a0-4b4e-bf3b-d6787b17e88d"))
+      (uuid "0aa3ed84-3d8b-4584-b1da-15b65bba9cde"))
     (pin "3"
-      (uuid "f7b89e69-bfd1-44ec-af88-7f377a6d18c4"))
+      (uuid "d75d8393-44ab-4fe4-8227-7db7e8ccb8c3"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D102")
           (unit 1)))))
   (label "S41"
@@ -6189,7 +6189,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "c2f761e8-ba1a-4dec-a980-591d772014f1"))
+    (uuid "d5438157-276b-4d99-9287-2e7b13352e5d"))
   (global_label "5VA"
     (shape bidirectional)
     (at 201.93 149.86 0)
@@ -6198,7 +6198,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "a7761759-928c-4eab-a8aa-bbb673054709")
+    (uuid "275408fe-78d9-434c-a8bd-1abff8d25901")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 201.93 149.86 0)
       (effects
@@ -6212,7 +6212,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e7020d87-7e59-4b96-9dcb-0dd8d54bb3d5")
+    (uuid "3052ff8c-4481-45d4-9018-8ae5148b8579")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 201.93 152.4 0)
       (effects
@@ -6225,7 +6225,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ca96648a-f206-4fe0-ba11-bda369e14e72")
+    (uuid "bc9eb69e-dc6e-43ac-a83b-76bbe403a45e")
     (property "Reference" "D103"
       (at 228.6 145.72 0)
       (effects
@@ -6249,14 +6249,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0250e3ad-a7cc-4e5e-9724-39c7c0eca96c"))
+      (uuid "9825aa6e-d81f-4cd0-99ed-9f8d2e8c8e9e"))
     (pin "2"
-      (uuid "b9beb92c-fc47-413f-93c1-687bb105067f"))
+      (uuid "8e2b83be-809a-4396-882d-a4b597918e90"))
     (pin "3"
-      (uuid "717ed3e8-0608-41c6-ade3-35465c2d2d42"))
+      (uuid "c753a747-0fe1-4c82-8c96-c201a6a34efe"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D103")
           (unit 1)))))
   (global_label "TP41"
@@ -6267,7 +6267,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "3467b92b-b9b6-450f-90df-a38f3c326fcf")
+    (uuid "9a6ae597-0587-41a1-8c40-dff5294b135e")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 222.25 149.86 0)
       (effects
@@ -6281,7 +6281,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "51c46cea-d9a3-40c7-9815-049f8c17b5be")
+    (uuid "118876ff-2831-4f4a-97aa-6cfa1b0987d0")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 222.25 152.4 0)
       (effects
@@ -6295,7 +6295,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "2899c03a-d04e-447b-98c4-6a1206a31f62")
+    (uuid "530c6c64-69e1-4c58-ba30-b6520d9a20f7")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 234.95 149.86 0)
       (effects
@@ -6308,7 +6308,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "0988620c-3105-447f-a076-1c756b910cce")
+    (uuid "61723eeb-509d-4a42-965b-b024c7baec84")
     (property "Reference" "R99"
       (at 251.46 152.07 0)
       (effects
@@ -6342,12 +6342,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "4b59a04a-b752-4389-b217-26a81eb03028"))
+      (uuid "d75b1b36-f6f3-4587-a7a6-709d0c1b650a"))
     (pin "2"
-      (uuid "9935a24b-cbb0-4a41-a888-b9ae39fb9ae1"))
+      (uuid "3fe64d27-8fb7-41ad-8d33-0ae073f0d8c9"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R99")
           (unit 1)))))
   (global_label "TP42"
@@ -6358,7 +6358,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "31547032-8472-43c5-b96b-4a6079e92901")
+    (uuid "dedde36b-212d-41d4-aaec-86e9816bc8f5")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 251.46 153.67 0)
       (effects
@@ -6371,7 +6371,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "64692b1f-ab01-49e5-bd24-73d78b3d9d87"))
+    (uuid "b6744a99-73f0-445a-8b1a-45d99c107e51"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 264.16 157.48 0)
@@ -6379,7 +6379,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "31d89ee1-aaf5-414d-b832-0ea714107ffc")
+    (uuid "e766269c-d1ba-454c-b1ee-7f8181849b18")
     (property "Reference" "F43"
       (at 264.16 152.07 0)
       (effects
@@ -6408,12 +6408,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "d50b2c81-f093-48dd-bc07-d62eae8ccd9b"))
+      (uuid "818c1980-1737-43fa-bba9-741813686e81"))
     (pin "2"
-      (uuid "2ac4456b-9a3e-48cb-b71c-5abdc2e46875"))
+      (uuid "2174202e-cda2-4c1c-9e4a-002261e88228"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F43")
           (unit 1)))))
   (label "FR42"
@@ -6423,7 +6423,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "25440f15-6ef1-465b-8db4-f00852ba62fa"))
+    (uuid "98b0b2bb-b65e-4acd-8e5d-a867c9a61370"))
   (label "F42"
     (at 264.16 161.29 270)
     (fields_autoplaced)
@@ -6431,7 +6431,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "9436f974-8f6d-469d-9341-ba7094304bde"))
+    (uuid "57dd3af7-90ee-4069-8a39-fe1e1115696a"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 284.48 152.4 0)
@@ -6439,7 +6439,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "fcfb12d5-be5f-4a17-b2b2-5d2be8b5edc4")
+    (uuid "681001b0-748a-4529-beec-27795ca54746")
     (property "Reference" "D104"
       (at 284.48 145.72 0)
       (effects
@@ -6463,14 +6463,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "02e3c2eb-f72b-4d2c-a710-ff58d420288c"))
+      (uuid "a46a6bce-a67a-4661-aec2-5fa0af1578d9"))
     (pin "2"
-      (uuid "07d71c52-c45c-47b3-ad03-c6e4b9ca7730"))
+      (uuid "f7845857-36ac-4d9f-bccb-aa8c634aedb4"))
     (pin "3"
-      (uuid "9fee7faa-5749-4438-8efb-52f8777b72bb"))
+      (uuid "03c2c821-75ed-4d52-8dae-93c5b4d8fd95"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D104")
           (unit 1)))))
   (label "F42"
@@ -6480,7 +6480,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "953afa04-0e0a-4c53-ad5c-0a70230cbf5c"))
+    (uuid "e6fe4d2f-6f98-423a-9a99-7e7ae1a9dffb"))
   (global_label "5VA"
     (shape bidirectional)
     (at 290.83 149.86 0)
@@ -6489,7 +6489,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "05a6d21b-8451-44ec-9b86-a6fae6c7782e")
+    (uuid "ac417246-feb6-46c9-b978-c0985b03a133")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 290.83 149.86 0)
       (effects
@@ -6503,7 +6503,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "0195a561-54ff-462b-bd8c-bfc222fa6cc1")
+    (uuid "ff1c8ac5-5a7a-4a69-b994-b1d6b1d635b4")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 290.83 152.4 0)
       (effects
@@ -6516,7 +6516,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "f431e3ee-3ad8-4227-8603-2d5296e2e305")
+    (uuid "0aa56bb6-b8ab-4e24-9d22-a7683989ba40")
     (property "Reference" "R100"
       (at 307.34 152.07 0)
       (effects
@@ -6545,12 +6545,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "b365b9b7-844b-46f7-8b71-cbc6773d748e"))
+      (uuid "8ae8e74c-3ad9-4dc5-9376-a23945414f18"))
     (pin "2"
-      (uuid "0ca0e7f5-6efa-4ccd-8ce9-7be84a0164d5"))
+      (uuid "ccd96301-a198-468d-8bba-c32d76efc96a"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R100")
           (unit 1)))))
   (global_label "TP42"
@@ -6561,7 +6561,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "f7d0139e-5149-4482-9268-7f037c0ba13b")
+    (uuid "91d1686c-1d43-45b4-b3a7-b2a5ec930ebb")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 307.34 153.67 0)
       (effects
@@ -6574,7 +6574,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "2bc2ae9e-c351-4271-8bcf-c29e9f35c91c"))
+    (uuid "836358f5-f8ed-4772-b9b8-063679341f7a"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 330.2 152.4 0)
@@ -6582,7 +6582,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ca4aebf3-68ef-4202-91e8-3cf65fe366eb")
+    (uuid "3bb8a7f6-41f4-4920-9ea0-e28b6363cb47")
     (property "Reference" "D105"
       (at 330.2 145.72 0)
       (effects
@@ -6606,14 +6606,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "812f841d-4bbb-41d5-8533-7fafd50f7cf6"))
+      (uuid "b326b681-e169-4f59-bcad-6a8fb57e64cb"))
     (pin "2"
-      (uuid "c9f98540-f38e-40a5-a6fe-e6fc3a527056"))
+      (uuid "090087a2-0dcf-4251-b894-9e2f626b13ca"))
     (pin "3"
-      (uuid "09cd28aa-22ba-4f32-bb11-8ea38d4718af"))
+      (uuid "c4598122-8272-4657-98d9-d7dfae901d4a"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D105")
           (unit 1)))))
   (label "S42"
@@ -6623,7 +6623,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "6ae2016f-6628-4be7-ad9b-6a6db29cfc17"))
+    (uuid "b4806f86-1285-41db-8756-d59da7f5897c"))
   (global_label "5VA"
     (shape bidirectional)
     (at 336.55 149.86 0)
@@ -6632,7 +6632,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "8d943917-0717-40d3-bbea-18d0be8880a9")
+    (uuid "e283447f-d13b-4fb8-857b-2384aa94a08e")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 336.55 149.86 0)
       (effects
@@ -6646,7 +6646,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "dae87723-b01c-4a06-997f-7612ff4cc3d2")
+    (uuid "cb75e5b3-ce25-4e8a-a346-b26281be80dd")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 336.55 152.4 0)
       (effects
@@ -6659,7 +6659,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "d06e5ad9-9810-46dc-8d82-276ae7a508fb")
+    (uuid "1c6aabbd-e987-45b9-83a5-7068fbbc2b01")
     (property "Reference" "R101"
       (at 353.06 152.07 0)
       (effects
@@ -6693,12 +6693,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "a3ddcd8c-d772-44c9-b9ad-13785e6a6fc2"))
+      (uuid "515056ba-1b6e-4e03-97bc-359f55a41e92"))
     (pin "2"
-      (uuid "4d463fc8-cccb-41a7-be41-f2823ef08259"))
+      (uuid "62bb3cd4-5765-48fe-936c-88662b571455"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R101")
           (unit 1)))))
   (global_label "TP43"
@@ -6709,7 +6709,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "4ccf97a2-c426-43a1-a16f-34a6dc280b57")
+    (uuid "f15d02a7-c346-425d-9ef0-73d0c459e05a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 353.06 153.67 0)
       (effects
@@ -6722,7 +6722,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "c326148c-e64a-416a-b319-cd19a25bd0cd"))
+    (uuid "2cb9c52d-0e67-44e6-ab96-469f6ea2f57b"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 363.22 157.48 0)
@@ -6730,7 +6730,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "72de84a1-93da-42a2-bb0d-4b0558ed8438")
+    (uuid "92c03c79-62cb-4f3c-b673-35026541a8d3")
     (property "Reference" "F44"
       (at 363.22 152.07 0)
       (effects
@@ -6759,12 +6759,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "22c11a91-cf3d-4997-9cb6-310ff362f7a0"))
+      (uuid "e4ccf6b0-8e3d-4070-83f7-a1d37565663c"))
     (pin "2"
-      (uuid "1bff3c89-f4c0-434c-935e-18fef4bda19c"))
+      (uuid "a1faf0ab-462b-41e7-92bc-e40dc56d234e"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F44")
           (unit 1)))))
   (label "FR43"
@@ -6774,7 +6774,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "39d31a74-b800-4446-94a1-c88bda5690bf"))
+    (uuid "2eb48847-1d62-4794-a9df-72e9d13da299"))
   (label "F43"
     (at 363.22 161.29 270)
     (fields_autoplaced)
@@ -6782,7 +6782,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "7dbcfc09-1093-4e5e-aa7f-ab88dab755d0"))
+    (uuid "1d8baf60-2447-41f9-8e7d-584fe8dda37e"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 386.08 152.4 0)
@@ -6790,7 +6790,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9dcbc841-7983-4527-8c34-6d2a9e631a0a")
+    (uuid "498b77e2-9a7c-4c12-87a6-e9d1b68eadde")
     (property "Reference" "D106"
       (at 386.08 145.72 0)
       (effects
@@ -6814,14 +6814,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "fd62ee69-f77e-49ca-bd4f-51a79a3962bf"))
+      (uuid "59ac05fe-8a53-4495-b69b-c246ac630ab1"))
     (pin "2"
-      (uuid "24e19579-0403-4217-9839-dec0e88fd838"))
+      (uuid "bd8a3764-44d9-49ba-992f-57a6a15c806a"))
     (pin "3"
-      (uuid "6aa20424-21dd-42e7-af51-ad762c975255"))
+      (uuid "a1dcbaa1-5833-443c-9a67-ac1b00bbe502"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D106")
           (unit 1)))))
   (label "F43"
@@ -6831,7 +6831,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "2969d173-dd24-4cfa-8c72-d861fe0bb03c"))
+    (uuid "8a42b2fb-2cbd-4c32-afcb-dabe4ca1d02f"))
   (global_label "5VA"
     (shape bidirectional)
     (at 392.43 149.86 0)
@@ -6840,7 +6840,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "3fe136c1-9634-4e99-ab48-82499d68e9e1")
+    (uuid "2cef4739-0cc2-47a3-ba4c-fcd567c29382")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 392.43 149.86 0)
       (effects
@@ -6854,7 +6854,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "bd094706-e4d2-4640-b4ea-0db7a7acc722")
+    (uuid "296b8d07-948a-4056-a033-87ed2cd44e42")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 392.43 152.4 0)
       (effects
@@ -6867,7 +6867,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9c1798fa-b65e-4d78-8796-1dda89038442")
+    (uuid "d7c3f5b2-ba88-4b1f-86a2-92aaa3d2251b")
     (property "Reference" "R102"
       (at 408.94 152.07 0)
       (effects
@@ -6896,12 +6896,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "c3c8fcd6-f886-4e0b-8f2c-178098a569e2"))
+      (uuid "3cf3d300-e223-4317-91d2-3c5072fd7cfc"))
     (pin "2"
-      (uuid "eae39fa9-d14b-48b9-bae8-2a8f9d49f35f"))
+      (uuid "9dd7f775-f791-47c8-9023-51162011a1eb"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R102")
           (unit 1)))))
   (global_label "TP43"
@@ -6912,7 +6912,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e69be15f-53b1-4360-85f5-6dea246ed20e")
+    (uuid "c069d686-e860-43e4-a999-a2cff66e596a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 408.94 153.67 0)
       (effects
@@ -6925,7 +6925,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "989a99b9-0cf5-48b8-8b9d-a2c27b855eb4"))
+    (uuid "631bd2be-bc89-4491-a114-13257687f719"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 431.8 152.4 0)
@@ -6933,7 +6933,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "aa19d801-27b5-4e62-a560-13c10fe736b3")
+    (uuid "421697b3-b5d0-4ad3-b458-c2289f4b881e")
     (property "Reference" "D107"
       (at 431.8 145.72 0)
       (effects
@@ -6957,14 +6957,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "9787ec66-1f5c-4bf6-84ad-c0b3ad5364f1"))
+      (uuid "d1f81560-b5e0-451e-8a53-7d8b5672550b"))
     (pin "2"
-      (uuid "9dad6c8b-dfb3-48e1-b5ca-618508e91de6"))
+      (uuid "4f7da4a9-1355-43db-b88b-5810faeae5eb"))
     (pin "3"
-      (uuid "d9a9f56e-8e46-4703-997e-b0d530bdaaa2"))
+      (uuid "07917eaf-3cd0-44d3-9ebb-7c43e5adb9d5"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D107")
           (unit 1)))))
   (label "S43"
@@ -6974,7 +6974,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "938bf217-7e40-4713-92af-d8b105cd6c19"))
+    (uuid "cdad69c2-e38b-4cda-a016-34d40f3efe4f"))
   (global_label "5VA"
     (shape bidirectional)
     (at 438.15 149.86 0)
@@ -6983,7 +6983,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "9e8303c3-5f1e-447c-a8f6-5df3a275aeeb")
+    (uuid "01fac688-aef2-4815-a5b4-26aa7a771644")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 438.15 149.86 0)
       (effects
@@ -6997,7 +6997,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "92b6fa58-1fbd-4266-aaad-1a453d28f13b")
+    (uuid "9c30644c-634e-43c9-a732-c5e62a2314ae")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 438.15 152.4 0)
       (effects
@@ -7010,7 +7010,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "856687e9-9316-4104-82aa-c143a914f1e7")
+    (uuid "65f87470-1de9-4a40-8ebf-a925c7bc0be6")
     (property "Reference" "D108"
       (at 464.82 145.72 0)
       (effects
@@ -7034,14 +7034,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "addc57f1-c9c6-429a-ae3d-0a511f0b7ddd"))
+      (uuid "7b6d9295-a58e-4ef6-b905-1558ebce7a8f"))
     (pin "2"
-      (uuid "a5f14ee6-3836-41fe-8a0d-80002d4601b3"))
+      (uuid "c3222d7a-5d32-4261-9257-c818ddff5910"))
     (pin "3"
-      (uuid "3cf263b6-2ed2-42c1-80e0-e747f57cfad3"))
+      (uuid "591898a9-c790-4c41-9da4-0e1a4ed57e19"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D108")
           (unit 1)))))
   (global_label "TP43"
@@ -7052,7 +7052,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "7468851a-b2b1-4d09-a97a-7e9566239f2a")
+    (uuid "aba10dc9-ede3-474b-9fca-21d54a241fed")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 458.47 149.86 0)
       (effects
@@ -7066,7 +7066,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a11ecd08-eee9-4de5-a4f3-9de827dfad60")
+    (uuid "79f6c6aa-9e21-4295-8c09-0894287649b5")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 458.47 152.4 0)
       (effects
@@ -7080,7 +7080,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "aabf67b2-a2d9-4716-b5f6-626cf36893f0")
+    (uuid "62fe3a72-0a3e-47a6-a7f7-aa1fb12a6fec")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 471.17 149.86 0)
       (effects
@@ -7093,7 +7093,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "c7abf6f7-ab09-4f49-adc4-91e45be95453")
+    (uuid "d719d8ff-35c1-447c-8cda-27069f5c66dc")
     (property "Reference" "R103"
       (at 487.68 152.07 0)
       (effects
@@ -7127,12 +7127,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "9caa52de-aaa2-4ab1-8a20-a6b38d6b3bc9"))
+      (uuid "a5d2e4bb-293c-4fe9-8b5b-22cd0b33a7df"))
     (pin "2"
-      (uuid "36f5ee0a-ecaa-416b-bf9f-7036fbf2b568"))
+      (uuid "1b470367-27ae-4201-b962-27d61793a92b"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R103")
           (unit 1)))))
   (global_label "TP44"
@@ -7143,7 +7143,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "453bf923-1cc6-4d05-8d4d-0ed7edb58669")
+    (uuid "0b644fed-8203-40dc-bbf1-d2fe0af1aed2")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 487.68 153.67 0)
       (effects
@@ -7156,7 +7156,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a6caf91c-85cd-4bad-af65-0c5a02c5f703"))
+    (uuid "32a43e84-cefd-4291-bde8-c90eb22f5122"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 497.84 157.48 0)
@@ -7164,7 +7164,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9abc7fd7-5394-48ab-9668-23f13b3e0988")
+    (uuid "0b886892-2f48-4638-85d3-632448dcabff")
     (property "Reference" "F45"
       (at 497.84 152.07 0)
       (effects
@@ -7193,12 +7193,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ad1d8f36-404b-4c2e-90ac-5b9ec3d4d6c0"))
+      (uuid "622ea139-6aee-471b-bc84-045b7c05c5b1"))
     (pin "2"
-      (uuid "2f766b78-3bd0-40b4-86fc-df2737315d69"))
+      (uuid "8d82d676-a5f1-4d0e-a030-2de46df2840b"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F45")
           (unit 1)))))
   (label "FR44"
@@ -7208,7 +7208,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "c08520ee-98cd-4b41-88ba-fdf2d29870b8"))
+    (uuid "7424991b-ed66-407c-bf17-c5831c4bb612"))
   (label "F44"
     (at 497.84 161.29 270)
     (fields_autoplaced)
@@ -7216,7 +7216,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d06036e7-9d08-4544-9005-232cb74c940b"))
+    (uuid "3ff78ced-ceed-4fea-b8d9-067d172a2b2e"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 520.7 152.4 0)
@@ -7224,7 +7224,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "95f67199-874e-44f0-8bda-1138fb91b944")
+    (uuid "f00bf9fe-2713-4f8e-83e6-356062bb6ff7")
     (property "Reference" "D109"
       (at 520.7 145.72 0)
       (effects
@@ -7248,14 +7248,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "760f5ca9-5a1c-4c2f-a6fb-5971bcc1a371"))
+      (uuid "383539c5-cca4-4e1a-ba67-fb0fb1c410f3"))
     (pin "2"
-      (uuid "550d8017-6d00-4c04-be4d-19dda5a50776"))
+      (uuid "79f21981-f930-4185-9be1-a9051255ec2b"))
     (pin "3"
-      (uuid "1ea7af59-014e-4a30-8369-d3cde3349903"))
+      (uuid "c2bb58fe-678d-4397-ad87-6cdf305792af"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D109")
           (unit 1)))))
   (label "F44"
@@ -7265,7 +7265,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "ed122b8a-9133-480b-8a4e-5cba785f280d"))
+    (uuid "b47eaafd-2a38-4f38-af8a-b04c8062e06a"))
   (global_label "5VA"
     (shape bidirectional)
     (at 527.05 149.86 0)
@@ -7274,7 +7274,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "23ccf459-eb08-4027-9c28-c795f99e8482")
+    (uuid "4fdad231-726e-481f-8eb3-ddfc5019499a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 527.05 149.86 0)
       (effects
@@ -7288,7 +7288,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "93c993a6-d388-4be4-8d7b-0cfe22cc0c18")
+    (uuid "85e83b11-00a5-4222-a78b-ca1201b572c2")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 527.05 152.4 0)
       (effects
@@ -7301,7 +7301,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "77862f70-683f-473a-98e0-25e656113cdb")
+    (uuid "480ed3fb-544d-473d-a1ba-04961b4355c8")
     (property "Reference" "R104"
       (at 543.56 152.07 0)
       (effects
@@ -7330,12 +7330,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ff1d1db6-485d-4315-9d43-3a99d75f4c65"))
+      (uuid "d6ad8091-a41a-489f-a338-3e6ed2ddcbf7"))
     (pin "2"
-      (uuid "6784ee12-81b4-4495-b223-8613eb71fab7"))
+      (uuid "b49a3535-eb8f-4acd-9330-d16a7b944266"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R104")
           (unit 1)))))
   (global_label "TP44"
@@ -7346,7 +7346,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "6b010ffc-dc0c-4860-ac7b-e792cf732770")
+    (uuid "883c49bb-810b-4fd6-b102-1e986829c737")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 543.56 153.67 0)
       (effects
@@ -7359,7 +7359,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "65c4e4c0-0f80-4ad4-8fb9-84976ea566f2"))
+    (uuid "b2be017b-d7cd-4cea-bb05-7e7c84057d3f"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 38.1 185.42 0)
@@ -7367,7 +7367,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "e74d3faa-dc10-404f-ae30-3c257505fe9e")
+    (uuid "2619eebc-375d-4cfa-b718-c0362823f08f")
     (property "Reference" "D110"
       (at 38.1 178.74 0)
       (effects
@@ -7391,14 +7391,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "a23778a9-fa54-4629-9261-d5dd98a053ce"))
+      (uuid "6834702a-e957-40b5-80f4-a23960008da3"))
     (pin "2"
-      (uuid "e547661b-3e73-4019-a280-61e1da03b58a"))
+      (uuid "64b5d877-2947-473c-a378-7fe280fbac46"))
     (pin "3"
-      (uuid "e41e9d50-2804-48a8-8825-c7297bd22f14"))
+      (uuid "4e261608-879f-4ca9-8e68-617ab12280e8"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D110")
           (unit 1)))))
   (label "S44"
@@ -7408,7 +7408,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "04fd7927-a393-457c-930b-f7b8eb49cc22"))
+    (uuid "8b621b0a-b7aa-4ea4-9272-9ef0607ec3ad"))
   (global_label "5VA"
     (shape bidirectional)
     (at 44.45 182.88 0)
@@ -7417,7 +7417,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "810e437d-8572-43e1-9e51-6f1ebb965646")
+    (uuid "534dc1ee-3220-49d4-b6ca-2d61ed2fa96b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 44.45 182.88 0)
       (effects
@@ -7431,7 +7431,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "8fb611ae-f3fa-46f7-accf-d5194ad6a888")
+    (uuid "e46f2490-c1e1-48c8-b1c2-ba8983030cf4")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 44.45 185.42 0)
       (effects
@@ -7444,7 +7444,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "039f1e24-fc69-4064-9022-88d19975d64a")
+    (uuid "1b4db2d2-88f4-4bd8-b2be-55042e0c7f8b")
     (property "Reference" "R105"
       (at 58.42 185.09 0)
       (effects
@@ -7478,12 +7478,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "b2e3f6f7-67b6-4cad-ae17-3f0aee1d098c"))
+      (uuid "5d294d99-515e-4d0b-89d6-bea9fc8c1af7"))
     (pin "2"
-      (uuid "d66d2e66-4183-4722-b63c-461a5626372e"))
+      (uuid "47c96f84-b05e-4514-8af6-3bd229a10b4d"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R105")
           (unit 1)))))
   (global_label "TP45"
@@ -7494,7 +7494,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "b09f6ea9-c36c-4512-bfe5-ee2857191bb2")
+    (uuid "fc3c2b8d-b133-45de-953b-83b2088bf2b5")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 58.42 186.69 0)
       (effects
@@ -7507,7 +7507,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "4cbe0c5c-253a-4c35-b70d-0342a504897e"))
+    (uuid "86a3e76e-6200-4de8-ac04-c8d6c9d882dd"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 71.12 190.5 0)
@@ -7515,7 +7515,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "0994b3d3-360d-416b-b77e-1bc6285d5abd")
+    (uuid "2b075527-b73a-4cfd-b6c1-4f691ac6e13f")
     (property "Reference" "F46"
       (at 71.12 185.09 0)
       (effects
@@ -7544,12 +7544,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0dfa49c5-77b8-43bf-9c24-4722654ac555"))
+      (uuid "dfa6f21e-32b1-4f47-922e-b56788bfde29"))
     (pin "2"
-      (uuid "2bbc7ca4-dbbb-4c2b-8f40-5eee7e5d36be"))
+      (uuid "c12d4dd4-0526-42b6-8050-db080ca32b17"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F46")
           (unit 1)))))
   (label "FR45"
@@ -7559,7 +7559,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e7fc0fb2-1f02-4ac3-97f1-ff864fe41eca"))
+    (uuid "db917266-39c9-40af-9f6e-8c375df52d09"))
   (label "F45"
     (at 71.12 194.31 270)
     (fields_autoplaced)
@@ -7567,7 +7567,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "f047814b-733f-49c4-a4b8-a7f55c0e5b42"))
+    (uuid "d941f020-2701-4da7-80a5-7113ef5f46c5"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 93.98 185.42 0)
@@ -7575,7 +7575,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "7bbd79f3-8e18-46a1-8915-f9b32aa8d1b2")
+    (uuid "ae62b51a-f78e-40ad-8db3-a6ebf916f604")
     (property "Reference" "D111"
       (at 93.98 178.74 0)
       (effects
@@ -7599,14 +7599,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "64bba793-418f-4033-be81-a66f1a965628"))
+      (uuid "6209137e-45c7-4f23-85cc-b970585cfdc9"))
     (pin "2"
-      (uuid "d0e8a820-aaa3-4b03-b394-434ec2216f2f"))
+      (uuid "398d56fb-84b4-43dd-bb57-9a06de712578"))
     (pin "3"
-      (uuid "7b895b25-bf5e-4b2b-a119-67c6f5650180"))
+      (uuid "c9d5a249-a4bc-4425-96ec-f6755a801b54"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D111")
           (unit 1)))))
   (label "F45"
@@ -7616,7 +7616,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "0801e60c-4519-4804-8749-6c34067fbc41"))
+    (uuid "39766466-6363-4302-95d8-9ce8e534c182"))
   (global_label "5VA"
     (shape bidirectional)
     (at 100.33 182.88 0)
@@ -7625,7 +7625,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "11964f5e-b300-44a4-8fab-d55b3af9411d")
+    (uuid "96a9b56c-8dda-495a-9d91-84c3ffb4c7f3")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 100.33 182.88 0)
       (effects
@@ -7639,7 +7639,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5d19b6fb-7aa7-4cc8-8e3e-bc51939ba9f2")
+    (uuid "eca53e54-622e-40c5-9740-f0241a345d36")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 100.33 185.42 0)
       (effects
@@ -7652,7 +7652,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "e147bcb5-d959-43d3-8384-8368ed169dc2")
+    (uuid "338b0a0f-c270-4c62-b44f-c5572e90ef7c")
     (property "Reference" "R106"
       (at 116.84 185.09 0)
       (effects
@@ -7681,12 +7681,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "b957bfb9-7602-4203-8986-51b882bbcb60"))
+      (uuid "383dba8c-2406-49a0-b7cb-6b25acd003b7"))
     (pin "2"
-      (uuid "bc3dae83-b496-4a96-a3b5-dc2dc5eb49ac"))
+      (uuid "e0befe9a-b873-422e-bc7b-8040b0e63907"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R106")
           (unit 1)))))
   (global_label "TP45"
@@ -7697,7 +7697,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "3ff57771-7a03-48e4-b1fe-ff3ad5685b46")
+    (uuid "7db2fc9d-8876-4921-b31e-bb6c91f8c39a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 116.84 186.69 0)
       (effects
@@ -7710,7 +7710,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "688ca150-b9f0-4646-849c-ae55e2df9820"))
+    (uuid "2b05cc11-ba8a-447d-b1e0-fc555886409d"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 137.16 185.42 0)
@@ -7718,7 +7718,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "5b2dfdad-de3e-4608-9a5b-a5dbe5317f1f")
+    (uuid "7473b3bd-1b25-48e1-a53b-adaf9a3a0177")
     (property "Reference" "D112"
       (at 137.16 178.74 0)
       (effects
@@ -7742,14 +7742,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "7e85d787-9b05-4979-b035-9dca2ea1f2a7"))
+      (uuid "cdefc3c8-15cd-4751-980d-edb6b75ca4d5"))
     (pin "2"
-      (uuid "fb36589d-6283-43fa-ae2f-67e4050539df"))
+      (uuid "24e26924-ca2e-4aa3-9d0d-bcc7baef12e3"))
     (pin "3"
-      (uuid "764bb8ea-04b7-4047-aa20-66aaa919f394"))
+      (uuid "c5ce1745-bc27-4fa0-9030-99f5c086c563"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D112")
           (unit 1)))))
   (label "S45"
@@ -7759,7 +7759,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "6f71a97d-df7c-4064-8deb-daf2fae345aa"))
+    (uuid "3fd10d9f-0b24-45ff-bc0c-ec232a9aa275"))
   (global_label "5VA"
     (shape bidirectional)
     (at 143.51 182.88 0)
@@ -7768,7 +7768,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "62025b89-e334-485f-8ca6-d9bc77fdebe8")
+    (uuid "659e5b47-0c67-4409-88ef-241665b9f8a8")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 143.51 182.88 0)
       (effects
@@ -7782,7 +7782,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "e41deab7-20a1-4622-bafc-0cc1a294ce9b")
+    (uuid "79f1827d-2295-49ff-bcc4-60213c3c8986")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 143.51 185.42 0)
       (effects
@@ -7795,7 +7795,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "c47c27f3-618a-4ba6-820e-ba21c0093a4b")
+    (uuid "436b436a-5123-401a-90b8-fa0a8c63273a")
     (property "Reference" "D113"
       (at 172.72 178.74 0)
       (effects
@@ -7819,14 +7819,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "d4fe8360-ef1b-445a-83be-ba593caeab6f"))
+      (uuid "1cdfd6fe-5a63-465f-866a-18d69983ce63"))
     (pin "2"
-      (uuid "1d0422ad-c251-42a0-b5ef-5d0efc3bd745"))
+      (uuid "dbe297a2-903c-4ef1-82d2-f03924660208"))
     (pin "3"
-      (uuid "99717616-507f-475d-903e-0ab96dfdd580"))
+      (uuid "d09143dc-77f9-4d93-ba9e-43240fe77e1a"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D113")
           (unit 1)))))
   (global_label "TP45"
@@ -7837,7 +7837,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "bc384ba4-72b5-4f16-8a0e-251a3a0d4858")
+    (uuid "79c8bfc5-4cdc-419b-adb1-73a46d18295e")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 166.37 182.88 0)
       (effects
@@ -7851,7 +7851,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "05822a63-0b75-405a-b130-4d4d9c35452a")
+    (uuid "145e8ff8-e06d-4121-8f2a-8b58c168731a")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 166.37 185.42 0)
       (effects
@@ -7865,7 +7865,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "7c08bd12-0d65-40b3-a757-9ec04711ebbc")
+    (uuid "363c9ab4-0d52-4adf-81fd-f045d286d045")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 179.07 182.88 0)
       (effects
@@ -7878,7 +7878,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "00d15176-7b71-47e3-9d0f-863cb204aa88")
+    (uuid "ea74a4e1-0a54-4036-87bf-b53d2ac2ced2")
     (property "Reference" "R107"
       (at 195.58 185.09 0)
       (effects
@@ -7912,12 +7912,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "1323ccad-35d4-45cb-830a-e99bdf3cdae8"))
+      (uuid "9100cb56-e4ff-49c0-acdd-9d23433a571d"))
     (pin "2"
-      (uuid "6e08e4b6-da4e-48ff-b7f1-e47155e50b52"))
+      (uuid "4ea19af9-5dbf-4178-9594-d882e4567d78"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R107")
           (unit 1)))))
   (global_label "TP46"
@@ -7928,7 +7928,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "735fed58-2029-4041-96dc-61b162703135")
+    (uuid "81d59ac1-3621-45a8-a7cd-93f3562ca088")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 195.58 186.69 0)
       (effects
@@ -7941,7 +7941,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "6979811b-eb34-46c0-9a4f-98179d52bb9f"))
+    (uuid "90f71c84-da29-45ed-af24-eb47dd750532"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 205.74 190.5 0)
@@ -7949,7 +7949,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "4f400235-4e94-4464-8834-a242c34a8733")
+    (uuid "b80662c4-1e91-4ef4-8f01-c61297258476")
     (property "Reference" "F47"
       (at 205.74 185.09 0)
       (effects
@@ -7978,12 +7978,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0ccccf6c-3b42-47bd-88bb-31b4a9b06b1b"))
+      (uuid "97d7938e-2324-40a2-a4e4-6e3d8e06cd98"))
     (pin "2"
-      (uuid "f2e8a2e0-839d-46f7-8072-3e107de37700"))
+      (uuid "767c958b-674c-4b33-bde5-82292ba3d9cb"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F47")
           (unit 1)))))
   (label "FR46"
@@ -7993,7 +7993,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "49ffe0d3-4055-4345-ab8c-b04489154df9"))
+    (uuid "14e57e0e-ec3f-4b3e-aeee-a5bacea6ea56"))
   (label "F46"
     (at 205.74 194.31 270)
     (fields_autoplaced)
@@ -8001,7 +8001,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "e3aea225-510c-48cb-80d9-e91938fe88e7"))
+    (uuid "a812f3ed-f168-4705-8d30-9a2c0fef8cd6"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 228.6 185.42 0)
@@ -8009,7 +8009,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "c110deeb-8016-46a3-9376-17517691d14a")
+    (uuid "de41ff48-310e-4363-9d7b-f65b009d17fd")
     (property "Reference" "D114"
       (at 228.6 178.74 0)
       (effects
@@ -8033,14 +8033,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "7540d6a1-9b4b-4ae5-a9be-cf5cd9594277"))
+      (uuid "bbfb6b5f-653f-4906-a58f-296560bde56f"))
     (pin "2"
-      (uuid "3f6d9efd-5d38-475a-a2a4-ad76c94828c2"))
+      (uuid "b287b617-4c20-48c4-a00c-5a04734775f4"))
     (pin "3"
-      (uuid "00111bc6-7d18-43b4-9078-186ce9f56a01"))
+      (uuid "236469ad-b68d-481b-bb96-0126128848fa"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D114")
           (unit 1)))))
   (label "F46"
@@ -8050,7 +8050,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "af77c1a6-2187-428a-8d3e-6feb759e8226"))
+    (uuid "8e8d009a-08c9-475e-8961-633f088cf669"))
   (global_label "5VA"
     (shape bidirectional)
     (at 234.95 182.88 0)
@@ -8059,7 +8059,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "cfa0eeec-452e-4201-90fb-66b3dd81d48b")
+    (uuid "d68e9823-f24e-4f3d-a7d9-d67909831c22")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 234.95 182.88 0)
       (effects
@@ -8073,7 +8073,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "7efb7d9b-5361-494b-adc3-ca61356cba2b")
+    (uuid "92561cf1-0580-4e7c-a2f1-5a94e331c404")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 234.95 185.42 0)
       (effects
@@ -8086,7 +8086,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9b4dbd44-9f00-4aa6-8458-0b40bb96cdba")
+    (uuid "f0f8b4b6-2a65-4a96-9262-a3bb285b1c09")
     (property "Reference" "R108"
       (at 251.46 185.09 0)
       (effects
@@ -8115,12 +8115,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "2424483d-6bbc-4696-a0a9-2261a0dc8a23"))
+      (uuid "934da186-44fe-4c93-9679-4e1c41df33d9"))
     (pin "2"
-      (uuid "7e4c0906-af33-4f13-9ab1-73c46b428047"))
+      (uuid "10d77966-1aaf-43c1-83ba-5008a427ba33"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R108")
           (unit 1)))))
   (global_label "TP46"
@@ -8131,7 +8131,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "33bedbf9-ff6a-460e-9065-6a5c1cf95b05")
+    (uuid "46c6e0ab-d5e5-4493-8a50-f460b8572383")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 251.46 186.69 0)
       (effects
@@ -8144,7 +8144,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "bea93cda-837b-4c59-83de-985fea38014b"))
+    (uuid "fe0368fd-10f7-4cb4-ab7d-1bbe0a07165d"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 274.32 185.42 0)
@@ -8152,7 +8152,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "042c5ea4-d612-460c-9a99-79eb636cf2ce")
+    (uuid "9198fbb6-e96d-4dc9-a73f-1978fb5f742c")
     (property "Reference" "D115"
       (at 274.32 178.74 0)
       (effects
@@ -8176,14 +8176,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "53d2f71a-243d-4352-915a-d0d87a063faf"))
+      (uuid "98bd2e58-fa76-4e8f-9461-7dac9d749442"))
     (pin "2"
-      (uuid "929ca082-3015-4ef3-a3c8-8b4c088a4f39"))
+      (uuid "2205885e-325d-4777-8fd8-ab21531f7404"))
     (pin "3"
-      (uuid "c88b9247-a532-4479-b740-2fff907d3def"))
+      (uuid "e491cde1-44f5-4485-b3b8-21305aa1dd46"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D115")
           (unit 1)))))
   (label "S46"
@@ -8193,7 +8193,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "bc24c2d5-5951-4ad0-b1a5-a21b9ec6d678"))
+    (uuid "401bc1e5-a69b-4c1e-a5e6-d6b94ad9d114"))
   (global_label "5VA"
     (shape bidirectional)
     (at 280.67 182.88 0)
@@ -8202,7 +8202,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "14ffb3e4-17a2-46e4-af02-9a72520dabf0")
+    (uuid "c689c755-8cfe-42b0-8be9-d40d9092652b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 280.67 182.88 0)
       (effects
@@ -8216,7 +8216,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "4a94cf22-db02-44d7-92a4-e7cf0ef86a00")
+    (uuid "e9cc2340-688e-45d8-a7dd-69e8e5c69003")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 280.67 185.42 0)
       (effects
@@ -8229,7 +8229,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9ae7c258-9407-43db-b282-150f60f41096")
+    (uuid "b61f1752-e607-44c2-8038-6df8537101dc")
     (property "Reference" "R109"
       (at 294.64 185.09 0)
       (effects
@@ -8263,12 +8263,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "e0ee8f9b-bdff-4b7c-aae0-328eed75fd65"))
+      (uuid "25c53e8b-f15e-4f44-8e97-c2cccfe2dc70"))
     (pin "2"
-      (uuid "3a4d8b98-a3d9-4827-9afc-84323310507a"))
+      (uuid "aa0e870d-abce-4e3a-adbb-ad11832ae290"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R109")
           (unit 1)))))
   (global_label "TP47"
@@ -8279,7 +8279,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "1e2176f7-6b88-4d3b-bd83-86026af94d7f")
+    (uuid "0f2c1171-2fbf-4f11-a1eb-a4d6dd26769c")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 294.64 186.69 0)
       (effects
@@ -8292,7 +8292,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "66831372-d6e7-47e6-9936-e7dbd1c3f64c"))
+    (uuid "3d53289c-c26c-4901-9675-85248c2f98d2"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 307.34 190.5 0)
@@ -8300,7 +8300,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "476bde3d-0f60-4cf1-9418-da12fb07c741")
+    (uuid "cbd1f5d4-2120-447e-9bfe-9e2a55c21a60")
     (property "Reference" "F48"
       (at 307.34 185.09 0)
       (effects
@@ -8329,12 +8329,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "ba41ce2e-68e0-466f-b162-86615f8677c2"))
+      (uuid "9be92cd4-c654-4801-a95c-a3a6c04d3c0d"))
     (pin "2"
-      (uuid "a17570c2-243b-44b9-ad10-08d867ce72c8"))
+      (uuid "72e67674-eda7-45ae-8cf1-c9368d5360e3"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F48")
           (unit 1)))))
   (label "FR47"
@@ -8344,7 +8344,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5fd7bc08-2e14-444c-b63c-d54224679d2a"))
+    (uuid "7cd58ad9-fef1-4379-baa3-22210d4dfd62"))
   (label "F47"
     (at 307.34 194.31 270)
     (fields_autoplaced)
@@ -8352,7 +8352,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "b9c2cf29-ca45-46e5-a51b-2ed33b98474d"))
+    (uuid "3b216a0b-aec8-4a4e-b4d3-170d14efcd0a"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 330.2 185.42 0)
@@ -8360,7 +8360,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "7878a28d-8dc8-43eb-a30f-d9dd943950d4")
+    (uuid "761685e9-d9d5-48ef-933f-0a710797581f")
     (property "Reference" "D116"
       (at 330.2 178.74 0)
       (effects
@@ -8384,14 +8384,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "7a7b6328-2e97-40d6-98f6-8101b44e907e"))
+      (uuid "38514d5a-ecfa-463f-89c0-15580eee4462"))
     (pin "2"
-      (uuid "efb57ce0-870d-4c5c-b4b9-38b7305e1a58"))
+      (uuid "b33e63e1-3470-4b25-a5c0-6de2e733ed72"))
     (pin "3"
-      (uuid "df7b373a-5fdd-48ec-b2ab-6d7532b950e8"))
+      (uuid "6d64d9b8-a8bb-45e0-927d-fbdadf15320d"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D116")
           (unit 1)))))
   (label "F47"
@@ -8401,7 +8401,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "eddc16d0-0202-4127-9900-a4aa61a762d5"))
+    (uuid "7faad2c3-60a8-42a6-92a4-1348978a7e0c"))
   (global_label "5VA"
     (shape bidirectional)
     (at 336.55 182.88 0)
@@ -8410,7 +8410,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "992e8f26-6584-4d58-8bc3-84f21c188186")
+    (uuid "3d8820f4-66c7-4487-ab01-8eea47a4e00e")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 336.55 182.88 0)
       (effects
@@ -8424,7 +8424,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "09664cdd-a1eb-49dd-a580-48da8d330bfd")
+    (uuid "196a0916-b3f4-42c4-9d41-f55261ec4ab2")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 336.55 185.42 0)
       (effects
@@ -8437,7 +8437,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ca152c91-3773-45af-9622-26c66c5635aa")
+    (uuid "e70ba560-21fe-48f9-8f92-c49a446ea4ac")
     (property "Reference" "R110"
       (at 353.06 185.09 0)
       (effects
@@ -8466,12 +8466,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "0b44a7a9-7dc0-46cc-bf3a-b60fcf807e28"))
+      (uuid "dcfeaa7a-ed84-45ce-9692-b45a1667177a"))
     (pin "2"
-      (uuid "55eb9bde-8971-41b5-a6ab-41fea1854322"))
+      (uuid "432a1754-7c36-4072-ad99-e6bb120decce"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R110")
           (unit 1)))))
   (global_label "TP47"
@@ -8482,7 +8482,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "f45bd085-787f-4dfc-b728-9be564d1ed62")
+    (uuid "c5d753a5-e0cd-4b61-abad-000631e691f0")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 353.06 186.69 0)
       (effects
@@ -8495,7 +8495,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "f97ba200-8ccb-41b4-b29a-26d0732e5f88"))
+    (uuid "f2d68782-b810-4ab3-b58a-8c4f3b5f847c"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 373.38 185.42 0)
@@ -8503,7 +8503,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "87ef2e8a-ff23-4390-8def-d164735cde87")
+    (uuid "e2216ace-5b9b-4570-b9c0-c929a0dd9a99")
     (property "Reference" "D117"
       (at 373.38 178.74 0)
       (effects
@@ -8527,14 +8527,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "a8d6ddd6-6572-45b3-826b-ef1732897fd4"))
+      (uuid "710c1d2e-ff5a-42b8-8383-fd69315bd39f"))
     (pin "2"
-      (uuid "670fdc6d-0f31-47f6-89c3-484e57c01161"))
+      (uuid "69652149-dd75-4857-88fc-d0edc80b4d37"))
     (pin "3"
-      (uuid "ad092bd4-5059-4197-b461-1b11b2f2910e"))
+      (uuid "59d6d545-857b-4917-aab3-f18eac03e5e3"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D117")
           (unit 1)))))
   (label "S47"
@@ -8544,7 +8544,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "557cb01d-12ad-4df2-8b02-d5865b0df62c"))
+    (uuid "98df65c5-19d4-4800-a5d6-6e15eba5489b"))
   (global_label "5VA"
     (shape bidirectional)
     (at 379.73 182.88 0)
@@ -8553,7 +8553,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "55f92a27-be75-4c4e-8579-baeec569e75b")
+    (uuid "0cb789b6-2c06-433e-8684-e7a747813381")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 379.73 182.88 0)
       (effects
@@ -8567,7 +8567,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "cc781057-29a8-47e3-bdfd-d6fda72d8eef")
+    (uuid "37b29d2a-2691-43a4-9b5a-01d2963a8758")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 379.73 185.42 0)
       (effects
@@ -8580,7 +8580,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "34531419-e851-4173-9c67-d19da883414e")
+    (uuid "d1918fed-e01b-451c-a14b-80dc5c6c591b")
     (property "Reference" "D118"
       (at 408.94 178.74 0)
       (effects
@@ -8604,14 +8604,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "c5817272-082b-4cdc-ae4c-06b4138be3d9"))
+      (uuid "ea20b802-aba6-4d85-a2ad-9788594a5263"))
     (pin "2"
-      (uuid "e18b2b8e-1328-4ce3-9123-7dffe2cadc15"))
+      (uuid "e2ef7890-5a86-4062-b959-82489848b065"))
     (pin "3"
-      (uuid "ceb3a845-ec32-4885-9727-73240fb9fc20"))
+      (uuid "951fca51-a338-4b8e-be02-fed383da1eec"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D118")
           (unit 1)))))
   (global_label "TP47"
@@ -8622,7 +8622,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "7e78c939-9047-4bf0-8e33-65be7b3373d1")
+    (uuid "2deba058-c92b-45ab-8d8a-023deea3b9aa")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 402.59 182.88 0)
       (effects
@@ -8636,7 +8636,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "1c9bb6e8-998d-4969-b0ec-99bfbe26fa25")
+    (uuid "8c4e6399-cffb-498d-8086-f2235dc44512")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 402.59 185.42 0)
       (effects
@@ -8650,7 +8650,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "b723bc3c-6f26-4f23-90dc-02d6bdd997c1")
+    (uuid "52f33353-dde9-4408-a25a-eac0a8ecd422")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 415.29 182.88 0)
       (effects
@@ -8663,7 +8663,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9611d0b1-3168-42fc-b467-6958042069e8")
+    (uuid "64b31d6a-ca22-49f7-9f10-16da0cb17fd0")
     (property "Reference" "R111"
       (at 431.8 185.09 0)
       (effects
@@ -8697,12 +8697,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "e200a486-38cb-4f04-8643-1d022373bb50"))
+      (uuid "59fff893-4452-4788-b883-a74d33e258cd"))
     (pin "2"
-      (uuid "f20d6397-8098-461f-a56e-96e58b8a0ff6"))
+      (uuid "0251b022-765e-4374-89a0-63e7d034fa0d"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R111")
           (unit 1)))))
   (global_label "TP48"
@@ -8713,7 +8713,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "291263d3-8984-4fce-be6c-9dd458a6ce2b")
+    (uuid "2b8260fb-68d0-42c8-bb67-9234212424b2")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 431.8 186.69 0)
       (effects
@@ -8726,7 +8726,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "0331197c-25dc-4c2d-b9f3-ba54e353217c"))
+    (uuid "9c22fd6f-37a1-485b-b19a-93896e057586"))
   (symbol
     (lib_id "Device:Polyfuse")
     (at 441.96 190.5 0)
@@ -8734,7 +8734,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "27124978-01c2-4e6a-b267-b8320a31ee94")
+    (uuid "adaee34a-a235-4dd5-9189-d4dc5e226da8")
     (property "Reference" "F49"
       (at 441.96 185.09 0)
       (effects
@@ -8763,12 +8763,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "7183b9c3-2344-474f-9c54-664d7ca58069"))
+      (uuid "3b6f5372-8aa5-4aa2-a4eb-f8e4b23ec292"))
     (pin "2"
-      (uuid "7af2083d-dc80-4b86-a71b-fbedc6920d5a"))
+      (uuid "d42ddc92-6b41-4058-9407-12e868dc6f5f"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "F49")
           (unit 1)))))
   (label "FR48"
@@ -8778,7 +8778,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "871c4e4d-99c2-4f73-a8b6-baa7967cb521"))
+    (uuid "c9b73bda-e01a-420c-8346-a63b14c96ee3"))
   (label "F48"
     (at 441.96 194.31 270)
     (fields_autoplaced)
@@ -8786,7 +8786,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "759bfe92-3eab-4f20-a4dd-f3adb23fb3a9"))
+    (uuid "14ac5845-bff6-4a48-a610-5f91ef472401"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 464.82 185.42 0)
@@ -8794,7 +8794,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "31c8a220-0b2d-40b1-988e-3713b8a13f5a")
+    (uuid "3488fcd4-ff41-482e-aeef-4f31374a005a")
     (property "Reference" "D119"
       (at 464.82 178.74 0)
       (effects
@@ -8818,14 +8818,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "d357081a-1b3f-4ecf-b663-d07764e55da5"))
+      (uuid "6edcca78-3410-4bc6-ad5e-207914b5a8d2"))
     (pin "2"
-      (uuid "e09d9982-b430-42c1-a92c-5e4176169968"))
+      (uuid "76bccf0e-c2e9-4578-a6e1-8590fd64bb34"))
     (pin "3"
-      (uuid "98634209-890d-4c6c-bf12-ded836d977d6"))
+      (uuid "c3cd54bc-0909-4a42-a83c-ba3aa810daf4"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D119")
           (unit 1)))))
   (label "F48"
@@ -8835,7 +8835,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "1e7bb498-00e3-4d7b-b15f-0c65b4e088a2"))
+    (uuid "ce40483c-7964-4972-a236-089935d73c81"))
   (global_label "5VA"
     (shape bidirectional)
     (at 471.17 182.88 0)
@@ -8844,7 +8844,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "8fa18c17-fcc1-4db2-b25c-8b602b2742ee")
+    (uuid "1a280d71-7e6c-4d77-9789-9c0dee68920b")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 471.17 182.88 0)
       (effects
@@ -8858,7 +8858,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "463b40f6-52ba-492e-a67f-f16a12dbe32b")
+    (uuid "5f5f0b61-9680-4357-8085-463ffffe06c9")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 471.17 185.42 0)
       (effects
@@ -8871,7 +8871,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "7e5d4153-eca5-45b5-b28c-27de08d8d05f")
+    (uuid "df074dd0-2387-4357-a156-befb851f3958")
     (property "Reference" "R112"
       (at 487.68 185.09 0)
       (effects
@@ -8900,12 +8900,12 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "309153a2-87a3-499a-b5f2-8909ec0dd5e6"))
+      (uuid "541d4165-2489-488e-9fdc-9ec35a3546a1"))
     (pin "2"
-      (uuid "79520963-b513-4304-87a2-b7e4f879801c"))
+      (uuid "ce959a57-d132-4473-8ca6-7d6e4b8492b7"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "R112")
           (unit 1)))))
   (global_label "TP48"
@@ -8916,7 +8916,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "7e13a693-a7b0-48ee-8775-9058e42d9583")
+    (uuid "f3fba658-7864-40d6-827b-d1b2ad0b82cd")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 487.68 186.69 0)
       (effects
@@ -8929,7 +8929,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "07d6e441-1dea-4fef-8b5f-9070fc34632c"))
+    (uuid "81c582e3-0e98-44c9-ad06-44e9f854bcf4"))
   (symbol
     (lib_id "kabeltester:BAV199")
     (at 510.54 185.42 0)
@@ -8937,7 +8937,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "054c7689-0abf-4abc-b980-d733e72a011d")
+    (uuid "36fc8eae-c6f6-4b53-b890-d1f092c42ba3")
     (property "Reference" "D120"
       (at 510.54 178.74 0)
       (effects
@@ -8961,14 +8961,14 @@
         (font
           (size 1.27 1.27)) hide))
     (pin "1"
-      (uuid "5988ef52-af46-4f20-9085-3ad483a36913"))
+      (uuid "62c0d2dd-238d-483d-b299-0c244870e508"))
     (pin "2"
-      (uuid "347ede79-2b4c-4cac-b5c6-c85f1a85f64f"))
+      (uuid "4c809029-223a-48a3-b585-b8e29688f03c"))
     (pin "3"
-      (uuid "fffd1e1b-fad4-4b2a-91b3-acce4044a2d2"))
+      (uuid "bfc9fff4-f67e-4dfa-bf2b-49521cb600a2"))
     (instances
       (project "kanalkarte"
-        (path "/e1b89954-6b4e-4b04-99d8-82150a80ab6d/5b3e3d5b-106b-43f4-96d0-ef2833aab07c"
+        (path "/3e179b57-553d-4790-a5c5-3fbfbd6ea661/39ba1ace-b7dd-444d-9dfa-60f7ed1ea030"
           (reference "D120")
           (unit 1)))))
   (label "S48"
@@ -8978,7 +8978,7 @@
       (font
         (size 1.27 1.27))
       (justify right bottom))
-    (uuid "ead51d38-c69c-4d0b-8b0d-e9676d60bf46"))
+    (uuid "eb05ace2-6b12-44fe-8cd8-661fcd158cec"))
   (global_label "5VA"
     (shape bidirectional)
     (at 516.89 182.88 0)
@@ -8987,7 +8987,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5a09d1fd-fe97-42f4-8308-9ebff3578899")
+    (uuid "e73f17af-b000-49fa-add9-23852213f14d")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 516.89 182.88 0)
       (effects
@@ -9001,7 +9001,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "847b3b3d-537d-440e-93ba-af5a576c2e4b")
+    (uuid "8d3b6f03-1a5d-47b3-a004-076f2d71b3f4")
     (property "Intersheetrefs" "${INTERSHEET_REFS}"
       (at 516.89 185.42 0)
       (effects
